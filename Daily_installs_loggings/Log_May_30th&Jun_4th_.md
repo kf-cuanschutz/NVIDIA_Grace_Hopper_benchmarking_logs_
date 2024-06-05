@@ -32,4 +32,9 @@ apptainer pull pytorch.sif docker://nvcr.io/nvidia/pytorch:24.05-py3
 ```bash
 apptainer pull nvidia_rapids_.sif docker://nvcr.io/nvidia/rapidsai/base:24.04-cuda12.2-py3.11
 ```
+
+* Installing cupy:
+```bash
+ apptainer pull cupy_.sif docker://cupy/cupy
+```
  
