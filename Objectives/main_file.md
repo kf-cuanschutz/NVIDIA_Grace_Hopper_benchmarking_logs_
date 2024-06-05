@@ -29,3 +29,5 @@ and it would be a great advancement for Anschutz Medical Campus.
 (14) Benchmark with HPL-gpu
 
 (15) Benchmark Deep learning using Hands-on Machine learning github [examples](https://github.com/ageron/handson-ml3/tree/main) and MarkIII Sys workshop series [1](https://trending.markiiisys.com/cu-anschutz-aiseries), [2](https://trending.markiiisys.com/cu-anschutz-ai-2024), [3](https://github.com/kf-cuanschutz/CU-Anschutz-HPC-documentation/blob/main/Workshops/nvidia_workshop_series_information_spring_23.md).
+
+(16) Ensure that on Grace Hopper we can recreate a Research Computing like environment. That is, an environment where researchers can run their experiments without too many hurdles and provided that they have access to a well written documentation.
