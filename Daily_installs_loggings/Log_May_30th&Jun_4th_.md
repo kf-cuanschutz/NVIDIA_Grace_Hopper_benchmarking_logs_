@@ -13,7 +13,12 @@ sudo apt install -y apptainer
 ```bash
 sudo snap install nvtop
 ```
-* Installing tensorflow:
+* Installed tensorflow:
 ```bash
 apptainer pull nvcr_tf.sif docker://nvcr.io/nvidia/tensorflow:24.05-tf2-py3-igpu
-```  
+```
+* Installed screen"
+```bash
+sudo apt install screen
+```
+ 
