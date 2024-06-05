@@ -70,4 +70,15 @@ To install conda's shell functions for easier access, first activate, then:
 
 conda init
 ```
- 
+
+* Installing of mamba cuda, nvprof and nsight toolkit:
+
+```bash
+eval "$(/opt/miniconda3/bin/conda shell.bash hook)"
+conda create -n cuda_env python=3.9
+onda activate cuda_env
+conda install -c "nvidia/label/cuda-11.8.0" cuda-toolkit
+conda install nvidia::cuda-nvprof -y
+conda install nvidia::nsight-compute -y
+conda install numba -y
+```
