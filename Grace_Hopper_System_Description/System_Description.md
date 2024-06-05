@@ -11,4 +11,5 @@ The Grace Hopper system is made of an ARM CPU part and a Hopper architechture pa
 
 
 [1] Further links to nvidia-smi: https://developer.download.nvidia.com/compute/DCGM/docs/nvidia-smi-367.38.pdf
+
 [2] More information on Grace-Hopper: https://extremecomputingtraining.anl.gov/wp-content/uploads/sites/96/2023/08/ATPESC-2023-Track-1-Talk-4-Giri-Nvidia-Grace-Hopper-1.pdf
