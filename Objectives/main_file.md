@@ -25,3 +25,5 @@ and it would be a great advancement for Anschutz Medical Campus.
 (12) Benchmark AMFM texture extraction methods
 
 (13) Benchmark MRI reconstruction pipelines.
+
+(14) Benchmark with HPL-gpu
