@@ -7,7 +7,7 @@ The Grace Hopper system is made of an ARM CPU part and a Hopper architechture pa
 * CPU max Frequency is 3,483 MHz and 81 MHz min Frequency.
 * The system has about 480G CPU RAM
 * Here is a link to the CPU [model](https://www.arm.com/products/silicon-ip-cpu/neoverse/neoverse-v2)
-* According to nvidia-smi, the GPU chip is  NVIDIA GH200 with global memory 480GB.
+* According to nvidia-smi, the GPU chip is  NVIDIA GH200 with global memory 574.5GB.
 
 
 [1] Further links to nvidia-smi: https://developer.download.nvidia.com/compute/DCGM/docs/nvidia-smi-367.38.pdf
