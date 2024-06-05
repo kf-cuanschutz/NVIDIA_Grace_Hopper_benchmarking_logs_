@@ -8,6 +8,7 @@ The Grace Hopper system is made of an ARM CPU part and a Hopper architechture pa
 * The system has about 480G CPU RAM
 * Here is a link to the CPU [model](https://www.arm.com/products/silicon-ip-cpu/neoverse/neoverse-v2)
 * According to nvidia-smi, the GPU chip is  NVIDIA GH200 with global memory 574.5GB.
+* The OS distribution is Ubuntu 22.04.4 and the kernel is 6.5.0-1019-nvidia-64k, suitable for the arm64 architecture.
 
 
 [1] Further links to nvidia-smi: https://developer.download.nvidia.com/compute/DCGM/docs/nvidia-smi-367.38.pdf
