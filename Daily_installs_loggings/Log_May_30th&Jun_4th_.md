@@ -21,4 +21,15 @@ apptainer pull nvcr_tf.sif docker://nvcr.io/nvidia/tensorflow:24.05-tf2-py3-igpu
 ```bash
 sudo apt install screen
 ```
+
+* Installed pytorch
+```bash
+apptainer pull pytorch.sif docker://nvcr.io/nvidia/pytorch:24.05-py3
+```
+
+* Installing NVIDIA Rapids:
+
+```bash
+apptainer pull nvidia_rapids_.sif docker://nvcr.io/nvidia/rapidsai/base:24.04-cuda12.2-py3.11
+```
  
