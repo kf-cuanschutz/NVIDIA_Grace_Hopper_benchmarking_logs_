@@ -82,3 +82,8 @@ conda install nvidia::cuda-nvprof -y
 conda install nvidia::nsight-compute -y
 conda install numba -y
 ```
+
+* Containers images were copied to
+```bash
+/opt/containers_img
+```
