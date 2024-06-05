@@ -18,7 +18,7 @@ and it would be a great advancement for Anschutz Medical Campus.
 
 (8) Benchmark LLMs
 
-(9) Benchmark Machine learning and Deep learning pipelines
+(9) Benchmark Machine learning with NVIDIA [Rapids](https://developer.nvidia.com/rapids/get-started).
 
 (10) Benchmark the game of Life pipeline
 
@@ -27,3 +27,5 @@ and it would be a great advancement for Anschutz Medical Campus.
 (13) Benchmark MRI reconstruction pipelines.
 
 (14) Benchmark with HPL-gpu
+
+(15) Benchmark Deep learning using Hands-on Machine learning github [examples](https://github.com/ageron/handson-ml3/tree/main) and MarkIII Sys workshop series [1](https://trending.markiiisys.com/cu-anschutz-aiseries), [2](https://trending.markiiisys.com/cu-anschutz-ai-2024), [3](https://github.com/kf-cuanschutz/CU-Anschutz-HPC-documentation/blob/main/Workshops/nvidia_workshop_series_information_spring_23.md).
