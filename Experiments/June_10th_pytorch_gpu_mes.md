@@ -48,6 +48,8 @@ import sklearn
 import matplotlib.pyplot as plt
 import tensorflow as tf
 from pathlib import Path
+import numpy as np
+import time    # Or replace with something more advance, like cProfile???
 
 
 # Make tensorflow run script on a GPU
@@ -98,11 +100,14 @@ def save_fig(fig_id, tight_layout=True, fig_extension="png", resolution=300):
 Creating the SVM
 
 ```
-import numpy as np
 from sklearn.datasets import load_iris
 from sklearn.pipeline import make_pipeline
 from sklearn.preprocessing import StandardScaler
 from sklearn.svm import LinearSVC
+
+
+start_time = time.time()    # Potentially replace!!! Times start of SVM to prediction outputs (Can change)
+
 
 iris = load_iris(as_frame=True)
 X = iris.data[["petal length (cm)", "petal width (cm)"]].values
@@ -120,6 +125,11 @@ X_new = [[5.5, 1.7], [5.0, 1.5]]
 svm_clf.predict(X_new)
 
 svm_clf.decision_function(X_new)
+
+end_time = time.time()
+execution_time= end_time - start_time
+
+print("Function execution time:", execution_time, "seconds")
 ```
 
 Nonlinear SVM? Polynomial SVM? Should I print outputs as well? Predictions? Or just time it?
