@@ -66,6 +66,11 @@ conda install -c conda-forge cudnn
 conda install -c "nvidia/label/cuda-11.8.0" cuda-toolkit 
 ```
 
+* Installed gxx:
+```bash
+ conda install conda-forge::gxx_linux-64
+```
+
 
 
 
