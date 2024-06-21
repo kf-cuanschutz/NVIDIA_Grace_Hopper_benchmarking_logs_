@@ -92,7 +92,20 @@ CC=mpicc CXX=mpicxx  CMAKE=1 HOROVOD_WITH_MPI=1 HOROVOD_WITH_PYTORCH=1 HOROVOD_G
 
 ```
 
-But failed ``` Error: unknown architecture `nocona```
+But failed 
+```bash E
+Assembler messages:
+      Error: unknown architecture `nocona'
+
+      Error: unrecognized option -march=nocona
+      cc1plus: error: unknown value ‘nocona’ for ‘-march’
+      cc1plus: note: valid arguments are: armv8-a armv8.1-a armv8.2-a armv8.3-a armv8.4-a armv8.5-a armv8.6-a armv8-r native
+      cc1plus: error: unknown value ‘haswell’ for ‘-mtune’
+```
+I tried
+`apt-get install -y g++-aarch64-linux-gnu```
+
+I also tried to build Horovod without HOROVOD_GPU_ALLREDUCE=MPI and/or CC=mpicc CXX=mpicxx  but it did not work. I might be better off using Pytorch lightning.
 
 
 
