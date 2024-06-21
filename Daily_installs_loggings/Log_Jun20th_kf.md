@@ -60,6 +60,12 @@ and use the search bar at the top of the page.
 conda install -c conda-forge cudnn
 ```
 
+* Installing Cudatoolkit:
+
+```bash
+conda install -c "nvidia/label/cuda-11.8.0" cuda-toolkit 
+```
+
 
 
 
