@@ -107,6 +107,34 @@ I tried
 
 I also tried to build Horovod without HOROVOD_GPU_ALLREDUCE=MPI and/or CC=mpicc CXX=mpicxx  but it did not work. I might be better off using Pytorch lightning.
 
+* Installed spack with the following commands:
+
+```bash
+sudo apt update
+sudo apt install build-essential ca-certificates coreutils curl environment-modules gfortran git gpg lsb-release python3 python3-distutils python3-venv unzip zip
+git clone -c feature.manyFiles=true https://github.com/spack/spack.git
+. spack/share/spack/setup-env.sh
+```
+
+However installs of even simple packages like zlib seem to not work. Got the following error
+```bash
+==> gmake: Executing phase: 'install'
+==> [2024-06-21-04:02:05.362046] '/tmp/a10-kfotso/spack-stage/spack-stage-gmake-4.4.1-tiqzp6vofv6jm7zktwnv3ibu6n2sr24t/spack-src/configure' '--prefix=/home/a10-kfotso/spack/spack/opt/spack/linux-ubuntu22.04-neoverse_v2/gcc-12.3.0/gmake-4.4.1-tiqzp6vofv6jm7zktwnv3ibu6n2sr24t' '--without-guile' '--disable-nls' '--disable-dependency-tracking'
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether build environment is sane... yes
+checking for a race-free mkdir -p... /usr/bin/mkdir -p
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+checking whether make supports nested variables... yes
+checking whether make supports the include directive... yes (GNU style)
+checking for gcc... /home/a10-kfotso/spack/spack/lib/spack/env/c++
+checking whether the C compiler works... no
+configure: error: in `/tmp/a10-kfotso/spack-stage/spack-stage-gmake-4.4.1-tiqzp6vofv6jm7zktwnv3ibu6n2sr24t/spack-src/spack-build':
+configure: error: C compiler cannot create executables
+See `config.log' for more details
+```
+
+
 
 
 
