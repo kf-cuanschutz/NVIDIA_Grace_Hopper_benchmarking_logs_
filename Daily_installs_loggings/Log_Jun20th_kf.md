@@ -134,6 +134,17 @@ configure: error: C compiler cannot create executables
 See `config.log' for more details
 ```
 
+* I installed lua with the following as shown [here](https://lmod.readthedocs.io/en/latest/030_installing.html):
+
+```bash
+wget https://sourceforge.net/projects/lmod/files/lua-5.1.4.9.tar.bz2
+tar xf lua-5.1.4.9.tar.bz2
+cd lua-5.1.4.9/
+sudo make;sudo make install
+cd /opt/apps/lua; 
+sudo ln -s 5.1.4.9 lua
+sudo mkdir /usr/local/bin; sudo ln -s /opt/apps/lua/lua/bin/lua /usr/local/bin
+```
 
 
 
