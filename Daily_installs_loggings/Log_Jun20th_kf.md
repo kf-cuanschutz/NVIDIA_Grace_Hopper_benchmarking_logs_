@@ -71,6 +71,29 @@ conda install -c "nvidia/label/cuda-11.8.0" cuda-toolkit
  conda install conda-forge::gxx_linux-64
 ```
 
+* Downloaded NCCL from https://developer.nvidia.com/nccl:
+```bash
+wget https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2004/sbsa/cuda-keyring_1.0-1_all.deb
+sudo dpkg -i cuda-keyring_1.0-1_all.deb
+sudo apt-get update
+sudo apt install libnccl2=2.16.2-1+cuda11.8 libnccl-dev=2.16.2-1+cuda11.8 
+```
+
+* Gave the path to libnccl
+
+```bash
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/lib/aarch64-linux-gnu
+```
+
+* Tried to build Horovod with:
+
+```bash
+CC=mpicc CXX=mpicxx  CMAKE=1 HOROVOD_WITH_MPI=1 HOROVOD_WITH_PYTORCH=1 HOROVOD_GPU_ALLREDUCE=MPI HOROVOD_GPU_OPERATIONS=NCCL   pip install --no-cache-dir  horovod[pytorch]
+
+```
+
+But failed ``` Error: unknown architecture `nocona```
+
 
 
 
