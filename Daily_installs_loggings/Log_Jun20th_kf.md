@@ -54,6 +54,12 @@ looking for, navigate to
 
 and use the search bar at the top of the page.
 ```
+* Installing CUDNN:
+  
+```bash
+conda install -c conda-forge cudnn
+```
+
 
 
 
