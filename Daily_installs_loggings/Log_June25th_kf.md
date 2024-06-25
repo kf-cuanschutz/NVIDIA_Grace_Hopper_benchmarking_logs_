@@ -89,3 +89,96 @@ So I finally ran conda update all:
 apptainer shell -H $CONTAIN_DIR --bind=$FUNC_DIR --fakeroot --nv --containall --overlay nvidia_rapids_.img $FUNC_DIR/nvidia_rapids_.sif
  conda update --all
 ```
+
+Didn't work, please see issue [here](https://github.com/kf-cuanschutz/NVIDIA_Grace_Hopper_benchmarking_logs_/issues/8) 
+
+I instead built a conda ENV with nvidia rapids and installed nvprof that way
+
+Seems like it works when creating a new CONDA ENV. See below:
+
+```bash
+conda create -n rapids_ml_2 -c rapidsai -c conda-forge -c nvidia  \
+    rapids=24.06 python=3.11 cuda-version=11.2
+
+ conda activate rapids_ml_2     
+
+conda install nvidia::cuda-nvprof -y  
+conda install nvidia::nsight-compute -y                                                                                                                                                                           
+Channels:                                                                                                                                                                                                         
+ - defaults                                                                                                                                                                                                       
+ - nvidia                                                                                                                                                                                                         
+ - conda-forge                                                                                                                                                                                                    
+ - rapidsai                                                                                                                                                                                                       
+Platform: linux-aarch64                                                                                                                                                                                           
+Collecting package metadata (repodata.json): done                                                                                                                                                                 
+Solving environment: done                                                                                                                                                                                         
+                                                                                                                                                                                                                  
+## Package Plan ##                                                                                                                                                                                                
+                                                                                                                                                                                                                  
+  environment location: /home/a10-kfotso/.conda/envs/rapids_ml_2                                                                                                                                                  
+                                                                                                                                                                                                                  
+  added / updated specs:                                                                                                                                                                                          
+    - nvidia::cuda-nvprof                                                                                                                                                                                         
+                                                                                                                                                                                                                  
+                                                                                                                                                                                                                  
+The following packages will be downloaded:                                                                                                                                                                        
+                                                                                                                                                                                                                  
+    package                    |            build                                                                                                                                                                 
+    ---------------------------|-----------------                                                                                                                                                                 
+    certifi-2024.6.2           |  py311hd43f75c_0         161 KB                                                                                                                                                  
+    ------------------------------------------------------------                                                                                                                                                  
+                                           Total:         161 KB                                                                                                                                                  
+                                                                                                                                                                                                                  
+The following NEW packages will be INSTALLED:                                                                                                                                                                     
+                                                                                                                                                                                                                  
+  cuda-nvprof        nvidia/linux-aarch64::cuda-nvprof-11.7.101-0                                                                                                                                                 
+                                                                                                                                                                                                                  
+The following packages will be SUPERSEDED by a higher-priority channel:                                                                                                                                           
+                                                                                                                                                                                                                  
+  certifi            conda-forge/noarch::certifi-2024.6.2-~ --> pkgs/main/linux-aarch64::certifi-2024.6.2-py311hd43f75c_0                                                                                         
+                                                                                                                                                                                                                  
+                                                                                                                                                                                                                  
+                                                                                                                                                                                                                  
+Downloading and Extracting Packages:                                                                                                                                                                              
+                                                                                                                                                                                                                  
+Preparing transaction: done
+Verifying transaction: done
+Executing transaction: done
+Channels:
+ - defaults
+ - nvidia
+ - conda-forge
+ - rapidsai
+Platform: linux-aarch64
+Collecting package metadata (repodata.json): done
+Solving environment: done
+
+## Package Plan ##
+
+  environment location: /home/a10-kfotso/.conda/envs/rapids_ml_2
+
+  added / updated specs:
+    - nvidia::nsight-compute
+
+
+The following packages will be downloaded:
+
+    package                    |            build
+    ---------------------------|-----------------
+    nsight-compute-2024.1.1.4  |                0       282.9 MB  nvidia
+    ------------------------------------------------------------
+                                           Total:       282.9 MB
+
+The following NEW packages will be INSTALLED:
+
+  nsight-compute     nvidia/linux-aarch64::nsight-compute-2024.1.1.4-0 
+
+
+
+Downloading and Extracting Packages:
+                                                                                                                                                                                                                  
+Preparing transaction: done
+Verifying transaction: done
+Executing transaction: done
+
+```
