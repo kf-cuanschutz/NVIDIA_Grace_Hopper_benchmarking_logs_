@@ -83,9 +83,6 @@ ERROR conda.core.link:_execute(949): An error occurred while installing package 
 Rolling back transaction: done
 ```
 
-* I then created an overlay
-```
-
 So I finally ran conda update all:
 
 ```bash
