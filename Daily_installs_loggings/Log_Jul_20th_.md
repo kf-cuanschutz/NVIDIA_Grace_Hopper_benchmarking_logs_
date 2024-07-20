@@ -45,4 +45,9 @@ sudo apt-get install libopenblas-dev
     ```
 
  * It looks like I can get an HPL container here: https://catalog.ngc.nvidia.com/orgs/nvidia/containers/hpc-benchmarks
+   Currently building it with the following below:
+
+   ```bash
+   apptainer build  hpc-benchmarks:24.06.sif  docker://nvcr.io/nvidia/hpc-benchmarks:24.06
+   ```
 
