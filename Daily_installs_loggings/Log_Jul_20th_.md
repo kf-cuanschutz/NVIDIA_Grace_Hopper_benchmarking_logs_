@@ -9,3 +9,9 @@
  sudo apt install mpich
 ```
 
+* Installed Go2blas with the following:
+
+```bash
+sudo apt-get install libopenblas-dev
+```
+
