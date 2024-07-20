@@ -44,3 +44,5 @@ sudo apt-get install libopenblas-dev
     sudo apt  install cmake-curses-gui
     ```
 
+ * It looks like I can get an HPL container here: https://catalog.ngc.nvidia.com/orgs/nvidia/containers/hpc-benchmarks
+
