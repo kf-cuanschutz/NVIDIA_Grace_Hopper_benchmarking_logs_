@@ -39,3 +39,8 @@ sudo apt-get install libopenblas-dev
   /home/a10-kfotso/.conda/envs/cuda_env/lib/libcublasLt.so.11.11.3.6
   ```
 
+  * Installing cmkae with snap does not work ```sudo snap install cmake```. However the following worked
+    ```bash
+    sudo apt  install cmake-curses-gui
+    ```
+
