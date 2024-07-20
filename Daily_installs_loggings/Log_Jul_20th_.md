@@ -50,4 +50,5 @@ sudo apt-get install libopenblas-dev
    ```bash
    apptainer build  hpc-benchmarks:24.06.sif  docker://nvcr.io/nvidia/hpc-benchmarks:24.06
    ```
+ * I installed slurm following this [guide](https://drtailor.medium.com/how-to-setup-slurm-on-ubuntu-20-04-for-single-node-work-scheduling-6cc909574365). For the slurm.conf file, I entered 72 CPUs and 480G memory. Also, the slurm.conf file had to be created under "/etc/slurm/" in lieu of "/etc/slurm-llnl" for it to work. I applied the permission "755" on /etc/slurm/ as well.
 
