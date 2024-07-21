@@ -57,10 +57,55 @@ sudo apt-get install libopenblas-dev
 ```bash
  sudo slurmctld -D
 sudo mkdir -vp /var/lib/slurm-llnl/slurmctld
+sudo mkdir -pv /var/lib/slurm-llnl/slurmd
 sudo chown slurm:slurm /var/lib/slurm-llnl
 sudo chown slurm:slurm /var/lib/slurm-llnl/slurmctld
 sudo chmod 755 /var/lib/slurm-llnl
 sudo chmod 755 /var/lib/slurm-llnl/slurmctld
+sudo chmod 755 /var/lib/slurm-llnl/slurmd
+```
+
+Current output after making all of those edits for slurm:
+
+```bash
+(cuda_env) a10-kfotso@a10-cuanschutz01:~/slurm$ sudo slurmctld -D
+slurmctld: error: Configured MailProg is invalid
+slurmctld: slurmctld version 21.08.5 started on cluster localcluster
+slurmctld: No memory enforcing mechanism configured.
+slurmctld: Recovered state of 1 nodes
+slurmctld: Recovered information about 0 jobs
+slurmctld: select/cons_tres: part_data_create_array: select/cons_tres: preparing for 1 partitions
+slurmctld: Recovered state of 0 reservations
+slurmctld: read_slurm_conf: backup_controller not specified
+slurmctld: select/cons_tres: select_p_reconfigure: select/cons_tres: reconfigure
+slurmctld: select/cons_tres: part_data_create_array: select/cons_tres: preparing for 1 partitions
+slurmctld: Running as primary controller
+slurmctld: No parameter for mcs plugin, default values set
+slurmctld: mcs: MCSParameters = (null). ondemand set.
+slurmctld: SchedulerParameters=default_queue_depth=100,max_rpc_cnt=0,max_sched_time=2,partition_job_depth=0,sched_max_job_start=0,sched_min_interval=2
+slurmctld: error: Nodes localhost not responding
+slurmctld: error: Nodes localhost not responding
+^Cslurmctld: Terminate signal (SIGINT or SIGTERM) received
+slurmctld: Saving all slurm state
+(cuda_env) a10-kfotso@a10-cuanschutz01:~/slurm$ ^C
+(cuda_env) a10-kfotso@a10-cuanschutz01:~/slurm$ sudo systemctl stop slurmctld
+(cuda_env) a10-kfotso@a10-cuanschutz01:~/slurm$ sudo systemctl start slurmctld
+(cuda_env) a10-kfotso@a10-cuanschutz01:~/slurm$  systemctl status slurmctld
+● slurmctld.service - Slurm controller daemon
+     Loaded: loaded (/lib/systemd/system/slurmctld.service; enabled; vendor preset: enabled)
+     Active: active (running) since Sun 2024-07-21 00:29:53 UTC; 5s ago
+       Docs: man:slurmctld(8)
+   Main PID: 194544 (slurmctld)
+      Tasks: 14
+     Memory: 35.3M
+        CPU: 11ms
+     CGroup: /system.slice/slurmctld.service
+             ├─194544 /usr/sbin/slurmctld -D -s
+             └─194545 "slurmctld: slurmscriptd" "" ""
+(cuda_env) a10-kfotso@a10-cuanschutz01:~/slurm$ sinfo -a
+PARTITION AVAIL  TIMELIMIT  NODES  STATE NODELIST
+LocalQ*      up   infinite      1    unk localhost
+
 ```
 
 
