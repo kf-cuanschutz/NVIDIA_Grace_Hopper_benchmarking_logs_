@@ -108,4 +108,4 @@ LocalQ*      up   infinite      1    unk localhost
 
 ```
 
-
+* I installed Docker using [this](https://docs.docker.com/engine/install/ubuntu/#install-using-the-repository) guide.
