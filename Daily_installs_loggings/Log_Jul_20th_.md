@@ -109,3 +109,4 @@ LocalQ*      up   infinite      1    unk localhost
 ```
 
 * I installed Docker using [this](https://docs.docker.com/engine/install/ubuntu/#install-using-the-repository) guide.
+* Th[guide](https://docs.nvidia.com/nvidia-hpc-benchmarks/) is useful to do the HPL benchmark.
