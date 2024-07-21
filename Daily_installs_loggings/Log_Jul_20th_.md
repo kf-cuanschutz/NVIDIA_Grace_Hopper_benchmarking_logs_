@@ -52,3 +52,15 @@ sudo apt-get install libopenblas-dev
    ```
  * I installed slurm following this [guide](https://drtailor.medium.com/how-to-setup-slurm-on-ubuntu-20-04-for-single-node-work-scheduling-6cc909574365). For the slurm.conf file, I entered 72 CPUs and 480G memory. Also, the slurm.conf file had to be created under "/etc/slurm/" in lieu of "/etc/slurm-llnl" for it to work. I applied the permission "755" on /etc/slurm/ as well.
 
+* I had to follow this [guide](https://nekodaemon.com/2022/09/02/Slurm-Quick-Installation-for-Cluster-on-Ubuntu-20-04/) as well. But I was still getting issues when trying to start slurmctld. Running the following below allowed me to see that I had to create the "/var/lib/slurm-llnl" and "/var/lib/slurm-llnl/slurmctld" directories. I also changed the owner of "/var/lib/slurm-llnl" directories and change permissions.
+
+```bash
+ sudo slurmctld -D
+sudo mkdir -vp /var/lib/slurm-llnl/slurmctld
+sudo chown slurm:slurm /var/lib/slurm-llnl
+sudo chown slurm:slurm /var/lib/slurm-llnl/slurmctld
+sudo chmod 755 /var/lib/slurm-llnl
+sudo chmod 755 /var/lib/slurm-llnl/slurmctld
+```
+
+
