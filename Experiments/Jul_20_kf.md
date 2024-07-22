@@ -5,11 +5,6 @@ HPL benchmarking:
 * This HPL NVIDIA [documentation](https://docs.nvidia.com/nvidia-hpc-benchmarks/overview.html#using-custom-libraries) is useful.
 * And of course the [documentation](https://catalog.ngc.nvidia.com/orgs/nvidia/containers/hpc-benchmarks) on the container page is very useful as well.
 
-```bash
-python  calculate_pi_gpu_opt_clean_float64.py 1000000000
-```
-Results in --> ```Pi = 3.14159265358980155369, (Diff=0.00000000000000843769) (calculated in 27.445787 secs with 1000000000 steps)```
-
 * Running the HPL container as below. Note that the amount of cores sent with mpirun needs to be identical with what is written on the .dat file.
 
 ```bash
