@@ -8,6 +8,8 @@ HPL benchmarking:
 * Running the HPL container as below. Note that the amount of cores sent with mpirun needs to be identical with what is written on the .dat file.
 
 ```bash
+cd /home/a10-kfotso/containers_img_/hpl
+export CONTAIN_DIR=${PWD}
 apptainer shell -H $CONTAIN_DIR --nv hpc-benchmarks\:24.06.sif
  mpirun -n 72 /workspace/hpl.sh --dat mysample.dat
 ================================================================================
