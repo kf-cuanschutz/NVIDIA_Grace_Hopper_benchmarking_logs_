@@ -1396,3 +1396,5 @@ the job to be terminated. The first process to do so was:
 -------------------------------------------------------
 ```
 Looks like there is an issue with CUBLAS.
+
+* Looks like .dat files provided by the container are located under: ```/workspace/hpcg-linux-aarch64/sample-dat``` , ```/workspace/hpl-linux-aarch64-gpu/sample-dat```.
