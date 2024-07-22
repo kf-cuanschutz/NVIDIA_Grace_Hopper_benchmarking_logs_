@@ -5,7 +5,8 @@ HPL benchmarking:
 * This HPL NVIDIA [documentation](https://docs.nvidia.com/nvidia-hpc-benchmarks/overview.html#using-custom-libraries) is useful.
 * And of course the [documentation](https://catalog.ngc.nvidia.com/orgs/nvidia/containers/hpc-benchmarks) on the container page is very useful as well.
 
-* Running the HPL container as below. Note that the amount of cores sent with mpirun needs to be identical with what is written on the .dat file.
+* Running the HPL container as below. Note that the amount of cores sent with mpirun needs to be identical with what is written on the .dat file. HPL scripts inside the container
+  are located under ```/workspace```
 
 ```bash
 cd /home/a10-kfotso/containers_img_/hpl
