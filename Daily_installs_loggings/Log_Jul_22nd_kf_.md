@@ -85,3 +85,8 @@ eval "$(/opt/miniconda3/bin/conda shell.bash hook)"
 conda activate cuda_env
  conda install nvidia::cuda-nvprof
 ```
+
+Trying now:
+```bash
+ conda install nvidia::cuda-profiler-api
+```
