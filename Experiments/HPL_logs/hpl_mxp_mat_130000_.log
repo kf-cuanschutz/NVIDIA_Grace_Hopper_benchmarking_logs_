@@ -1,0 +1,120 @@
+
+================================================================================
+HPL-MxP-NVIDIA 24.6.0  -- NVIDIA accelerated HPL-MxP benchmark -- NVIDIA
+================================================================================
+
+ ****** HPL MxP Settings ****** 
+
+   --nprow =  1 
+   --npcol =  1 
+   --order = row 
+   --n     = 13000 
+   --nb    = 2048 
+   --tolerance                        = 1.000000e-12 
+   --test_loop                        = 1 
+   --preset-gemm-kernel               = 90 
+   --u-panel-chunk-nbs                = 8 
+   --call-dgemv-with-multiple-threads = 0 
+   --prioritize-trsm                  = 0 
+   --prioritize-factorization         = 0 
+   --use-separate-stream-for-gemm     = 1 
+   --use-mpi-panel-broadcast          = 50 
+   --mpi-use-host-threads             = 1 
+   --sloppy-type                      = 2 
+   --Anq-device                       = 0 
+   --cuda-host-register-step          = 2048 
+   --mpi-use-mpi                      = 0 
+   --use-host-mpi                     = 0 
+
+
+
+ ****** Monitor GPU Settings ****** 
+
+   --monitor-gpu                      = 0 
+
+
+
+ ****** test 1 of 1 starts ****** 
+
+   n      = 13000
+   nb     = 2048
+   nprow  = 1
+   cpcol  = 1
+
+Device info:
+	Peak clock frequency 1980 MHz
+	SM 90
+	Number of SMs 132
+	Total memory available 94.50 GB
+
+Per process host memory MAX = 1.262 GB
+
+Per process device memory MAX = 1.026 GB
+
+Constructor seconds: AVG = 0.15, MAX = 0.15 (0->a10-cuanschutz01), MIN = 0.15 (0->a10-cuanschutz01)
+
+
+ ****** Testing HPL MxP components ****** 
+
+GEMM seconds: AVG = 0.07, MAX = 0.07 (0->a10-cuanschutz01), MIN = 0.07 (0->a10-cuanschutz01)
+
+GEMM GFLOPS: AVG = 468738.13, MAX = 468738.13 (0->a10-cuanschutz01), MIN = 468738.13 (0->a10-cuanschutz01)
+
+pdgemv seconds: AVG = 0.20, MAX = 0.20 (0->a10-cuanschutz01), MIN = 0.20 (0->a10-cuanschutz01)
+
+pdgemv GFLOPS: AVG = 1.71, MAX = 1.71 (0->a10-cuanschutz01), MIN = 1.71 (0->a10-cuanschutz01)
+
+
+ ****** Matrix Generation ****** 
+
+RNG seconds: AVG = 0.19, MAX = 0.19 (0->a10-cuanschutz01), MIN = 0.19 (0->a10-cuanschutz01)
+
+Set Diagonal seconds: AVG = 0.00, MAX = 0.00 (0->a10-cuanschutz01), MIN = 0.00 (0->a10-cuanschutz01)
+
+Get Anorm seconds: AVG = 0.00, MAX = 0.00 (0->a10-cuanschutz01), MIN = 0.00 (0->a10-cuanschutz01)
+
+Sp seconds: AVG = 0.10, MAX = 0.10 (0->a10-cuanschutz01), MIN = 0.10 (0->a10-cuanschutz01)
+
+matgen seconds: AVG = 0.30, MAX = 0.30 (0->a10-cuanschutz01), MIN = 0.30 (0->a10-cuanschutz01)
+
+
+ ****** test loop 1 of 1 starts ****** 
+
+2024-07-23 04:54:42.651
+[0;31m Prog=  67.87% N_left=     8904 Time=     0.04 Time_left=       0.02 iTF=      27.89 TF=    27.89 iTF_per=    27.89 TF_per=    27.89[0m
+[0;31m Prog=  85.33% N_left=     6856 Time=     0.04 Time_left=       0.01 iTF=      94.01 TF=    32.57 iTF_per=    94.01 TF_per=    32.57[0m
+[0;31m Prog=  94.94% N_left=     4808 Time=     0.04 Time_left=       0.00 iTF=      33.91 TF=    32.70 iTF_per=    33.91 TF_per=    32.70[0m
+[0;31m Prog=  99.04% N_left=     2760 Time=     0.05 Time_left=       0.00 iTF=       8.61 TF=    29.31 iTF_per=     8.61 TF_per=    29.31[0m
+[0;31m Prog=  99.98% N_left=      712 Time=     0.05 Time_left=       0.00 iTF=      10.59 TF=    28.83 iTF_per=    10.59 TF_per=    28.83[0m
+2024-07-23 04:54:42.704
+LU seconds: AVG = 0.05, MAX = 0.05 (0->a10-cuanschutz01), MIN = 0.05 (0->a10-cuanschutz01)
+
+GMRES iteration  0, L-infinite residual = 4.04348931e-04
+GMRES iteration  1, L-infinite residual = 1.03245285e-09
+GMRES iteration  2, L-infinite residual = 1.63532648e-14
+GMRES seconds: AVG = 0.02, MAX = 0.02 (0->a10-cuanschutz01), MIN = 0.02 (0->a10-cuanschutz01)
+
+2024-07-23 04:54:42.728
+
+ ****** HPL MxP Result    ****** 
+
+    EPS           . . . . . . . . . . . . . . . . .          =    2.000000E-16
+    Threshold     . . . . . . . . . . . . . . . . .          =    1.600000E+01
+  ||Ax-b||_oo     . . . . . . . . . . . . . . . . .          =    1.635326E-14
+  ||A   ||_oo     . . . . . . . . . . . . . . . . .          =    1.328737E+04
+  ||x   ||_oo     . . . . . . . . . . . . . . . . .          =    1.566580E-04
+  ||b   ||_oo     . . . . . . . . . . . . . . . . .          =    9.999603E-01
+  ||Ax-b||_oo / (EPS * (||A||_oo * ||x||_oo + ||b||_oo) * N) =    2.041100E-03 ...... PASSED
+
+    N = 13000, NB = 2048, NPROW = 1, NPCOL = 1, SLOPPY-TYPE = 2
+       GFLOPS = 1.9102e+04, per GPU =   19102.31
+    LU GFLOPS = 2.7856e+04, per GPU =   27856.18
+
+ ****** HPL MxP Result    ****** 
+
+
+ ****** test loop 1 of 1 done   ****** 
+
+
+ ****** test 1 of 1 done   ****** 
+
