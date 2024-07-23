@@ -18,5 +18,6 @@ III) Documentation related to HPL:
 * [10] https://icl.utk.edu/~luszczek/pubs/hplpaper.pdf
 * [11] "CUDA Accelerated Linpack on Clusters" by E. Phillips et al.
 * [12] https://hpl-calculator.sourceforge.net/Howto-HPL-GPU.pdf
+* [13] Information on HPL [syntax](https://sepwww.stanford.edu/sep/claudio/Research/Prst_ExpRefl/ShtPSPI/intel/cmkl/10.0.3.020/benchmarks/mp_linpack/www/HPL_infog2l.html)
 
 
