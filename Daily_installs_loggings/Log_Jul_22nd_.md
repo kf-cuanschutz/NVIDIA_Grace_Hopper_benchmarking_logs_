@@ -77,3 +77,11 @@ a10-kfotso@a10-cuanschutz01:~/ac-dc_/paper_experiment$ make >> exp_.log
 
 
 ```
+
+* I need the profiler in a conda ENV:
+
+```bash
+eval "$(/opt/miniconda3/bin/conda shell.bash hook)"
+conda activate cuda_env
+ conda install nvidia::cuda-nvprof
+```
