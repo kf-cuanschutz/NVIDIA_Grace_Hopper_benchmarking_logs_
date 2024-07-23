@@ -13,4 +13,10 @@ II) The game of Life:
 * [7] https://sites.google.com/view/flowlenia/
 * [8] https://gist.github.com/maximxlss/4f40d6141a83f0b764c400937bb0ba37
 
+III) Documentation related to HPL:
+* [9] https://icl.utk.edu/files/publications/2016/icl-utk-1394-2016.pdf
+* [10] https://icl.utk.edu/~luszczek/pubs/hplpaper.pdf
+* [11] "CUDA Accelerated Linpack on Clusters" by E. Phillips et al.
+* [12] https://hpl-calculator.sourceforge.net/Howto-HPL-GPU.pdf
+
 
