@@ -34,3 +34,20 @@ Pi = 3.14159265358979045146, (Diff=-0.00000000000000266454) (calculated in 0.413
 ```
 
 No success yet.
+
+I tried to log into the system as root and created a file ```/etc/modprobe.d/nvidia-prof-access.conf``` with the following inside ```options nvidia NVreg_RestrictProfilingToAdminUsers=0```. Then I ran the following below:
+
+```bash
+(cuda_env) a10-kfotso@a10-cuanschutz01:~/benchmarking_/Pi_numba_cuda_project_/gpu_programming_December_2023$ sudo update-initramfs -u -k all
+update-initramfs: Generating /boot/initrd.img-6.5.0-1023-nvidia-64k
+W: Possible missing firmware /lib/firmware/ast_dp501_fw.bin for module ast
+update-initramfs: Generating /boot/initrd.img-6.5.0-1019-nvidia-64k
+W: Possible missing firmware /lib/firmware/ast_dp501_fw.bin for module ast
+update-initramfs: Generating /boot/initrd.img-6.5.0-44-generic
+W: Possible missing firmware /lib/firmware/ast_dp501_fw.bin for module ast
+
+```
+
+A restart might be necessary  unfortunately.
+
+
