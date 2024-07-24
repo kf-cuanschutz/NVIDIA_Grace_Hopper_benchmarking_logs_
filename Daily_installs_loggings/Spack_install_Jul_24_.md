@@ -78,3 +78,19 @@ a10-kfotso@a10-cuanschutz01:~/spack$ spack install nvhpc
 [+] /home/a10-kfotso/spack/spack/opt/spack/linux-ubuntu22.04-neoverse_v2/gcc-11.4.0/nvhpc-24.5-lwy544yxfvbzqufhsdp5mubg2swkt74j
 
 ```
+
+* NVHPC works!!! Let's gooooo!!!!
+```bash
+a10-kfotso@a10-cuanschutz01:~/spack$ spack install nvhpc
+[+] /usr (external glibc-2.35-rxmgmi2lpetiqurcupi3ii2jhdphh3w2)
+[+] /home/a10-kfotso/spack/spack/opt/spack/linux-ubuntu22.04-neoverse_v2/gcc-11.4.0/gcc-runtime-11.4.0-l6h4twhuoxi3yvh6qmql2rohcv5dv7yc
+==> Installing nvhpc-24.5-lwy544yxfvbzqufhsdp5mubg2swkt74j [3/3]
+==> No binary for nvhpc-24.5-lwy544yxfvbzqufhsdp5mubg2swkt74j found: installing from source
+==> Fetching https://developer.download.nvidia.com/hpc-sdk/24.5/nvhpc_2024_245_Linux_aarch64_cuda_multi.tar.gz
+==> No patches needed for nvhpc
+==> nvhpc: Executing phase: 'install'
+==> nvhpc: Successfully installed nvhpc-24.5-lwy544yxfvbzqufhsdp5mubg2swkt74j
+  Stage: 3m 33.36s.  Install: 17.05s.  Post-install: 13.76s.  Total: 4m 4.18s
+[+] /home/a10-kfotso/spack/spack/opt/spack/linux-ubuntu22.04-neoverse_v2/gcc-11.4.0/nvhpc-24.5-lwy544yxfvbzqufhsdp5mubg2swkt74j
+
+```
