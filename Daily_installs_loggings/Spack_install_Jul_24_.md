@@ -94,3 +94,9 @@ a10-kfotso@a10-cuanschutz01:~/spack$ spack install nvhpc
 [+] /home/a10-kfotso/spack/spack/opt/spack/linux-ubuntu22.04-neoverse_v2/gcc-11.4.0/nvhpc-24.5-lwy544yxfvbzqufhsdp5mubg2swkt74j
 
 ```
+
+Profilers can be found here:
+
+```bash
+/home/a10-kfotso/spack/spack/opt/spack/linux-ubuntu22.04-neoverse_v2/gcc-11.4.0/nvhpc-24.5-lwy544yxfvbzqufhsdp5mubg2swkt74j/Linux_aarch64/2024/profilers/Nsight_Compute/ncu
+```
