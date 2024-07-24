@@ -100,3 +100,47 @@ Profilers can be found here:
 ```bash
 /home/a10-kfotso/spack/spack/opt/spack/linux-ubuntu22.04-neoverse_v2/gcc-11.4.0/nvhpc-24.5-lwy544yxfvbzqufhsdp5mubg2swkt74j/Linux_aarch64/2024/profilers/Nsight_Compute/ncu
 ```
+
+* Installed nvtx:
+
+```bash
+spack install nvtx
+```
+
+* Installed lmod
+
+```bash
+spack install lmod
+```
+
+* Issue with py-horovod and pytorch-lightning:
+
+```bash
+a10-kfotso@a10-cuanschutz01:~/spack$ spack env create horovod_env
+==> Created environment horovod_env in: /home/a10-kfotso/spack/spack/var/spack/environments/horovod_env
+==> Activate with: spack env activate horovod_env
+a10-kfotso@a10-cuanschutz01:~/spack$ spacktivate horovod_env
+a10-kfotso@a10-cuanschutz01:~/spack$ spacktivate -p horovod_env
+[horovod_env] a10-kfotso@a10-cuanschutz01:~/spack$ spack install --add py-horovod
+
+```
+
+```bash
+[horovod_env] a10-kfotso@a10-cuanschutz01:~/spack$ spack compiler find
+==> Added 1 new compiler to /home/a10-kfotso/spack/spack/var/spack/environments/horovod_env/spack.yaml
+    gcc@12.3.0
+==> Compilers are defined in the following files:
+    /home/a10-kfotso/.spack/linux/compilers.yaml  /home/a10-kfotso/spack/spack/var/spack/environments/horovod_env/spack.yaml
+
+[horovod_env] a10-kfotso@a10-cuanschutz01:~/spack$ spack compilers
+==> Available compilers
+-- gcc ubuntu22.04-aarch64 --------------------------------------
+gcc@12.3.0  gcc@11.4.0
+[horovod_env] a10-kfotso@a10-cuanschutz01:~/spack$ spack compiler remove gcc@12.3.0
+==> gcc@12.3.0 has been removed
+[horovod_env] a10-kfotso@a10-cuanschutz01:~/spack$ spack compiler add  gcc@11.4.0
+[horovod_env] a10-kfotso@a10-cuanschutz01:~/spack$spack install --add py-horovod
+[horovod_env] a10-kfotso@a10-cuanschutz01:~/spack$ spack add nvhpc
+==> Adding nvhpc to environment horovod_env
+[horovod_env] a10-kfotso@a10-cuanschutz01:~/spack$ spack install --add py-horovod
+```
