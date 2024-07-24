@@ -1,0 +1,327 @@
+a10-kfotso@a10-cuanschutz01:~/spack$ spack install nvtx
+[+] /usr (external glibc-2.35-rxmgmi2lpetiqurcupi3ii2jhdphh3w2)
+[+] /home/a10-kfotso/spack/spack/opt/spack/linux-ubuntu22.04-neoverse_v2/gcc-11.4.0/gcc-runtime-11.4.0-l6h4twhuoxi3yvh6qmql2rohcv5dv7yc
+==> Installing gnuconfig-2022-09-17-ysqp2pdst367qahoooook3lytmv2lc6y [3/35]
+==> No binary for gnuconfig-2022-09-17-ysqp2pdst367qahoooook3lytmv2lc6y found: installing from source
+==> Fetching https://mirror.spack.io/_source-cache/archive/95/95306801ad7086e6a6e13397cb859183d8b7adbba2e372ce0819bad5fcb919b7.tar.gz
+==> No patches needed for gnuconfig
+==> gnuconfig: Executing phase: 'install'
+==> gnuconfig: Successfully installed gnuconfig-2022-09-17-ysqp2pdst367qahoooook3lytmv2lc6y
+  Stage: 0.69s.  Install: 0.00s.  Post-install: 0.01s.  Total: 0.71s
+[+] /home/a10-kfotso/spack/spack/opt/spack/linux-ubuntu22.04-neoverse_v2/gcc-11.4.0/gnuconfig-2022-09-17-ysqp2pdst367qahoooook3lytmv2lc6y
+==> Installing ca-certificates-mozilla-2023-05-30-5jjomw3f326mvalamrzn736lxckmml2s [4/35]
+==> No binary for ca-certificates-mozilla-2023-05-30-5jjomw3f326mvalamrzn736lxckmml2s found: installing from source
+==> Fetching https://mirror.spack.io/_source-cache/archive/5f/5fadcae90aa4ae041150f8e2d26c37d980522cdb49f923fc1e1b5eb8d74e71ad
+==> No patches needed for ca-certificates-mozilla
+==> ca-certificates-mozilla: Executing phase: 'install'
+==> ca-certificates-mozilla: Successfully installed ca-certificates-mozilla-2023-05-30-5jjomw3f326mvalamrzn736lxckmml2s
+  Stage: 0.71s.  Install: 0.00s.  Post-install: 0.01s.  Total: 0.73s
+[+] /home/a10-kfotso/spack/spack/opt/spack/linux-ubuntu22.04-neoverse_v2/gcc-11.4.0/ca-certificates-mozilla-2023-05-30-5jjomw3f326mvalamrzn736lxckmml2s
+[+] /home/a10-kfotso/spack/spack/opt/spack/linux-ubuntu22.04-neoverse_v2/gcc-11.4.0/gmake-4.4.1-p3tf5z6thwfxnav22qtrknf6cxtobbjl
+==> Installing pkgconf-2.2.0-japagtporebgefmxqoyhrvmx5sifqjhm [6/35]
+==> No binary for pkgconf-2.2.0-japagtporebgefmxqoyhrvmx5sifqjhm found: installing from source
+==> Fetching https://distfiles.ariadne.space/pkgconf/pkgconf-2.2.0.tar.xz
+==> No patches needed for pkgconf
+==> pkgconf: Executing phase: 'autoreconf'
+==> pkgconf: Executing phase: 'configure'
+==> pkgconf: Executing phase: 'build'
+==> pkgconf: Executing phase: 'install'
+==> pkgconf: Successfully installed pkgconf-2.2.0-japagtporebgefmxqoyhrvmx5sifqjhm
+  Stage: 1.62s.  Autoreconf: 0.01s.  Configure: 1.93s.  Build: 0.59s.  Install: 0.09s.  Post-install: 0.01s.  Total: 4.28s
+[+] /home/a10-kfotso/spack/spack/opt/spack/linux-ubuntu22.04-neoverse_v2/gcc-11.4.0/pkgconf-2.2.0-japagtporebgefmxqoyhrvmx5sifqjhm
+==> Installing zstd-1.5.6-dasks5npkv5ns4yzcfkes4b5gfvzsnsx [7/35]
+==> No binary for zstd-1.5.6-dasks5npkv5ns4yzcfkes4b5gfvzsnsx found: installing from source
+==> Fetching https://github.com/facebook/zstd/archive/v1.5.6.tar.gz
+==> No patches needed for zstd
+==> zstd: Executing phase: 'edit'
+==> zstd: Executing phase: 'build'
+==> zstd: Executing phase: 'install'
+==> zstd: Successfully installed zstd-1.5.6-dasks5npkv5ns4yzcfkes4b5gfvzsnsx
+  Stage: 1.76s.  Edit: 0.00s.  Build: 0.00s.  Install: 9.07s.  Post-install: 0.01s.  Total: 10.86s
+[+] /home/a10-kfotso/spack/spack/opt/spack/linux-ubuntu22.04-neoverse_v2/gcc-11.4.0/zstd-1.5.6-dasks5npkv5ns4yzcfkes4b5gfvzsnsx
+==> Installing diffutils-3.10-fliy6rlyazxjc3nckeioukr3ljfgeq36 [8/35]
+==> No binary for diffutils-3.10-fliy6rlyazxjc3nckeioukr3ljfgeq36 found: installing from source
+==> Fetching https://ftpmirror.gnu.org/diffutils/diffutils-3.10.tar.xz
+==> No patches needed for diffutils
+==> diffutils: Executing phase: 'autoreconf'
+==> diffutils: Executing phase: 'configure'
+==> diffutils: Executing phase: 'build'
+==> diffutils: Executing phase: 'install'
+==> diffutils: Successfully installed diffutils-3.10-fliy6rlyazxjc3nckeioukr3ljfgeq36
+  Stage: 3.19s.  Autoreconf: 0.01s.  Configure: 14.57s.  Build: 0.94s.  Install: 0.33s.  Post-install: 0.03s.  Total: 19.11s
+[+] /home/a10-kfotso/spack/spack/opt/spack/linux-ubuntu22.04-neoverse_v2/gcc-11.4.0/diffutils-3.10-fliy6rlyazxjc3nckeioukr3ljfgeq36
+==> Installing libffi-3.4.6-bf6tf53bdw63flut7qukywcd2yor7szb [9/35]
+==> No binary for libffi-3.4.6-bf6tf53bdw63flut7qukywcd2yor7szb found: installing from source
+==> Fetching https://github.com/libffi/libffi/releases/download/v3.4.6/libffi-3.4.6.tar.gz
+==> No patches needed for libffi
+==> libffi: Executing phase: 'autoreconf'
+==> libffi: Executing phase: 'configure'
+==> libffi: Executing phase: 'build'
+==> libffi: Executing phase: 'install'
+==> libffi: Successfully installed libffi-3.4.6-bf6tf53bdw63flut7qukywcd2yor7szb
+  Stage: 1.65s.  Autoreconf: 0.02s.  Configure: 2.17s.  Build: 0.69s.  Install: 0.11s.  Post-install: 0.01s.  Total: 4.67s
+[+] /home/a10-kfotso/spack/spack/opt/spack/linux-ubuntu22.04-neoverse_v2/gcc-11.4.0/libffi-3.4.6-bf6tf53bdw63flut7qukywcd2yor7szb
+==> Installing berkeley-db-18.1.40-u6uwac4jo4pwh52s3kzarzo264hsbo4m [10/35]
+==> No binary for berkeley-db-18.1.40-u6uwac4jo4pwh52s3kzarzo264hsbo4m found: installing from source
+==> Fetching https://mirror.spack.io/_source-cache/archive/0c/0cecb2ef0c67b166de93732769abdeba0555086d51de1090df325e18ee8da9c8.tar.gz
+==> Applied patch /home/a10-kfotso/spack/spack/var/spack/repos/builtin/packages/berkeley-db/drop-docs.patch
+==> Applied patch /home/a10-kfotso/spack/spack/var/spack/repos/builtin/packages/berkeley-db/tls.patch
+==> Ran patch() for berkeley-db
+==> berkeley-db: Executing phase: 'autoreconf'
+==> berkeley-db: Executing phase: 'configure'
+==> berkeley-db: Executing phase: 'build'
+==> berkeley-db: Executing phase: 'install'
+==> berkeley-db: Successfully installed berkeley-db-18.1.40-u6uwac4jo4pwh52s3kzarzo264hsbo4m
+  Stage: 2.25s.  Autoreconf: 0.03s.  Configure: 5.91s.  Build: 3.88s.  Install: 0.20s.  Post-install: 0.02s.  Total: 12.31s
+[+] /home/a10-kfotso/spack/spack/opt/spack/linux-ubuntu22.04-neoverse_v2/gcc-11.4.0/berkeley-db-18.1.40-u6uwac4jo4pwh52s3kzarzo264hsbo4m
+[+] /home/a10-kfotso/spack/spack/opt/spack/linux-ubuntu22.04-neoverse_v2/gcc-11.4.0/zlib-1.3.1-mldkqchxuqjsjfunxxqy5veegrp2i6fp
+==> Installing libmd-1.0.4-p4an3hmz4m2ntfls2fwxdgftpo2joh5n [12/35]
+==> No binary for libmd-1.0.4-p4an3hmz4m2ntfls2fwxdgftpo2joh5n found: installing from source
+==> Fetching https://mirror.spack.io/_source-cache/archive/f5/f51c921042e34beddeded4b75557656559cf5b1f2448033b4c1eec11c07e530f.tar.xz
+==> No patches needed for libmd
+==> libmd: Executing phase: 'autoreconf'
+==> libmd: Executing phase: 'configure'
+==> libmd: Executing phase: 'build'
+==> libmd: Executing phase: 'install'
+==> libmd: Successfully installed libmd-1.0.4-p4an3hmz4m2ntfls2fwxdgftpo2joh5n
+  Stage: 0.89s.  Autoreconf: 0.02s.  Configure: 1.73s.  Build: 0.35s.  Install: 0.08s.  Post-install: 0.02s.  Total: 3.11s
+[+] /home/a10-kfotso/spack/spack/opt/spack/linux-ubuntu22.04-neoverse_v2/gcc-11.4.0/libmd-1.0.4-p4an3hmz4m2ntfls2fwxdgftpo2joh5n
+==> Installing xz-5.4.6-2gpu6kir75qdgy43d2mx3ibo575fbtwx [13/35]
+==> No binary for xz-5.4.6-2gpu6kir75qdgy43d2mx3ibo575fbtwx found: installing from source
+==> Fetching https://prdownloads.sourceforge.net/lzmautils/files/xz-5.4.6.tar.bz2
+==> No patches needed for xz
+==> xz: Executing phase: 'autoreconf'
+==> xz: Executing phase: 'configure'
+==> xz: Executing phase: 'build'
+==> xz: Executing phase: 'install'
+==> xz: Successfully installed xz-5.4.6-2gpu6kir75qdgy43d2mx3ibo575fbtwx
+  Stage: 7.65s.  Autoreconf: 0.02s.  Configure: 3.43s.  Build: 1.86s.  Install: 0.71s.  Post-install: 0.05s.  Total: 13.74s
+[+] /home/a10-kfotso/spack/spack/opt/spack/linux-ubuntu22.04-neoverse_v2/gcc-11.4.0/xz-5.4.6-2gpu6kir75qdgy43d2mx3ibo575fbtwx
+==> Installing ncurses-6.5-chizrqvo3i5wyvdbo6ps5apltscolpvq [14/35]
+==> No binary for ncurses-6.5-chizrqvo3i5wyvdbo6ps5apltscolpvq found: installing from source
+==> Fetching https://ftpmirror.gnu.org/ncurses/ncurses-6.5.tar.gz
+==> Applied patch /home/a10-kfotso/spack/spack/var/spack/repos/builtin/packages/ncurses/rxvt_unicode_6_4.patch
+==> ncurses: Executing phase: 'autoreconf'
+==> ncurses: Executing phase: 'configure'
+==> ncurses: Executing phase: 'build'
+==> ncurses: Executing phase: 'install'
+==> ncurses: Successfully installed ncurses-6.5-chizrqvo3i5wyvdbo6ps5apltscolpvq
+  Stage: 2.92s.  Autoreconf: 0.02s.  Configure: 16.63s.  Build: 9.45s.  Install: 2.21s.  Post-install: 0.35s.  Total: 31.62s
+[+] /home/a10-kfotso/spack/spack/opt/spack/linux-ubuntu22.04-neoverse_v2/gcc-11.4.0/ncurses-6.5-chizrqvo3i5wyvdbo6ps5apltscolpvq
+==> Installing util-linux-uuid-2.40.2-v6lbdwgoxvlojrkxj3mdtqfnhc5xjifw [15/35]
+==> No binary for util-linux-uuid-2.40.2-v6lbdwgoxvlojrkxj3mdtqfnhc5xjifw found: installing from source
+==> Fetching https://www.kernel.org/pub/linux/utils/util-linux/v2.40/util-linux-2.40.2.tar.gz
+==> No patches needed for util-linux-uuid
+==> util-linux-uuid: Executing phase: 'autoreconf'
+==> util-linux-uuid: Executing phase: 'configure'
+==> util-linux-uuid: Executing phase: 'build'
+==> util-linux-uuid: Executing phase: 'install'
+==> util-linux-uuid: Successfully installed util-linux-uuid-2.40.2-v6lbdwgoxvlojrkxj3mdtqfnhc5xjifw
+  Stage: 2.63s.  Autoreconf: 0.02s.  Configure: 7.87s.  Build: 0.36s.  Install: 0.23s.  Post-install: 0.03s.  Total: 11.17s
+[+] /home/a10-kfotso/spack/spack/opt/spack/linux-ubuntu22.04-neoverse_v2/gcc-11.4.0/util-linux-uuid-2.40.2-v6lbdwgoxvlojrkxj3mdtqfnhc5xjifw
+==> Installing bzip2-1.0.8-htzsjvp7ywog3vsd3irxm5xnbjjvjkj3 [16/35]
+==> No binary for bzip2-1.0.8-htzsjvp7ywog3vsd3irxm5xnbjjvjkj3 found: installing from source
+==> Fetching https://mirror.spack.io/_source-cache/archive/ab/ab5a03176ee106d3f0fa90e381da478ddae405918153cca248e682cd0c4a2269.tar.gz
+==> Ran patch() for bzip2
+==> bzip2: Executing phase: 'install'
+==> bzip2: Successfully installed bzip2-1.0.8-htzsjvp7ywog3vsd3irxm5xnbjjvjkj3
+  Stage: 1.00s.  Install: 1.30s.  Post-install: 0.01s.  Total: 2.33s
+[+] /home/a10-kfotso/spack/spack/opt/spack/linux-ubuntu22.04-neoverse_v2/gcc-11.4.0/bzip2-1.0.8-htzsjvp7ywog3vsd3irxm5xnbjjvjkj3
+==> Installing pigz-2.8-xjvmotwwnd7qskjr6f2xsllsuunf3myi [17/35]
+==> No binary for pigz-2.8-xjvmotwwnd7qskjr6f2xsllsuunf3myi found: installing from source
+==> Fetching https://github.com/madler/pigz/archive/v2.8.tar.gz
+==> No patches needed for pigz
+==> pigz: Executing phase: 'edit'
+==> pigz: Executing phase: 'build'
+==> pigz: Executing phase: 'install'
+==> pigz: Successfully installed pigz-2.8-xjvmotwwnd7qskjr6f2xsllsuunf3myi
+  Stage: 1.45s.  Edit: 0.00s.  Build: 1.04s.  Install: 0.00s.  Post-install: 0.01s.  Total: 2.52s
+[+] /home/a10-kfotso/spack/spack/opt/spack/linux-ubuntu22.04-neoverse_v2/gcc-11.4.0/pigz-2.8-xjvmotwwnd7qskjr6f2xsllsuunf3myi
+==> Installing libbsd-0.12.2-cr7d4jideocdbksfbdyl4gt6lx6n523m [18/35]
+==> No binary for libbsd-0.12.2-cr7d4jideocdbksfbdyl4gt6lx6n523m found: installing from source
+==> Fetching https://libbsd.freedesktop.org/releases/libbsd-0.12.2.tar.xz
+==> No patches needed for libbsd
+==> libbsd: Executing phase: 'autoreconf'
+==> libbsd: Executing phase: 'configure'
+==> libbsd: Executing phase: 'build'
+==> libbsd: Executing phase: 'install'
+==> libbsd: Successfully installed libbsd-0.12.2-cr7d4jideocdbksfbdyl4gt6lx6n523m
+  Stage: 1.95s.  Autoreconf: 0.01s.  Configure: 3.09s.  Build: 0.73s.  Install: 0.15s.  Post-install: 0.04s.  Total: 6.01s
+[+] /home/a10-kfotso/spack/spack/opt/spack/linux-ubuntu22.04-neoverse_v2/gcc-11.4.0/libbsd-0.12.2-cr7d4jideocdbksfbdyl4gt6lx6n523m
+==> Installing libxml2-2.10.3-6m35i67yd3vbplgzfgjotliiwuyic4js [19/35]
+==> No binary for libxml2-2.10.3-6m35i67yd3vbplgzfgjotliiwuyic4js found: installing from source
+==> Fetching https://mirror.spack.io/_source-cache/archive/5d/5d2cc3d78bec3dbe212a9d7fa629ada25a7da928af432c93060ff5c17ee28a9c.tar.xz
+==> Fetching https://mirror.spack.io/_source-cache/archive/96/96151685cec997e1f9f3387e3626d61e6284d4d6e66e0e440c209286c03e9cc7.tar.gz
+==> Moving resource stage
+	source: /tmp/a10-kfotso/spack-stage/resource-xmlts-6m35i67yd3vbplgzfgjotliiwuyic4js/spack-src/
+	destination: /tmp/a10-kfotso/spack-stage/spack-stage-libxml2-2.10.3-6m35i67yd3vbplgzfgjotliiwuyic4js/spack-src/xmlconf
+==> Ran patch() for libxml2
+==> libxml2: Executing phase: 'autoreconf'
+==> libxml2: Executing phase: 'configure'
+==> libxml2: Executing phase: 'build'
+==> libxml2: Executing phase: 'install'
+==> libxml2: Successfully installed libxml2-2.10.3-6m35i67yd3vbplgzfgjotliiwuyic4js
+  Stage: 2.45s.  Autoreconf: 0.03s.  Configure: 2.37s.  Build: 4.06s.  Install: 0.14s.  Post-install: 0.04s.  Total: 9.11s
+[+] /home/a10-kfotso/spack/spack/opt/spack/linux-ubuntu22.04-neoverse_v2/gcc-11.4.0/libxml2-2.10.3-6m35i67yd3vbplgzfgjotliiwuyic4js
+==> Installing readline-8.2-7ogvkdusm5igpdsfmspz2eiw2kqeqad4 [20/35]
+==> No binary for readline-8.2-7ogvkdusm5igpdsfmspz2eiw2kqeqad4 found: installing from source
+==> Fetching https://mirror.spack.io/_source-cache/archive/3f/3feb7171f16a84ee82ca18a36d7b9be109a52c04f492a053331d7d1095007c35.tar.gz
+==> Fetching https://mirror.spack.io/_source-cache/archive/bb/bbf97f1ec40a929edab5aa81998c1e2ef435436c597754916e6a5868f273aff7
+==> Applied patch https://ftpmirror.gnu.org/readline/readline-8.2-patches/readline82-001
+==> readline: Executing phase: 'autoreconf'
+==> readline: Executing phase: 'configure'
+==> readline: Executing phase: 'build'
+==> readline: Executing phase: 'install'
+==> readline: Successfully installed readline-8.2-7ogvkdusm5igpdsfmspz2eiw2kqeqad4
+  Stage: 1.96s.  Autoreconf: 0.02s.  Configure: 2.60s.  Build: 0.80s.  Install: 0.04s.  Post-install: 0.02s.  Total: 5.47s
+[+] /home/a10-kfotso/spack/spack/opt/spack/linux-ubuntu22.04-neoverse_v2/gcc-11.4.0/readline-8.2-7ogvkdusm5igpdsfmspz2eiw2kqeqad4
+==> Installing tar-1.34-7ax3gxfiyjg3xtudybibjqrmi6nqumwn [21/35]
+==> No binary for tar-1.34-7ax3gxfiyjg3xtudybibjqrmi6nqumwn found: installing from source
+==> Fetching https://mirror.spack.io/_source-cache/archive/03/03d908cf5768cfe6b7ad588c921c6ed21acabfb2b79b788d1330453507647aed.tar.gz
+==> No patches needed for tar
+==> tar: Executing phase: 'autoreconf'
+==> tar: Executing phase: 'configure'
+==> tar: Executing phase: 'build'
+==> tar: Executing phase: 'install'
+==> tar: Successfully installed tar-1.34-7ax3gxfiyjg3xtudybibjqrmi6nqumwn
+  Stage: 1.15s.  Autoreconf: 0.01s.  Configure: 16.28s.  Build: 2.66s.  Install: 0.33s.  Post-install: 0.03s.  Total: 20.50s
+[+] /home/a10-kfotso/spack/spack/opt/spack/linux-ubuntu22.04-neoverse_v2/gcc-11.4.0/tar-1.34-7ax3gxfiyjg3xtudybibjqrmi6nqumwn
+==> Installing expat-2.6.2-uufyyi3yz3tyhsihjbj47mzxu67kt6tv [22/35]
+==> No binary for expat-2.6.2-uufyyi3yz3tyhsihjbj47mzxu67kt6tv found: installing from source
+==> Fetching https://github.com/libexpat/libexpat/releases/download/R_2_6_2/expat-2.6.2.tar.bz2
+==> No patches needed for expat
+==> expat: Executing phase: 'autoreconf'
+==> expat: Executing phase: 'configure'
+==> expat: Executing phase: 'build'
+==> expat: Executing phase: 'install'
+==> expat: Successfully installed expat-2.6.2-uufyyi3yz3tyhsihjbj47mzxu67kt6tv
+  Stage: 1.54s.  Autoreconf: 0.01s.  Configure: 2.38s.  Build: 3.35s.  Install: 0.12s.  Post-install: 0.01s.  Total: 7.45s
+[+] /home/a10-kfotso/spack/spack/opt/spack/linux-ubuntu22.04-neoverse_v2/gcc-11.4.0/expat-2.6.2-uufyyi3yz3tyhsihjbj47mzxu67kt6tv
+==> Installing gdbm-1.23-ul5srcvk56d64lnrfyay2llyrzd7ddrs [23/35]
+==> No binary for gdbm-1.23-ul5srcvk56d64lnrfyay2llyrzd7ddrs found: installing from source
+==> Fetching https://mirror.spack.io/_source-cache/archive/74/74b1081d21fff13ae4bd7c16e5d6e504a4c26f7cde1dca0d963a484174bbcacd.tar.gz
+==> No patches needed for gdbm
+==> gdbm: Executing phase: 'autoreconf'
+==> gdbm: Executing phase: 'configure'
+==> gdbm: Executing phase: 'build'
+==> gdbm: Executing phase: 'install'
+==> gdbm: Successfully installed gdbm-1.23-ul5srcvk56d64lnrfyay2llyrzd7ddrs
+  Stage: 0.96s.  Autoreconf: 0.02s.  Configure: 2.18s.  Build: 1.11s.  Install: 0.27s.  Post-install: 0.02s.  Total: 4.58s
+[+] /home/a10-kfotso/spack/spack/opt/spack/linux-ubuntu22.04-neoverse_v2/gcc-11.4.0/gdbm-1.23-ul5srcvk56d64lnrfyay2llyrzd7ddrs
+==> Installing sqlite-3.46.0-aofn56jxcb2dkqvgzm3uwpcf3f7fig63 [24/35]
+==> No binary for sqlite-3.46.0-aofn56jxcb2dkqvgzm3uwpcf3f7fig63 found: installing from source
+==> Fetching https://www.sqlite.org/2024/sqlite-autoconf-3460000.tar.gz
+==> No patches needed for sqlite
+==> sqlite: Executing phase: 'autoreconf'
+==> sqlite: Executing phase: 'configure'
+==> sqlite: Executing phase: 'build'
+==> sqlite: Executing phase: 'install'
+==> sqlite: Successfully installed sqlite-3.46.0-aofn56jxcb2dkqvgzm3uwpcf3f7fig63
+  Stage: 1.08s.  Autoreconf: 0.01s.  Configure: 1.69s.  Build: 54.55s.  Install: 0.08s.  Post-install: 0.03s.  Total: 57.47s
+[+] /home/a10-kfotso/spack/spack/opt/spack/linux-ubuntu22.04-neoverse_v2/gcc-11.4.0/sqlite-3.46.0-aofn56jxcb2dkqvgzm3uwpcf3f7fig63
+==> Installing gettext-0.22.5-vxsmf7titeqkkqiciheib6a7pwvmcw5v [25/35]
+==> No binary for gettext-0.22.5-vxsmf7titeqkkqiciheib6a7pwvmcw5v found: installing from source
+==> Fetching https://ftpmirror.gnu.org/gettext/gettext-0.22.5.tar.xz
+==> Ran patch() for gettext
+==> gettext: Executing phase: 'autoreconf'
+==> gettext: Executing phase: 'configure'
+==> gettext: Executing phase: 'build'
+==> gettext: Executing phase: 'install'
+==> gettext: Successfully installed gettext-0.22.5-vxsmf7titeqkkqiciheib6a7pwvmcw5v
+  Stage: 3.08s.  Autoreconf: 0.09s.  Configure: 52.50s.  Build: 50.04s.  Install: 7.30s.  Post-install: 0.30s.  Total: 1m 53.37s
+[+] /home/a10-kfotso/spack/spack/opt/spack/linux-ubuntu22.04-neoverse_v2/gcc-11.4.0/gettext-0.22.5-vxsmf7titeqkkqiciheib6a7pwvmcw5v
+==> Installing perl-5.38.2-nvjoca33g34quhszsyplgqlitb7u56qu [26/35]
+==> No binary for perl-5.38.2-nvjoca33g34quhszsyplgqlitb7u56qu found: installing from source
+==> Fetching http://www.cpan.org/src/5.0/perl-5.38.2.tar.gz
+==> Fetching https://mirror.spack.io/_source-cache/archive/9d/9da50e155df72bce55cb69f51f1dbb4b62d23740fb99f6178bb27f22ebdf8a46.tar.gz
+==> Moving resource stage
+	source: /tmp/a10-kfotso/spack-stage/resource-cpanm-nvjoca33g34quhszsyplgqlitb7u56qu/spack-src/
+	destination: /tmp/a10-kfotso/spack-stage/spack-stage-perl-5.38.2-nvjoca33g34quhszsyplgqlitb7u56qu/spack-src/cpanm/cpanm
+==> Ran patch() for perl
+==> perl: Executing phase: 'configure'
+==> perl: Executing phase: 'build'
+==> perl: Executing phase: 'install'
+==> perl: Successfully installed perl-5.38.2-nvjoca33g34quhszsyplgqlitb7u56qu
+  Stage: 3.37s.  Configure: 24.70s.  Build: 17.76s.  Install: 10.40s.  Post-install: 0.39s.  Total: 56.66s
+[+] /home/a10-kfotso/spack/spack/opt/spack/linux-ubuntu22.04-neoverse_v2/gcc-11.4.0/perl-5.38.2-nvjoca33g34quhszsyplgqlitb7u56qu
+==> Installing libxcrypt-4.4.35-sw5y5vfetp3nlefrfjqpf3s2injfo4v7 [27/35]
+==> No binary for libxcrypt-4.4.35-sw5y5vfetp3nlefrfjqpf3s2injfo4v7 found: installing from source
+==> Fetching https://mirror.spack.io/_source-cache/archive/a8/a8c935505b55f1df0d17f8bfd59468c7c6709a1d31831b0f8e3e045ab8fd455d.tar.xz
+==> Applied patch /home/a10-kfotso/spack/spack/var/spack/repos/builtin/packages/libxcrypt/commit-95d56e0.patch
+==> libxcrypt: Executing phase: 'autoreconf'
+==> libxcrypt: Executing phase: 'configure'
+==> libxcrypt: Executing phase: 'build'
+==> libxcrypt: Executing phase: 'install'
+==> libxcrypt: Successfully installed libxcrypt-4.4.35-sw5y5vfetp3nlefrfjqpf3s2injfo4v7
+  Stage: 0.89s.  Autoreconf: 0.01s.  Configure: 2.41s.  Build: 1.13s.  Install: 0.09s.  Post-install: 0.02s.  Total: 4.59s
+[+] /home/a10-kfotso/spack/spack/opt/spack/linux-ubuntu22.04-neoverse_v2/gcc-11.4.0/libxcrypt-4.4.35-sw5y5vfetp3nlefrfjqpf3s2injfo4v7
+==> Installing openssl-3.3.1-tvgbezeutbafwgsejnssjsbo3d4ri3in [28/35]
+==> No binary for openssl-3.3.1-tvgbezeutbafwgsejnssjsbo3d4ri3in found: installing from source
+==> Fetching http://www.openssl.org/source/openssl-3.3.1.tar.gz
+==> Ran patch() for openssl
+==> openssl: Executing phase: 'install'
+==> openssl: Successfully installed openssl-3.3.1-tvgbezeutbafwgsejnssjsbo3d4ri3in
+  Stage: 2.79s.  Install: 23.23s.  Post-install: 0.05s.  Total: 26.12s
+[+] /home/a10-kfotso/spack/spack/opt/spack/linux-ubuntu22.04-neoverse_v2/gcc-11.4.0/openssl-3.3.1-tvgbezeutbafwgsejnssjsbo3d4ri3in
+==> Installing python-3.11.9-j6ddpuxpdvaemcpusbv54q5bkqiygf2x [29/35]
+==> No binary for python-3.11.9-j6ddpuxpdvaemcpusbv54q5bkqiygf2x found: installing from source
+==> Fetching https://www.python.org/ftp/python/3.11.9/Python-3.11.9.tgz
+==> Applied patch /home/a10-kfotso/spack/spack/var/spack/repos/builtin/packages/python/python-3.7.4+-distutils-C++-testsuite.patch
+==> Applied patch /home/a10-kfotso/spack/spack/var/spack/repos/builtin/packages/python/python-3.11-distutils-C++.patch
+==> Applied patch /home/a10-kfotso/spack/spack/var/spack/repos/builtin/packages/python/tkinter-3.11.patch
+==> Applied patch /home/a10-kfotso/spack/spack/var/spack/repos/builtin/packages/python/rpath-non-gcc.patch
+==> Ran patch() for python
+==> python: Executing phase: 'configure'
+==> python: Executing phase: 'build'
+==> python: Executing phase: 'install'
+==> python: Successfully installed python-3.11.9-j6ddpuxpdvaemcpusbv54q5bkqiygf2x
+  Stage: 1.49s.  Configure: 17.28s.  Build: 13.17s.  Install: 4.10s.  Post-install: 1.19s.  Total: 37.30s
+[+] /home/a10-kfotso/spack/spack/opt/spack/linux-ubuntu22.04-neoverse_v2/gcc-11.4.0/python-3.11.9-j6ddpuxpdvaemcpusbv54q5bkqiygf2x
+==> Installing python-venv-1.0-xgi5auhrzqxy2dyputvjbclw47rgkpq2 [30/35]
+==> No binary for python-venv-1.0-xgi5auhrzqxy2dyputvjbclw47rgkpq2 found: installing from source
+==> No patches needed for python-venv
+==> python-venv: Executing phase: 'install'
+==> python-venv: Successfully installed python-venv-1.0-xgi5auhrzqxy2dyputvjbclw47rgkpq2
+  Stage: 0.00s.  Install: 0.03s.  Post-install: 0.02s.  Total: 0.10s
+[+] /home/a10-kfotso/spack/spack/opt/spack/linux-ubuntu22.04-neoverse_v2/gcc-11.4.0/python-venv-1.0-xgi5auhrzqxy2dyputvjbclw47rgkpq2
+==> Installing py-pip-23.1.2-umn23wv4xwsyhq26odf7adj2gc75tezt [31/35]
+==> No binary for py-pip-23.1.2-umn23wv4xwsyhq26odf7adj2gc75tezt found: installing from source
+==> Fetching https://files.pythonhosted.org/packages/py3/p/pip/pip-23.1.2-py3-none-any.whl
+==> No patches needed for py-pip
+==> py-pip: Executing phase: 'install'
+==> py-pip: Successfully installed py-pip-23.1.2-umn23wv4xwsyhq26odf7adj2gc75tezt
+  Stage: 1.10s.  Install: 1.76s.  Post-install: 0.16s.  Total: 3.07s
+[+] /home/a10-kfotso/spack/spack/opt/spack/linux-ubuntu22.04-neoverse_v2/gcc-11.4.0/py-pip-23.1.2-umn23wv4xwsyhq26odf7adj2gc75tezt
+==> Installing py-setuptools-69.2.0-xhytqwbgfr2hdn5mj6at7m7kredmawtu [32/35]
+==> No binary for py-setuptools-69.2.0-xhytqwbgfr2hdn5mj6at7m7kredmawtu found: installing from source
+==> Fetching https://files.pythonhosted.org/packages/py3/s/setuptools/setuptools-69.2.0-py3-none-any.whl
+==> No patches needed for py-setuptools
+==> py-setuptools: Executing phase: 'install'
+==> py-setuptools: Successfully installed py-setuptools-69.2.0-xhytqwbgfr2hdn5mj6at7m7kredmawtu
+  Stage: 0.94s.  Install: 0.56s.  Post-install: 0.09s.  Total: 1.64s
+[+] /home/a10-kfotso/spack/spack/opt/spack/linux-ubuntu22.04-neoverse_v2/gcc-11.4.0/py-setuptools-69.2.0-xhytqwbgfr2hdn5mj6at7m7kredmawtu
+==> Installing py-wheel-0.41.2-5qofncupsc52p6kakr2igpsckghhcn7k [33/35]
+==> No binary for py-wheel-0.41.2-5qofncupsc52p6kakr2igpsckghhcn7k found: installing from source
+==> Fetching https://files.pythonhosted.org/packages/py3/w/wheel/wheel-0.41.2-py3-none-any.whl
+==> No patches needed for py-wheel
+==> py-wheel: Executing phase: 'install'
+==> py-wheel: Successfully installed py-wheel-0.41.2-5qofncupsc52p6kakr2igpsckghhcn7k
+  Stage: 0.89s.  Install: 0.29s.  Post-install: 0.03s.  Total: 1.26s
+[+] /home/a10-kfotso/spack/spack/opt/spack/linux-ubuntu22.04-neoverse_v2/gcc-11.4.0/py-wheel-0.41.2-5qofncupsc52p6kakr2igpsckghhcn7k
+==> Installing py-cython-3.0.10-z7t6endalr7uxdluxmgvplne3nlukg6j [34/35]
+==> No binary for py-cython-3.0.10-z7t6endalr7uxdluxmgvplne3nlukg6j found: installing from source
+==> Fetching https://files.pythonhosted.org/packages/source/c/cython/Cython-3.0.10.tar.gz
+==> No patches needed for py-cython
+==> py-cython: Executing phase: 'install'
+==> py-cython: Successfully installed py-cython-3.0.10-z7t6endalr7uxdluxmgvplne3nlukg6j
+  Stage: 1.09s.  Install: 2m 51.25s.  Post-install: 0.11s.  Total: 2m 52.50s
+[+] /home/a10-kfotso/spack/spack/opt/spack/linux-ubuntu22.04-neoverse_v2/gcc-11.4.0/py-cython-3.0.10-z7t6endalr7uxdluxmgvplne3nlukg6j
+==> Installing nvtx-3.1.0-sef5fyvbyq3noy5pa3g43cwfdjiscwwu [35/35]
+==> No binary for nvtx-3.1.0-sef5fyvbyq3noy5pa3g43cwfdjiscwwu found: installing from source
+==> Fetching https://mirror.spack.io/_source-cache/archive/dc/dc4e4a227d04d3da46ad920dfee5f7599ac8d6b2ee1809c9067110fb1cc71ced.tar.gz
+==> Applied patch /home/a10-kfotso/spack/spack/var/spack/repos/builtin/packages/nvtx/nvtx-config.patch
+==> Ran patch() for nvtx
+==> nvtx: Executing phase: 'install'
+==> nvtx: Successfully installed nvtx-3.1.0-sef5fyvbyq3noy5pa3g43cwfdjiscwwu
+  Stage: 1.11s.  Install: 6.23s.  Post-install: 0.03s.  Total: 7.43s
+[+] /home/a10-kfotso/spack/spack/opt/spack/linux-ubuntu22.04-neoverse_v2/gcc-11.4.0/nvtx-3.1.0-sef5fyvbyq3noy5pa3g43cwfdjiscwwu

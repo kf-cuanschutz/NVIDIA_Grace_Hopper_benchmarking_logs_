@@ -1,0 +1,144 @@
+a10-kfotso@a10-cuanschutz01:~/spack$ spack install lmod
+[+] /usr (external glibc-2.35-rxmgmi2lpetiqurcupi3ii2jhdphh3w2)
+[+] /home/a10-kfotso/spack/spack/opt/spack/linux-ubuntu22.04-neoverse_v2/gcc-11.4.0/gcc-runtime-11.4.0-l6h4twhuoxi3yvh6qmql2rohcv5dv7yc
+[+] /home/a10-kfotso/spack/spack/opt/spack/linux-ubuntu22.04-neoverse_v2/gcc-11.4.0/bzip2-1.0.8-htzsjvp7ywog3vsd3irxm5xnbjjvjkj3
+[+] /home/a10-kfotso/spack/spack/opt/spack/linux-ubuntu22.04-neoverse_v2/gcc-11.4.0/zstd-1.5.6-dasks5npkv5ns4yzcfkes4b5gfvzsnsx
+[+] /home/a10-kfotso/spack/spack/opt/spack/linux-ubuntu22.04-neoverse_v2/gcc-11.4.0/pkgconf-2.2.0-japagtporebgefmxqoyhrvmx5sifqjhm
+[+] /home/a10-kfotso/spack/spack/opt/spack/linux-ubuntu22.04-neoverse_v2/gcc-11.4.0/gmake-4.4.1-p3tf5z6thwfxnav22qtrknf6cxtobbjl
+[+] /home/a10-kfotso/spack/spack/opt/spack/linux-ubuntu22.04-neoverse_v2/gcc-11.4.0/gnuconfig-2022-09-17-ysqp2pdst367qahoooook3lytmv2lc6y
+==> Installing unzip-6.0-itw2qomsnu2la2ruueqpwvvalcxqjmxf [8/31]
+==> No binary for unzip-6.0-itw2qomsnu2la2ruueqpwvvalcxqjmxf found: installing from source
+==> Fetching https://mirror.spack.io/_source-cache/archive/03/036d96991646d0449ed0aa952e4fbe21b476ce994abc276e49d30e686708bd37.tar.gz
+==> Applied patch /home/a10-kfotso/spack/spack/var/spack/repos/builtin/packages/unzip/configure-cflags.patch
+==> unzip: Executing phase: 'edit'
+==> unzip: Executing phase: 'build'
+==> unzip: Executing phase: 'install'
+==> unzip: Successfully installed unzip-6.0-itw2qomsnu2la2ruueqpwvvalcxqjmxf
+  Stage: 1.09s.  Edit: 0.00s.  Build: 0.85s.  Install: 0.01s.  Post-install: 0.01s.  Total: 1.97s
+[+] /home/a10-kfotso/spack/spack/opt/spack/linux-ubuntu22.04-neoverse_v2/gcc-11.4.0/unzip-6.0-itw2qomsnu2la2ruueqpwvvalcxqjmxf
+[+] /home/a10-kfotso/spack/spack/opt/spack/linux-ubuntu22.04-neoverse_v2/gcc-11.4.0/zlib-1.3.1-mldkqchxuqjsjfunxxqy5veegrp2i6fp
+==> Installing ed-1.4-scrgnqcljolfodhuszk5v6kiofajke6h [10/31]
+==> No binary for ed-1.4-scrgnqcljolfodhuszk5v6kiofajke6h found: installing from source
+==> Fetching https://mirror.spack.io/_source-cache/archive/db/db36da85ee1a9d8bafb4b041bd4c8c11becba0c43ec446353b67045de1634fda.tar.gz
+==> No patches needed for ed
+==> ed: Executing phase: 'autoreconf'
+==> ed: Executing phase: 'configure'
+==> ed: Executing phase: 'build'
+==> ed: Executing phase: 'install'
+==> ed: Successfully installed ed-1.4-scrgnqcljolfodhuszk5v6kiofajke6h
+  Stage: 0.82s.  Autoreconf: 0.00s.  Configure: 0.01s.  Build: 0.64s.  Install: 0.01s.  Post-install: 0.01s.  Total: 1.51s
+[+] /home/a10-kfotso/spack/spack/opt/spack/linux-ubuntu22.04-neoverse_v2/gcc-11.4.0/ed-1.4-scrgnqcljolfodhuszk5v6kiofajke6h
+[+] /home/a10-kfotso/spack/spack/opt/spack/linux-ubuntu22.04-neoverse_v2/gcc-11.4.0/ncurses-6.5-chizrqvo3i5wyvdbo6ps5apltscolpvq
+[+] /home/a10-kfotso/spack/spack/opt/spack/linux-ubuntu22.04-neoverse_v2/gcc-11.4.0/diffutils-3.10-fliy6rlyazxjc3nckeioukr3ljfgeq36
+[+] /home/a10-kfotso/spack/spack/opt/spack/linux-ubuntu22.04-neoverse_v2/gcc-11.4.0/berkeley-db-18.1.40-u6uwac4jo4pwh52s3kzarzo264hsbo4m
+[+] /home/a10-kfotso/spack/spack/opt/spack/linux-ubuntu22.04-neoverse_v2/gcc-11.4.0/xz-5.4.6-2gpu6kir75qdgy43d2mx3ibo575fbtwx
+[+] /home/a10-kfotso/spack/spack/opt/spack/linux-ubuntu22.04-neoverse_v2/gcc-11.4.0/openssl-3.3.1-tvgbezeutbafwgsejnssjsbo3d4ri3in
+==> Installing tcl-8.6.12-lagiv3jkdeu7z7r236z232krxtnk7p3f [16/31]
+==> No binary for tcl-8.6.12-lagiv3jkdeu7z7r236z232krxtnk7p3f found: installing from source
+==> Fetching https://mirror.spack.io/_source-cache/archive/26/26c995dd0f167e48b11961d891ee555f680c175f7173ff8cb829f4ebcde4c1a6.tar.gz
+==> No patches needed for tcl
+==> tcl: Executing phase: 'autoreconf'
+==> tcl: Executing phase: 'configure'
+==> tcl: Executing phase: 'build'
+==> tcl: Executing phase: 'install'
+==> tcl: Successfully installed tcl-8.6.12-lagiv3jkdeu7z7r236z232krxtnk7p3f
+  Stage: 1.56s.  Autoreconf: 0.01s.  Configure: 2.99s.  Build: 38.85s.  Install: 1.42s.  Post-install: 0.48s.  Total: 45.33s
+[+] /home/a10-kfotso/spack/spack/opt/spack/linux-ubuntu22.04-neoverse_v2/gcc-11.4.0/tcl-8.6.12-lagiv3jkdeu7z7r236z232krxtnk7p3f
+[+] /home/a10-kfotso/spack/spack/opt/spack/linux-ubuntu22.04-neoverse_v2/gcc-11.4.0/pigz-2.8-xjvmotwwnd7qskjr6f2xsllsuunf3myi
+[+] /home/a10-kfotso/spack/spack/opt/spack/linux-ubuntu22.04-neoverse_v2/gcc-11.4.0/readline-8.2-7ogvkdusm5igpdsfmspz2eiw2kqeqad4
+==> Installing nghttp2-1.62.0-ugkla5ki64xmr7ozdp7j744vmdlvdqhb [19/31]
+==> No binary for nghttp2-1.62.0-ugkla5ki64xmr7ozdp7j744vmdlvdqhb found: installing from source
+==> Fetching https://github.com/nghttp2/nghttp2/releases/download/v1.62.0/nghttp2-1.62.0.tar.gz
+==> No patches needed for nghttp2
+==> nghttp2: Executing phase: 'autoreconf'
+==> nghttp2: Executing phase: 'configure'
+==> nghttp2: Executing phase: 'build'
+==> nghttp2: Executing phase: 'install'
+==> nghttp2: Successfully installed nghttp2-1.62.0-ugkla5ki64xmr7ozdp7j744vmdlvdqhb
+  Stage: 1.71s.  Autoreconf: 0.02s.  Configure: 4.78s.  Build: 2.13s.  Install: 0.12s.  Post-install: 0.02s.  Total: 8.81s
+[+] /home/a10-kfotso/spack/spack/opt/spack/linux-ubuntu22.04-neoverse_v2/gcc-11.4.0/nghttp2-1.62.0-ugkla5ki64xmr7ozdp7j744vmdlvdqhb
+[+] /home/a10-kfotso/spack/spack/opt/spack/linux-ubuntu22.04-neoverse_v2/gcc-11.4.0/libxml2-2.10.3-6m35i67yd3vbplgzfgjotliiwuyic4js
+[+] /home/a10-kfotso/spack/spack/opt/spack/linux-ubuntu22.04-neoverse_v2/gcc-11.4.0/tar-1.34-7ax3gxfiyjg3xtudybibjqrmi6nqumwn
+[+] /home/a10-kfotso/spack/spack/opt/spack/linux-ubuntu22.04-neoverse_v2/gcc-11.4.0/gdbm-1.23-ul5srcvk56d64lnrfyay2llyrzd7ddrs
+[+] /home/a10-kfotso/spack/spack/opt/spack/linux-ubuntu22.04-neoverse_v2/gcc-11.4.0/gettext-0.22.5-vxsmf7titeqkkqiciheib6a7pwvmcw5v
+[+] /home/a10-kfotso/spack/spack/opt/spack/linux-ubuntu22.04-neoverse_v2/gcc-11.4.0/perl-5.38.2-nvjoca33g34quhszsyplgqlitb7u56qu
+==> Installing texinfo-7.1-cen2zptqxqbtuiirogaqfahcrrl5skba [25/31]
+==> No binary for texinfo-7.1-cen2zptqxqbtuiirogaqfahcrrl5skba found: installing from source
+==> Fetching https://ftpmirror.gnu.org/texinfo/texinfo-7.1.tar.gz
+==> No patches needed for texinfo
+==> texinfo: Executing phase: 'autoreconf'
+==> texinfo: Executing phase: 'configure'
+==> texinfo: Executing phase: 'build'
+==> texinfo: Executing phase: 'install'
+==> texinfo: Successfully installed texinfo-7.1-cen2zptqxqbtuiirogaqfahcrrl5skba
+  Stage: 3.47s.  Autoreconf: 0.06s.  Configure: 11.48s.  Build: 2.15s.  Install: 0.51s.  Post-install: 0.10s.  Total: 17.82s
+[+] /home/a10-kfotso/spack/spack/opt/spack/linux-ubuntu22.04-neoverse_v2/gcc-11.4.0/texinfo-7.1-cen2zptqxqbtuiirogaqfahcrrl5skba
+==> Installing curl-8.7.1-jgl64lfvpwnxv7byngpvsz7khcqq7ygt [26/31]
+==> No binary for curl-8.7.1-jgl64lfvpwnxv7byngpvsz7khcqq7ygt found: installing from source
+==> Fetching http://curl.haxx.se/download/curl-8.7.1.tar.bz2
+==> No patches needed for curl
+==> curl: Executing phase: 'autoreconf'
+==> curl: Executing phase: 'configure'
+==> curl: Executing phase: 'build'
+==> curl: Executing phase: 'install'
+==> curl: Successfully installed curl-8.7.1-jgl64lfvpwnxv7byngpvsz7khcqq7ygt
+  Stage: 2.98s.  Autoreconf: 0.02s.  Configure: 9.72s.  Build: 4.03s.  Install: 0.59s.  Post-install: 0.08s.  Total: 17.47s
+[+] /home/a10-kfotso/spack/spack/opt/spack/linux-ubuntu22.04-neoverse_v2/gcc-11.4.0/curl-8.7.1-jgl64lfvpwnxv7byngpvsz7khcqq7ygt
+==> Installing bc-1.07.1-lihowgvkxcexng2nmy22dxua5nifwepo [27/31]
+==> No binary for bc-1.07.1-lihowgvkxcexng2nmy22dxua5nifwepo found: installing from source
+==> Fetching https://mirror.spack.io/_source-cache/archive/62/62adfca89b0a1c0164c2cdca59ca210c1d44c3ffc46daf9931cf4942664cb02a.tar.gz
+==> No patches needed for bc
+==> bc: Executing phase: 'autoreconf'
+==> bc: Executing phase: 'configure'
+==> bc: Executing phase: 'build'
+==> bc: Executing phase: 'install'
+==> bc: Successfully installed bc-1.07.1-lihowgvkxcexng2nmy22dxua5nifwepo
+  Stage: 0.94s.  Autoreconf: 0.00s.  Configure: 1.22s.  Build: 2.06s.  Install: 0.06s.  Post-install: 0.02s.  Total: 4.36s
+[+] /home/a10-kfotso/spack/spack/opt/spack/linux-ubuntu22.04-neoverse_v2/gcc-11.4.0/bc-1.07.1-lihowgvkxcexng2nmy22dxua5nifwepo
+==> Installing lua-5.4.6-dzalcqyomdui6fwf3ynmgjatlsju7nip [28/31]
+==> No binary for lua-5.4.6-dzalcqyomdui6fwf3ynmgjatlsju7nip found: installing from source
+==> Fetching https://www.lua.org/ftp/lua-5.4.6.tar.gz
+==> Fetching https://mirror.spack.io/_source-cache/archive/56/56ab9b90f5acbc42eb7a94cf482e6c058a63e8a1effdf572b8b2a6323a06d923.tar.gz
+==> Moving resource stage
+	source: /tmp/a10-kfotso/spack-stage/resource-luarocks-dzalcqyomdui6fwf3ynmgjatlsju7nip/spack-src/
+	destination: /tmp/a10-kfotso/spack-stage/spack-stage-lua-5.4.6-dzalcqyomdui6fwf3ynmgjatlsju7nip/spack-src/luarocks/luarocks
+==> No patches needed for lua
+==> lua: Executing phase: 'edit'
+==> lua: Executing phase: 'build'
+==> lua: Executing phase: 'install'
+==> lua: Successfully installed lua-5.4.6-dzalcqyomdui6fwf3ynmgjatlsju7nip
+  Stage: 3.56s.  Edit: 0.00s.  Build: 0.72s.  Install: 0.13s.  Post-install: 0.03s.  Total: 4.49s
+[+] /home/a10-kfotso/spack/spack/opt/spack/linux-ubuntu22.04-neoverse_v2/gcc-11.4.0/lua-5.4.6-dzalcqyomdui6fwf3ynmgjatlsju7nip
+==> Installing lua-luaposix-36.1-zwb3443pnn3bwfcaoecyqb3jhhh5zvzx [29/31]
+==> No binary for lua-luaposix-36.1-zwb3443pnn3bwfcaoecyqb3jhhh5zvzx found: installing from source
+==> Fetching https://mirror.spack.io/_source-cache/archive/5e/5e48e8ea5adfd8958bcdbaba132f5766473afedecc5c14ae3593464a5463a616.tar.gz
+==> No patches needed for lua-luaposix
+==> lua-luaposix: Executing phase: 'unpack'
+==> lua-luaposix: Executing phase: 'generate_luarocks_config'
+==> lua-luaposix: Executing phase: 'preprocess'
+==> lua-luaposix: Executing phase: 'install'
+==> lua-luaposix: Successfully installed lua-luaposix-36.1-zwb3443pnn3bwfcaoecyqb3jhhh5zvzx
+  Stage: 0.83s.  Unpack: 0.00s.  Generate_luarocks_config: 0.00s.  Preprocess: 0.00s.  Install: 2.32s.  Post-install: 0.03s.  Total: 3.23s
+[+] /home/a10-kfotso/spack/spack/opt/spack/linux-ubuntu22.04-neoverse_v2/gcc-11.4.0/lua-luaposix-36.1-zwb3443pnn3bwfcaoecyqb3jhhh5zvzx
+==> Installing lua-luafilesystem-1.8.0-wiz7xfvfpznzvvbtibadmfjgyt5xcwbz [30/31]
+==> No binary for lua-luafilesystem-1.8.0-wiz7xfvfpznzvvbtibadmfjgyt5xcwbz found: installing from source
+==> Fetching https://mirror.spack.io/_source-cache/archive/16/16d17c788b8093f2047325343f5e9b74cccb1ea96001e45914a58bbae8932495.tar.gz
+==> No patches needed for lua-luafilesystem
+==> lua-luafilesystem: Executing phase: 'unpack'
+==> lua-luafilesystem: Executing phase: 'generate_luarocks_config'
+==> lua-luafilesystem: Executing phase: 'preprocess'
+==> lua-luafilesystem: Executing phase: 'install'
+==> lua-luafilesystem: Successfully installed lua-luafilesystem-1.8.0-wiz7xfvfpznzvvbtibadmfjgyt5xcwbz
+  Stage: 0.61s.  Unpack: 0.00s.  Generate_luarocks_config: 0.00s.  Preprocess: 0.00s.  Install: 0.17s.  Post-install: 0.02s.  Total: 0.85s
+[+] /home/a10-kfotso/spack/spack/opt/spack/linux-ubuntu22.04-neoverse_v2/gcc-11.4.0/lua-luafilesystem-1.8.0-wiz7xfvfpznzvvbtibadmfjgyt5xcwbz
+==> Installing lmod-8.7.37-kpim24ew7wewv46nwktyybu3irp4gr6w [31/31]
+==> No binary for lmod-8.7.37-kpim24ew7wewv46nwktyybu3irp4gr6w found: installing from source
+==> Fetching https://github.com/TACC/Lmod/archive/8.7.37.tar.gz
+==> Ran patch() for lmod
+==> lmod: Executing phase: 'autoreconf'
+==> lmod: Executing phase: 'configure'
+==> lmod: Executing phase: 'build'
+==> lmod: Executing phase: 'install'
+==> lmod: Successfully installed lmod-8.7.37-kpim24ew7wewv46nwktyybu3irp4gr6w
+  Stage: 2.88s.  Autoreconf: 0.07s.  Configure: 0.65s.  Build: 0.02s.  Install: 0.76s.  Post-install: 0.05s.  Total: 4.50s
+[+] /home/a10-kfotso/spack/spack/opt/spack/linux-ubuntu22.04-neoverse_v2/gcc-11.4.0/lmod-8.7.37-kpim24ew7wewv46nwktyybu3irp4gr6w

@@ -1,0 +1,1222 @@
+[horovod_env] a10-kfotso@a10-cuanschutz01:~/spack$ spack install --add py-horovod
+==> Concretized 1 spec
+ -   ghgpqsy  py-horovod@0.28.1%gcc@11.4.0~cuda~rocm build_system=python_pip controllers=mpi frameworks=pytorch tensor_ops=gloo arch=linux-ubuntu22.04-neoverse_v2
+ -   tsr7iwo      ^cmake@3.29.6%gcc@11.4.0~doc+ncurses+ownlibs build_system=generic build_type=Release patches=dbc3892 arch=linux-ubuntu22.04-neoverse_v2
+[+]  jgl64lf          ^curl@8.7.1%gcc@11.4.0~gssapi~ldap~libidn2~librtmp~libssh~libssh2+nghttp2 build_system=autotools libs=shared,static tls=openssl arch=linux-ubuntu22.04-neoverse_v2
+[+]  ugkla5k              ^nghttp2@1.62.0%gcc@11.4.0 build_system=autotools arch=linux-ubuntu22.04-neoverse_v2
+[+]  p3tf5z6          ^gmake@4.4.1%gcc@11.4.0~guile build_system=generic arch=linux-ubuntu22.04-neoverse_v2
+[+]  chizrqv          ^ncurses@6.5%gcc@11.4.0~symlinks+termlib abi=none build_system=autotools patches=7a351bc arch=linux-ubuntu22.04-neoverse_v2
+[+]  mldkqch          ^zlib@1.3.1%gcc@11.4.0+optimize+pic+shared build_system=makefile arch=linux-ubuntu22.04-neoverse_v2
+[+]  l6h4twh      ^gcc-runtime@11.4.0%gcc@11.4.0 build_system=generic arch=linux-ubuntu22.04-neoverse_v2
+[e]  rxmgmi2      ^glibc@2.35%gcc@11.4.0 build_system=autotools arch=linux-ubuntu22.04-neoverse_v2
+ -   c2hveem      ^openmpi@5.0.3%gcc@11.4.0~atomics~cuda~gpfs~internal-hwloc~internal-libevent~internal-pmix~java~legacylaunchers~lustre~memchecker~openshmem~orterunprefix~romio+rsh~static+vt+wrapper-rpath build_system=autotools fabrics=none patches=1a8ff33,a057284 romio-filesystem=none schedulers=none arch=linux-ubuntu22.04-neoverse_v2
+ -   eufptuo          ^autoconf@2.72%gcc@11.4.0 build_system=autotools arch=linux-ubuntu22.04-neoverse_v2
+ -   avqird5              ^m4@1.4.19%gcc@11.4.0+sigsegv build_system=autotools patches=9dc5fbd,bfdffa7 arch=linux-ubuntu22.04-neoverse_v2
+ -   fxzbzyp                  ^libsigsegv@2.14%gcc@11.4.0 build_system=autotools arch=linux-ubuntu22.04-neoverse_v2
+ -   bsngu3v          ^automake@1.16.5%gcc@11.4.0 build_system=autotools arch=linux-ubuntu22.04-neoverse_v2
+[+]  ysqp2pd          ^gnuconfig@2022-09-17%gcc@11.4.0 build_system=generic arch=linux-ubuntu22.04-neoverse_v2
+ -   4xlx5is          ^hwloc@2.9.3%gcc@11.4.0~cairo~cuda~gl~libudev+libxml2~netloc~nvml~oneapi-level-zero~opencl+pci~rocm build_system=autotools libs=shared,static arch=linux-ubuntu22.04-neoverse_v2
+ -   u4ii7d7              ^libpciaccess@0.17%gcc@11.4.0 build_system=autotools arch=linux-ubuntu22.04-neoverse_v2
+ -   qgaswnf                  ^util-macros@1.20.1%gcc@11.4.0 build_system=autotools arch=linux-ubuntu22.04-neoverse_v2
+[+]  6m35i67              ^libxml2@2.10.3%gcc@11.4.0+pic~python+shared build_system=autotools arch=linux-ubuntu22.04-neoverse_v2
+ -   y26dyxy          ^libevent@2.1.12%gcc@11.4.0+openssl build_system=autotools arch=linux-ubuntu22.04-neoverse_v2
+ -   rxaft4i          ^libtool@2.4.7%gcc@11.4.0 build_system=autotools arch=linux-ubuntu22.04-neoverse_v2
+ -   bcsdesr              ^findutils@4.9.0%gcc@11.4.0 build_system=autotools patches=440b954 arch=linux-ubuntu22.04-neoverse_v2
+ -   6t5trqy          ^numactl@2.0.14%gcc@11.4.0 build_system=autotools patches=4e1d78c,62fc8a8,ff37630 arch=linux-ubuntu22.04-neoverse_v2
+ -   67ej6hj          ^openssh@9.7p1%gcc@11.4.0+gssapi build_system=autotools arch=linux-ubuntu22.04-neoverse_v2
+ -   ovhtdwy              ^krb5@1.21.2%gcc@11.4.0+shared build_system=autotools arch=linux-ubuntu22.04-neoverse_v2
+ -   jqxve5a                  ^bison@3.8.2%gcc@11.4.0~color build_system=autotools arch=linux-ubuntu22.04-neoverse_v2
+ -   pbkssnn              ^libedit@3.1-20230828%gcc@11.4.0 build_system=autotools arch=linux-ubuntu22.04-neoverse_v2
+[+]  nvjoca3          ^perl@5.38.2%gcc@11.4.0+cpanm+opcode+open+shared+threads build_system=generic arch=linux-ubuntu22.04-neoverse_v2
+[+]  u6uwac4              ^berkeley-db@18.1.40%gcc@11.4.0+cxx~docs+stl build_system=autotools patches=26090f4,b231fcc arch=linux-ubuntu22.04-neoverse_v2
+ -   hr57cqp          ^pmix@5.0.2%gcc@11.4.0~docs+pmi_backwards_compatibility~python~restful build_system=autotools arch=linux-ubuntu22.04-neoverse_v2
+[+]  japagtp      ^pkgconf@2.2.0%gcc@11.4.0 build_system=autotools arch=linux-ubuntu22.04-neoverse_v2
+ -   vyychbs      ^py-cffi@1.15.1%gcc@11.4.0 build_system=python_pip arch=linux-ubuntu22.04-neoverse_v2
+[+]  bf6tf53          ^libffi@3.4.6%gcc@11.4.0 build_system=autotools arch=linux-ubuntu22.04-neoverse_v2
+ -   xgilzsu          ^py-pycparser@2.21%gcc@11.4.0 build_system=python_pip arch=linux-ubuntu22.04-neoverse_v2
+ -   vmq466r      ^py-cloudpickle@3.0.0%gcc@11.4.0 build_system=python_pip arch=linux-ubuntu22.04-neoverse_v2
+ -   7begqlf          ^py-flit-core@3.9.0%gcc@11.4.0 build_system=python_pip arch=linux-ubuntu22.04-neoverse_v2
+ -   2ljperv      ^py-packaging@23.1%gcc@11.4.0 build_system=python_pip arch=linux-ubuntu22.04-neoverse_v2
+[+]  umn23wv      ^py-pip@23.1.2%gcc@11.4.0 build_system=generic arch=linux-ubuntu22.04-neoverse_v2
+ -   pgwsd3p      ^py-psutil@5.9.5%gcc@11.4.0 build_system=python_pip arch=linux-ubuntu22.04-neoverse_v2
+ -   jwshizg      ^py-pytorch-lightning@1.5.3%gcc@11.4.0 build_system=python_pip arch=linux-ubuntu22.04-neoverse_v2
+ -   vd2cogl          ^py-fsspec@2024.5.0%gcc@11.4.0+http build_system=python_pip arch=linux-ubuntu22.04-neoverse_v2
+ -   p3npace              ^py-aiohttp@3.9.5%gcc@11.4.0 build_system=python_pip arch=linux-ubuntu22.04-neoverse_v2
+ -   ayryuz5                  ^py-aiosignal@1.2.0%gcc@11.4.0 build_system=python_pip arch=linux-ubuntu22.04-neoverse_v2
+ -   rozikwg                  ^py-attrs@23.1.0%gcc@11.4.0 build_system=python_pip arch=linux-ubuntu22.04-neoverse_v2
+ -   ejmfk4s                      ^py-hatch-fancy-pypi-readme@23.1.0%gcc@11.4.0 build_system=python_pip arch=linux-ubuntu22.04-neoverse_v2
+ -   qad5vuz                  ^py-frozenlist@1.3.1%gcc@11.4.0 build_system=python_pip arch=linux-ubuntu22.04-neoverse_v2
+ -   z4tudqx                  ^py-multidict@6.0.4%gcc@11.4.0 build_system=python_pip arch=linux-ubuntu22.04-neoverse_v2
+ -   pdbon43                  ^py-yarl@1.9.2%gcc@11.4.0 build_system=python_pip arch=linux-ubuntu22.04-neoverse_v2
+ -   vfma5zt              ^py-hatch-vcs@0.3.0%gcc@11.4.0 build_system=python_pip arch=linux-ubuntu22.04-neoverse_v2
+ -   r3kuxmk              ^py-hatchling@1.21.0%gcc@11.4.0 build_system=python_pip arch=linux-ubuntu22.04-neoverse_v2
+ -   7op3da7                  ^py-editables@0.5%gcc@11.4.0 build_system=python_pip arch=linux-ubuntu22.04-neoverse_v2
+ -   z76q2wj                  ^py-pathspec@0.11.1%gcc@11.4.0 build_system=python_pip arch=linux-ubuntu22.04-neoverse_v2
+ -   e2czoep                  ^py-pluggy@1.5.0%gcc@11.4.0 build_system=python_pip arch=linux-ubuntu22.04-neoverse_v2
+ -   5kcuwvf                  ^py-trove-classifiers@2023.8.7%gcc@11.4.0 build_system=python_pip arch=linux-ubuntu22.04-neoverse_v2
+ -   7xlgtfw                      ^py-calver@2022.6.26%gcc@11.4.0 build_system=python_pip arch=linux-ubuntu22.04-neoverse_v2
+ -   iszqyq2          ^py-future@0.18.3%gcc@11.4.0 build_system=python_pip arch=linux-ubuntu22.04-neoverse_v2
+ -   ctd3432          ^py-numpy@1.26.4%gcc@11.4.0 build_system=python_pip patches=873745d arch=linux-ubuntu22.04-neoverse_v2
+ -   fxtqpv2              ^py-meson-python@0.16.0%gcc@11.4.0 build_system=python_pip arch=linux-ubuntu22.04-neoverse_v2
+ -   ajkbxhd                  ^meson@1.3.2%gcc@11.4.0 build_system=python_pip patches=0f0b1bd arch=linux-ubuntu22.04-neoverse_v2
+ -   5326fiu                  ^py-pyproject-metadata@0.7.1%gcc@11.4.0 build_system=python_pip arch=linux-ubuntu22.04-neoverse_v2
+ -   oh6ecbv          ^py-pydeprecate@0.3.1%gcc@11.4.0 build_system=python_pip arch=linux-ubuntu22.04-neoverse_v2
+ -   fwrxj55          ^py-tensorboard@2.11.2%gcc@11.4.0 build_system=python_pip arch=linux-ubuntu22.04-neoverse_v2
+ -   ouontue              ^py-absl-py@1.4.0%gcc@11.4.0 build_system=python_pip arch=linux-ubuntu22.04-neoverse_v2
+ -   zczb6lf              ^py-google-auth@2.27.0%gcc@11.4.0~aiohttp build_system=python_pip arch=linux-ubuntu22.04-neoverse_v2
+ -   qjsd3ss                  ^py-cachetools@5.2.0%gcc@11.4.0 build_system=python_pip arch=linux-ubuntu22.04-neoverse_v2
+ -   ohywip3                  ^py-pyasn1-modules@0.2.8%gcc@11.4.0 build_system=python_pip arch=linux-ubuntu22.04-neoverse_v2
+ -   7eqmo5s                      ^py-pyasn1@0.4.8%gcc@11.4.0 build_system=python_pip arch=linux-ubuntu22.04-neoverse_v2
+ -   enoe7jz                  ^py-rsa@4.9%gcc@11.4.0 build_system=python_pip arch=linux-ubuntu22.04-neoverse_v2
+ -   a5vgcda                      ^py-poetry-core@1.8.1%gcc@11.4.0 build_system=python_pip arch=linux-ubuntu22.04-neoverse_v2
+ -   epcpobm              ^py-google-auth-oauthlib@0.4.6%gcc@11.4.0 build_system=python_pip arch=linux-ubuntu22.04-neoverse_v2
+ -   hdvf73c                  ^py-requests-oauthlib@1.3.1%gcc@11.4.0 build_system=python_pip arch=linux-ubuntu22.04-neoverse_v2
+ -   kpr5o6o                      ^py-oauthlib@3.2.2%gcc@11.4.0~rsa~signals~signedtoken build_system=python_pip arch=linux-ubuntu22.04-neoverse_v2
+ -   wodnsxp              ^py-grpcio@1.48.2%gcc@11.4.0 build_system=python_pip patches=6be44fb arch=linux-ubuntu22.04-neoverse_v2
+ -   535yk2e                  ^c-ares@1.28.1%gcc@11.4.0~ipo build_system=cmake build_type=Release generator=make arch=linux-ubuntu22.04-neoverse_v2
+ -   aj764gw                  ^py-coverage@7.2.6%gcc@11.4.0~toml build_system=python_pip arch=linux-ubuntu22.04-neoverse_v2
+ -   v7jxa7r                  ^re2@2023-09-01%gcc@11.4.0~ipo+pic+shared build_system=cmake build_type=Release generator=make arch=linux-ubuntu22.04-neoverse_v2
+ -   nfqj66u                      ^abseil-cpp@20240116.2%gcc@11.4.0~ipo+shared build_system=cmake build_type=Release cxxstd=14 generator=make patches=14ad7ab arch=linux-ubuntu22.04-neoverse_v2
+ -   mvrccbr              ^py-markdown@3.4.1%gcc@11.4.0 build_system=python_pip arch=linux-ubuntu22.04-neoverse_v2
+ -   m6gsyzo              ^py-tensorboard-data-server@0.6.1%gcc@11.4.0 build_system=python_pip patches=4b3bcc2,878bbd6 arch=linux-ubuntu22.04-neoverse_v2
+ -   sciiv3q                  ^rust@1.78.0%gcc@11.4.0+dev~docs+src build_system=generic arch=linux-ubuntu22.04-neoverse_v2
+ -   z272zgl                      ^libgit2@1.8.0%gcc@11.4.0~curl~ipo+mmap+ssh build_system=cmake build_type=Release generator=make https=system arch=linux-ubuntu22.04-neoverse_v2
+ -   gixbqmg                          ^pcre@8.45%gcc@11.4.0~jit+multibyte+pic+shared+static+utf build_system=autotools arch=linux-ubuntu22.04-neoverse_v2
+ -   vkd6ina                      ^libssh2@1.11.0%gcc@11.4.0+shared build_system=autotools crypto=openssl patches=011d926 arch=linux-ubuntu22.04-neoverse_v2
+ -   gpy6e2r                      ^rust-bootstrap@1.78.0%gcc@11.4.0 build_system=generic arch=linux-ubuntu22.04-neoverse_v2
+ -   xxpybbk              ^py-tensorboard-plugin-wit@1.8.1%gcc@11.4.0 build_system=python_pip arch=linux-ubuntu22.04-neoverse_v2
+ -   xo2cllj              ^py-werkzeug@3.0.0%gcc@11.4.0 build_system=python_pip arch=linux-ubuntu22.04-neoverse_v2
+ -   24f2ymk          ^py-torchmetrics@1.4.0%gcc@11.4.0 build_system=python_pip arch=linux-ubuntu22.04-neoverse_v2
+ -   5yulxwe              ^py-lightning-utilities@0.8.0%gcc@11.4.0 build_system=python_pip arch=linux-ubuntu22.04-neoverse_v2
+ -   rykwn43              ^py-pretty-errors@1.2.25%gcc@11.4.0 build_system=python_pip arch=linux-ubuntu22.04-neoverse_v2
+ -   ylpcv7h                  ^py-colorama@0.4.6%gcc@11.4.0 build_system=python_pip arch=linux-ubuntu22.04-neoverse_v2
+ -   mgrl3lp          ^py-tqdm@4.66.3%gcc@11.4.0~notebook~telegram build_system=python_pip arch=linux-ubuntu22.04-neoverse_v2
+ -   hsah7tk              ^py-setuptools-scm@8.0.4%gcc@11.4.0+toml build_system=python_pip arch=linux-ubuntu22.04-neoverse_v2
+ -   x4soj27                  ^git@2.45.2%gcc@11.4.0+man+nls+perl+subtree~svn~tcltk build_system=autotools arch=linux-ubuntu22.04-neoverse_v2
+ -   gojf746                      ^libidn2@2.3.7%gcc@11.4.0 build_system=autotools arch=linux-ubuntu22.04-neoverse_v2
+ -   6ytjnsm                          ^libunistring@1.2%gcc@11.4.0 build_system=autotools arch=linux-ubuntu22.04-neoverse_v2
+ -   uqnwruz                      ^pcre2@10.43%gcc@11.4.0~jit+multibyte build_system=autotools arch=linux-ubuntu22.04-neoverse_v2
+ -   epqs5gh                  ^py-tomli@2.0.1%gcc@11.4.0 build_system=python_pip arch=linux-ubuntu22.04-neoverse_v2
+ -   wi4xvet          ^py-typing-extensions@4.8.0%gcc@11.4.0 build_system=python_pip arch=linux-ubuntu22.04-neoverse_v2
+ -   qzvg2il      ^py-pyyaml@6.0.1%gcc@11.4.0+libyaml build_system=python_pip arch=linux-ubuntu22.04-neoverse_v2
+ -   ejduizz          ^libyaml@0.2.5%gcc@11.4.0 build_system=autotools arch=linux-ubuntu22.04-neoverse_v2
+ -   l66bxox          ^py-cython@0.29.36%gcc@11.4.0 build_system=python_pip patches=c4369ad arch=linux-ubuntu22.04-neoverse_v2
+[+]  xhytqwb      ^py-setuptools@69.2.0%gcc@11.4.0 build_system=generic arch=linux-ubuntu22.04-neoverse_v2
+ -   i77jdvj      ^py-torch@2.0.1%gcc@11.4.0~caffe2~cuda~custom-protobuf~debug+distributed+fbgemm+gloo+kineto~metal~mkldnn+mpi+numa+numpy+onnx_ml+openmp+qnnpack~rocm+tensorpipe~test+valgrind+xnnpack build_system=python_pip patches=23fb400,65060b5,6730561,97d8bd4,beb3fb5 arch=linux-ubuntu22.04-neoverse_v2
+ -   ca77hgq          ^cpuinfo@2022-08-19%gcc@11.4.0~ipo build_system=cmake build_type=Release generator=ninja arch=linux-ubuntu22.04-neoverse_v2
+ -   azvqetd          ^eigen@3.4.0%gcc@11.4.0~ipo build_system=cmake build_type=RelWithDebInfo generator=make arch=linux-ubuntu22.04-neoverse_v2
+ -   3pdligg          ^fp16@2020-05-14%gcc@11.4.0~ipo build_system=cmake build_type=Release generator=ninja arch=linux-ubuntu22.04-neoverse_v2
+ -   64hdu34          ^fxdiv@2020-04-17%gcc@11.4.0~ipo build_system=cmake build_type=Release generator=ninja arch=linux-ubuntu22.04-neoverse_v2
+ -   widi2yg          ^gloo@2023-01-17%gcc@11.4.0~cuda~ipo build_system=cmake build_type=Release generator=ninja arch=linux-ubuntu22.04-neoverse_v2
+ -   nrmjvqp          ^ninja@1.12.0%gcc@11.4.0+re2c build_system=generic arch=linux-ubuntu22.04-neoverse_v2
+ -   ucbabp6              ^re2c@3.0%gcc@11.4.0 build_system=generic arch=linux-ubuntu22.04-neoverse_v2
+[+]  lwy544y          ^nvhpc@24.5%gcc@11.4.0+blas+lapack~mpi build_system=generic default_cuda=default install_type=single arch=linux-ubuntu22.04-neoverse_v2
+ -   4nznyup          ^protobuf@3.13.0%gcc@11.4.0~ipo+shared build_system=cmake build_type=Release generator=make patches=9b6dcfa arch=linux-ubuntu22.04-neoverse_v2
+ -   27memgu          ^psimd@2020-05-17%gcc@11.4.0~ipo build_system=cmake build_type=Release generator=ninja arch=linux-ubuntu22.04-neoverse_v2
+ -   ndzm3q5          ^pthreadpool@2021-04-13%gcc@11.4.0~ipo build_system=cmake build_type=Release generator=ninja arch=linux-ubuntu22.04-neoverse_v2
+ -   7mqhnjt          ^py-astunparse@1.6.3%gcc@11.4.0 build_system=python_pip arch=linux-ubuntu22.04-neoverse_v2
+ -   faxqpot              ^py-six@1.16.0%gcc@11.4.0 build_system=python_pip arch=linux-ubuntu22.04-neoverse_v2
+ -   yruxmnk          ^py-filelock@3.12.4%gcc@11.4.0 build_system=python_pip arch=linux-ubuntu22.04-neoverse_v2
+ -   ofrjrbr          ^py-jinja2@3.1.2%gcc@11.4.0~i18n build_system=python_pip arch=linux-ubuntu22.04-neoverse_v2
+ -   yza7xfg              ^py-markupsafe@2.1.3%gcc@11.4.0 build_system=python_pip arch=linux-ubuntu22.04-neoverse_v2
+ -   fkdtmfi          ^py-networkx@2.7.1%gcc@11.4.0+default~extra build_system=python_pip arch=linux-ubuntu22.04-neoverse_v2
+ -   3dcpuye          ^py-protobuf@3.13.0%gcc@11.4.0~cpp build_system=python_pip arch=linux-ubuntu22.04-neoverse_v2
+ -   xz4hzgl          ^py-pybind11@2.10.1%gcc@11.4.0~ipo build_system=cmake build_type=Release generator=ninja arch=linux-ubuntu22.04-neoverse_v2
+ -   5rx2nrv          ^py-requests@2.32.2%gcc@11.4.0~socks build_system=python_pip arch=linux-ubuntu22.04-neoverse_v2
+ -   uyiawdl              ^py-certifi@2023.7.22%gcc@11.4.0 build_system=python_pip arch=linux-ubuntu22.04-neoverse_v2
+ -   rbfgxua              ^py-charset-normalizer@3.3.0%gcc@11.4.0 build_system=python_pip arch=linux-ubuntu22.04-neoverse_v2
+ -   kubde7r              ^py-idna@3.4%gcc@11.4.0 build_system=python_pip arch=linux-ubuntu22.04-neoverse_v2
+ -   jor3sgh              ^py-urllib3@2.1.0%gcc@11.4.0~brotli~socks build_system=python_pip arch=linux-ubuntu22.04-neoverse_v2
+ -   2fkutoj          ^py-sympy@1.12%gcc@11.4.0 build_system=python_pip arch=linux-ubuntu22.04-neoverse_v2
+ -   r2cybfi              ^py-mpmath@1.3.0%gcc@11.4.0 build_system=python_pip arch=linux-ubuntu22.04-neoverse_v2
+ -   mkhfjri          ^sleef@3.5.1_2020-12-22%gcc@11.4.0~ipo build_system=cmake build_type=Release generator=ninja arch=linux-ubuntu22.04-neoverse_v2
+ -   gcrmysv          ^valgrind@3.23.0%gcc@11.4.0+boost+mpi+only64bit~ubsan build_system=autotools libs=shared,static arch=linux-ubuntu22.04-neoverse_v2
+ -   mkeyztp              ^boost@1.85.0%gcc@11.4.0+atomic+chrono~clanglibcpp~container~context~contract~coroutine~date_time~debug+exception~fiber~filesystem~graph~graph_parallel~icu~iostreams~json~locale~log~math~mpi+multithreaded~nowide~numpy~pic~program_options~python~random~regex~serialization+shared~signals~singlethreaded~stacktrace+system~taggedlayout~test+thread~timer~type_erasure~versionedlayout~wave build_system=generic cxxstd=11 patches=a440f96 visibility=hidden arch=linux-ubuntu22.04-neoverse_v2
+[+]  5qofncu      ^py-wheel@0.41.2%gcc@11.4.0 build_system=generic arch=linux-ubuntu22.04-neoverse_v2
+[+]  j6ddpux      ^python@3.11.9%gcc@11.4.0+bz2+crypt+ctypes+dbm~debug+libxml2+lzma~nis~optimizations+pic+pyexpat+pythoncmd+readline+shared+sqlite3+ssl~tkinter+uuid+zlib build_system=generic patches=13fa8bf,b0615b2,ebdca64,f2fd060 arch=linux-ubuntu22.04-neoverse_v2
+[+]  htzsjvp          ^bzip2@1.0.8%gcc@11.4.0~debug~pic+shared build_system=generic arch=linux-ubuntu22.04-neoverse_v2
+[+]  fliy6rl              ^diffutils@3.10%gcc@11.4.0 build_system=autotools arch=linux-ubuntu22.04-neoverse_v2
+[+]  uufyyi3          ^expat@2.6.2%gcc@11.4.0+libbsd build_system=autotools arch=linux-ubuntu22.04-neoverse_v2
+[+]  cr7d4ji              ^libbsd@0.12.2%gcc@11.4.0 build_system=autotools arch=linux-ubuntu22.04-neoverse_v2
+[+]  p4an3hm                  ^libmd@1.0.4%gcc@11.4.0 build_system=autotools arch=linux-ubuntu22.04-neoverse_v2
+[+]  ul5srcv          ^gdbm@1.23%gcc@11.4.0 build_system=autotools arch=linux-ubuntu22.04-neoverse_v2
+[+]  vxsmf7t          ^gettext@0.22.5%gcc@11.4.0+bzip2+curses+git~libunistring+libxml2+pic+shared+tar+xz build_system=autotools arch=linux-ubuntu22.04-neoverse_v2
+[+]  7ax3gxf              ^tar@1.34%gcc@11.4.0 build_system=autotools zip=pigz arch=linux-ubuntu22.04-neoverse_v2
+[+]  xjvmotw                  ^pigz@2.8%gcc@11.4.0 build_system=makefile arch=linux-ubuntu22.04-neoverse_v2
+[+]  dasks5n                  ^zstd@1.5.6%gcc@11.4.0+programs build_system=makefile compression=none libs=shared,static arch=linux-ubuntu22.04-neoverse_v2
+[+]  sw5y5vf          ^libxcrypt@4.4.35%gcc@11.4.0~obsolete_api build_system=autotools patches=4885da3 arch=linux-ubuntu22.04-neoverse_v2
+[+]  tvgbeze          ^openssl@3.3.1%gcc@11.4.0~docs+shared build_system=generic certs=mozilla arch=linux-ubuntu22.04-neoverse_v2
+[+]  5jjomw3              ^ca-certificates-mozilla@2023-05-30%gcc@11.4.0 build_system=generic arch=linux-ubuntu22.04-neoverse_v2
+[+]  7ogvkdu          ^readline@8.2%gcc@11.4.0 build_system=autotools patches=bbf97f1 arch=linux-ubuntu22.04-neoverse_v2
+[+]  aofn56j          ^sqlite@3.46.0%gcc@11.4.0+column_metadata+dynamic_extensions+fts~functions+rtree build_system=autotools arch=linux-ubuntu22.04-neoverse_v2
+[+]  v6lbdwg          ^util-linux-uuid@2.40.2%gcc@11.4.0 build_system=autotools arch=linux-ubuntu22.04-neoverse_v2
+[+]  2gpu6ki          ^xz@5.4.6%gcc@11.4.0~pic build_system=autotools libs=shared,static arch=linux-ubuntu22.04-neoverse_v2
+[+]  xgi5auh      ^python-venv@1.0%gcc@11.4.0 build_system=generic arch=linux-ubuntu22.04-neoverse_v2
+
+[+] /usr (external glibc-2.35-rxmgmi2lpetiqurcupi3ii2jhdphh3w2)
+[+] /home/a10-kfotso/spack/spack/opt/spack/linux-ubuntu22.04-neoverse_v2/gcc-11.4.0/gcc-runtime-11.4.0-l6h4twhuoxi3yvh6qmql2rohcv5dv7yc
+[+] /home/a10-kfotso/spack/spack/opt/spack/linux-ubuntu22.04-neoverse_v2/gcc-11.4.0/libffi-3.4.6-bf6tf53bdw63flut7qukywcd2yor7szb
+[+] /home/a10-kfotso/spack/spack/opt/spack/linux-ubuntu22.04-neoverse_v2/gcc-11.4.0/bzip2-1.0.8-htzsjvp7ywog3vsd3irxm5xnbjjvjkj3
+==> Installing boost-1.85.0-mkeyztpb3hna5s2juodldksivmkuan3m [5/151]
+==> No binary for boost-1.85.0-mkeyztpb3hna5s2juodldksivmkuan3m found: installing from source
+==> Fetching https://archives.boost.io/release/1.85.0/source/boost_1_85_0.tar.bz2
+==> Applied patch /home/a10-kfotso/spack/spack/var/spack/repos/builtin/packages/boost/bootstrap-compiler.patch
+==> Ran patch() for boost
+==> boost: Executing phase: 'install'
+==> boost: Successfully installed boost-1.85.0-mkeyztpb3hna5s2juodldksivmkuan3m
+  Stage: 49.08s.  Install: 32.11s.  Post-install: 2.18s.  Total: 1m 23.40s
+[+] /home/a10-kfotso/spack/spack/opt/spack/linux-ubuntu22.04-neoverse_v2/gcc-11.4.0/boost-1.85.0-mkeyztpb3hna5s2juodldksivmkuan3m
+[+] /home/a10-kfotso/spack/spack/opt/spack/linux-ubuntu22.04-neoverse_v2/gcc-11.4.0/nghttp2-1.62.0-ugkla5ki64xmr7ozdp7j744vmdlvdqhb
+[+] /home/a10-kfotso/spack/spack/opt/spack/linux-ubuntu22.04-neoverse_v2/gcc-11.4.0/util-linux-uuid-2.40.2-v6lbdwgoxvlojrkxj3mdtqfnhc5xjifw
+[+] /home/a10-kfotso/spack/spack/opt/spack/linux-ubuntu22.04-neoverse_v2/gcc-11.4.0/libxcrypt-4.4.35-sw5y5vfetp3nlefrfjqpf3s2injfo4v7
+[+] /home/a10-kfotso/spack/spack/opt/spack/linux-ubuntu22.04-neoverse_v2/gcc-11.4.0/ncurses-6.5-chizrqvo3i5wyvdbo6ps5apltscolpvq
+==> Installing rust-bootstrap-1.78.0-gpy6e2rirvuowksh7gjihkctu27emf6v [10/151]
+==> No binary for rust-bootstrap-1.78.0-gpy6e2rirvuowksh7gjihkctu27emf6v found: installing from source
+==> Fetching https://static.rust-lang.org/dist/rust-1.78.0-aarch64-unknown-linux-gnu.tar.gz
+==> No patches needed for rust-bootstrap
+==> rust-bootstrap: Executing phase: 'install'
+==> rust-bootstrap: Successfully installed rust-bootstrap-1.78.0-gpy6e2rirvuowksh7gjihkctu27emf6v
+  Stage: 48.12s.  Install: 2.31s.  Post-install: 0.81s.  Total: 51.26s
+[+] /home/a10-kfotso/spack/spack/opt/spack/linux-ubuntu22.04-neoverse_v2/gcc-11.4.0/rust-bootstrap-1.78.0-gpy6e2rirvuowksh7gjihkctu27emf6v
+[+] /home/a10-kfotso/spack/spack/opt/spack/linux-ubuntu22.04-neoverse_v2/gcc-11.4.0/gnuconfig-2022-09-17-ysqp2pdst367qahoooook3lytmv2lc6y
+[+] /home/a10-kfotso/spack/spack/opt/spack/linux-ubuntu22.04-neoverse_v2/gcc-11.4.0/gmake-4.4.1-p3tf5z6thwfxnav22qtrknf6cxtobbjl
+[+] /home/a10-kfotso/spack/spack/opt/spack/linux-ubuntu22.04-neoverse_v2/gcc-11.4.0/nvhpc-24.5-lwy544yxfvbzqufhsdp5mubg2swkt74j
+[+] /home/a10-kfotso/spack/spack/opt/spack/linux-ubuntu22.04-neoverse_v2/gcc-11.4.0/xz-5.4.6-2gpu6kir75qdgy43d2mx3ibo575fbtwx
+==> Installing libsigsegv-2.14-fxzbzyp3v6fg23wjazzrtfkdqmpajsu6 [15/151]
+==> No binary for libsigsegv-2.14-fxzbzyp3v6fg23wjazzrtfkdqmpajsu6 found: installing from source
+==> Fetching https://mirror.spack.io/_source-cache/archive/cd/cdac3941803364cf81a908499beb79c200ead60b6b5b40cad124fd1e06caa295.tar.gz
+==> No patches needed for libsigsegv
+==> libsigsegv: Executing phase: 'autoreconf'
+==> libsigsegv: Executing phase: 'configure'
+==> libsigsegv: Executing phase: 'build'
+==> libsigsegv: Executing phase: 'install'
+==> libsigsegv: Successfully installed libsigsegv-2.14-fxzbzyp3v6fg23wjazzrtfkdqmpajsu6
+  Stage: 0.82s.  Autoreconf: 0.01s.  Configure: 2.06s.  Build: 0.30s.  Install: 0.05s.  Post-install: 0.01s.  Total: 3.31s
+[+] /home/a10-kfotso/spack/spack/opt/spack/linux-ubuntu22.04-neoverse_v2/gcc-11.4.0/libsigsegv-2.14-fxzbzyp3v6fg23wjazzrtfkdqmpajsu6
+[+] /home/a10-kfotso/spack/spack/opt/spack/linux-ubuntu22.04-neoverse_v2/gcc-11.4.0/zlib-1.3.1-mldkqchxuqjsjfunxxqy5veegrp2i6fp
+[+] /home/a10-kfotso/spack/spack/opt/spack/linux-ubuntu22.04-neoverse_v2/gcc-11.4.0/readline-8.2-7ogvkdusm5igpdsfmspz2eiw2kqeqad4
+==> Installing libyaml-0.2.5-ejduizzlb45slgbxa6mpeqxujmn2pfik [18/151]
+==> No binary for libyaml-0.2.5-ejduizzlb45slgbxa6mpeqxujmn2pfik found: installing from source
+==> Fetching https://mirror.spack.io/_source-cache/archive/c6/c642ae9b75fee120b2d96c712538bd2cf283228d2337df2cf2988e3c02678ef4.tar.gz
+==> No patches needed for libyaml
+==> libyaml: Executing phase: 'autoreconf'
+==> libyaml: Executing phase: 'configure'
+==> libyaml: Executing phase: 'build'
+==> libyaml: Executing phase: 'install'
+==> libyaml: Successfully installed libyaml-0.2.5-ejduizzlb45slgbxa6mpeqxujmn2pfik
+  Stage: 1.02s.  Autoreconf: 0.02s.  Configure: 1.51s.  Build: 1.72s.  Install: 0.06s.  Post-install: 0.01s.  Total: 4.39s
+[+] /home/a10-kfotso/spack/spack/opt/spack/linux-ubuntu22.04-neoverse_v2/gcc-11.4.0/libyaml-0.2.5-ejduizzlb45slgbxa6mpeqxujmn2pfik
+[+] /home/a10-kfotso/spack/spack/opt/spack/linux-ubuntu22.04-neoverse_v2/gcc-11.4.0/pkgconf-2.2.0-japagtporebgefmxqoyhrvmx5sifqjhm
+[+] /home/a10-kfotso/spack/spack/opt/spack/linux-ubuntu22.04-neoverse_v2/gcc-11.4.0/diffutils-3.10-fliy6rlyazxjc3nckeioukr3ljfgeq36
+==> Installing libunistring-1.2-6ytjnsmqgdoza22wq3lz4exjyiqwswnb [21/151]
+==> No binary for libunistring-1.2-6ytjnsmqgdoza22wq3lz4exjyiqwswnb found: installing from source
+==> Fetching https://ftpmirror.gnu.org/libunistring/libunistring-1.2.tar.xz
+==> No patches needed for libunistring
+==> libunistring: Executing phase: 'autoreconf'
+==> libunistring: Executing phase: 'configure'
+==> libunistring: Executing phase: 'build'
+==> libunistring: Executing phase: 'install'
+==> libunistring: Successfully installed libunistring-1.2-6ytjnsmqgdoza22wq3lz4exjyiqwswnb
+  Stage: 2.65s.  Autoreconf: 0.02s.  Configure: 16.65s.  Build: 20.58s.  Install: 0.28s.  Post-install: 0.03s.  Total: 40.26s
+[+] /home/a10-kfotso/spack/spack/opt/spack/linux-ubuntu22.04-neoverse_v2/gcc-11.4.0/libunistring-1.2-6ytjnsmqgdoza22wq3lz4exjyiqwswnb
+[+] /home/a10-kfotso/spack/spack/opt/spack/linux-ubuntu22.04-neoverse_v2/gcc-11.4.0/libmd-1.0.4-p4an3hmz4m2ntfls2fwxdgftpo2joh5n
+==> Installing util-macros-1.20.1-qgaswnfomc4swkntju7oo75vhqy2tlkd [23/151]
+==> No binary for util-macros-1.20.1-qgaswnfomc4swkntju7oo75vhqy2tlkd found: installing from source
+==> Fetching https://www.x.org/archive/individual/util/util-macros-1.20.1.tar.xz
+==> No patches needed for util-macros
+==> util-macros: Executing phase: 'autoreconf'
+==> util-macros: Executing phase: 'configure'
+==> util-macros: Executing phase: 'build'
+==> util-macros: Executing phase: 'install'
+==> util-macros: Successfully installed util-macros-1.20.1-qgaswnfomc4swkntju7oo75vhqy2tlkd
+  Stage: 2.12s.  Autoreconf: 0.00s.  Configure: 1.13s.  Build: 0.00s.  Install: 0.01s.  Post-install: 0.01s.  Total: 3.32s
+[+] /home/a10-kfotso/spack/spack/opt/spack/linux-ubuntu22.04-neoverse_v2/gcc-11.4.0/util-macros-1.20.1-qgaswnfomc4swkntju7oo75vhqy2tlkd
+==> Installing pcre2-10.43-uqnwruzftg3ruq2hjlovvyi4qqlb6un4 [24/151]
+==> No binary for pcre2-10.43-uqnwruzftg3ruq2hjlovvyi4qqlb6un4 found: installing from source
+==> Fetching https://github.com/PCRE2Project/pcre2/releases/download/pcre2-10.43/pcre2-10.43.tar.bz2
+==> No patches needed for pcre2
+==> pcre2: Executing phase: 'autoreconf'
+==> pcre2: Executing phase: 'configure'
+==> pcre2: Executing phase: 'build'
+==> pcre2: Executing phase: 'install'
+==> pcre2: Successfully installed pcre2-10.43-uqnwruzftg3ruq2hjlovvyi4qqlb6un4
+  Stage: 1.73s.  Autoreconf: 0.01s.  Configure: 1.85s.  Build: 8.50s.  Install: 0.22s.  Post-install: 0.04s.  Total: 12.41s
+[+] /home/a10-kfotso/spack/spack/opt/spack/linux-ubuntu22.04-neoverse_v2/gcc-11.4.0/pcre2-10.43-uqnwruzftg3ruq2hjlovvyi4qqlb6un4
+==> Installing findutils-4.9.0-bcsdesrzpvxrw52khukej4a3qclalzgd [25/151]
+==> No binary for findutils-4.9.0-bcsdesrzpvxrw52khukej4a3qclalzgd found: installing from source
+==> Fetching https://mirror.spack.io/_source-cache/archive/a2/a2bfb8c09d436770edc59f50fa483e785b161a3b7b9d547573cb08065fd462fe.tar.xz
+==> Applied patch /home/a10-kfotso/spack/spack/var/spack/repos/builtin/packages/findutils/nonnull.patch
+==> findutils: Executing phase: 'autoreconf'
+==> findutils: Executing phase: 'configure'
+==> findutils: Executing phase: 'build'
+==> findutils: Executing phase: 'install'
+==> findutils: Successfully installed findutils-4.9.0-bcsdesrzpvxrw52khukej4a3qclalzgd
+  Stage: 1.09s.  Autoreconf: 0.02s.  Configure: 20.41s.  Build: 1.82s.  Install: 0.64s.  Post-install: 0.03s.  Total: 24.06s
+[+] /home/a10-kfotso/spack/spack/opt/spack/linux-ubuntu22.04-neoverse_v2/gcc-11.4.0/findutils-4.9.0-bcsdesrzpvxrw52khukej4a3qclalzgd
+==> Installing re2c-3.0-ucbabp64375s3unfvcbu6nv7m4wc7qmp [26/151]
+==> No binary for re2c-3.0-ucbabp64375s3unfvcbu6nv7m4wc7qmp found: installing from source
+==> Fetching https://github.com/skvadrik/re2c/releases/download/3.0/re2c-3.0.tar.xz
+==> No patches needed for re2c
+==> re2c: Executing phase: 'configure'
+==> re2c: Executing phase: 'build'
+==> re2c: Executing phase: 'install'
+==> re2c: Successfully installed re2c-3.0-ucbabp64375s3unfvcbu6nv7m4wc7qmp
+  Stage: 1.57s.  Configure: 1.99s.  Build: 6.57s.  Install: 0.05s.  Post-install: 0.04s.  Total: 10.27s
+[+] /home/a10-kfotso/spack/spack/opt/spack/linux-ubuntu22.04-neoverse_v2/gcc-11.4.0/re2c-3.0-ucbabp64375s3unfvcbu6nv7m4wc7qmp
+==> Installing pcre-8.45-gixbqmgoapr3xatgdl3dqnn4mlhheazi [27/151]
+==> No binary for pcre-8.45-gixbqmgoapr3xatgdl3dqnn4mlhheazi found: installing from source
+==> Fetching https://mirror.spack.io/_source-cache/archive/4d/4dae6fdcd2bb0bb6c37b5f97c33c2be954da743985369cddac3546e3218bffb8.tar.bz2
+==> No patches needed for pcre
+==> pcre: Executing phase: 'autoreconf'
+==> pcre: Executing phase: 'configure'
+==> pcre: Executing phase: 'build'
+==> pcre: Executing phase: 'install'
+==> pcre: Successfully installed pcre-8.45-gixbqmgoapr3xatgdl3dqnn4mlhheazi
+  Stage: 1.19s.  Autoreconf: 0.01s.  Configure: 2.28s.  Build: 5.55s.  Install: 0.32s.  Post-install: 0.04s.  Total: 9.45s
+[+] /home/a10-kfotso/spack/spack/opt/spack/linux-ubuntu22.04-neoverse_v2/gcc-11.4.0/pcre-8.45-gixbqmgoapr3xatgdl3dqnn4mlhheazi
+[+] /home/a10-kfotso/spack/spack/opt/spack/linux-ubuntu22.04-neoverse_v2/gcc-11.4.0/berkeley-db-18.1.40-u6uwac4jo4pwh52s3kzarzo264hsbo4m
+[+] /home/a10-kfotso/spack/spack/opt/spack/linux-ubuntu22.04-neoverse_v2/gcc-11.4.0/zstd-1.5.6-dasks5npkv5ns4yzcfkes4b5gfvzsnsx
+[+] /home/a10-kfotso/spack/spack/opt/spack/linux-ubuntu22.04-neoverse_v2/gcc-11.4.0/openssl-3.3.1-tvgbezeutbafwgsejnssjsbo3d4ri3in
+[+] /home/a10-kfotso/spack/spack/opt/spack/linux-ubuntu22.04-neoverse_v2/gcc-11.4.0/pigz-2.8-xjvmotwwnd7qskjr6f2xsllsuunf3myi
+[+] /home/a10-kfotso/spack/spack/opt/spack/linux-ubuntu22.04-neoverse_v2/gcc-11.4.0/gdbm-1.23-ul5srcvk56d64lnrfyay2llyrzd7ddrs
+[+] /home/a10-kfotso/spack/spack/opt/spack/linux-ubuntu22.04-neoverse_v2/gcc-11.4.0/sqlite-3.46.0-aofn56jxcb2dkqvgzm3uwpcf3f7fig63
+[+] /home/a10-kfotso/spack/spack/opt/spack/linux-ubuntu22.04-neoverse_v2/gcc-11.4.0/libxml2-2.10.3-6m35i67yd3vbplgzfgjotliiwuyic4js
+==> Installing libedit-3.1-20230828-pbkssnnk32jzoifzbqm476sizqhqfjve [35/151]
+==> No binary for libedit-3.1-20230828-pbkssnnk32jzoifzbqm476sizqhqfjve found: installing from source
+==> Fetching http://thrysoee.dk/editline/libedit-20230828-3.1.tar.gz
+==> No patches needed for libedit
+==> libedit: Executing phase: 'autoreconf'
+==> libedit: Executing phase: 'configure'
+==> libedit: Executing phase: 'build'
+==> libedit: Executing phase: 'install'
+==> libedit: Successfully installed libedit-3.1-20230828-pbkssnnk32jzoifzbqm476sizqhqfjve
+  Stage: 3.37s.  Autoreconf: 0.01s.  Configure: 2.55s.  Build: 1.26s.  Install: 0.11s.  Post-install: 0.02s.  Total: 7.38s
+[+] /home/a10-kfotso/spack/spack/opt/spack/linux-ubuntu22.04-neoverse_v2/gcc-11.4.0/libedit-3.1-20230828-pbkssnnk32jzoifzbqm476sizqhqfjve
+==> Installing m4-1.4.19-avqird52ab4ungwrclh25byinxjafoau [36/151]
+==> No binary for m4-1.4.19-avqird52ab4ungwrclh25byinxjafoau found: installing from source
+==> Fetching https://mirror.spack.io/_source-cache/archive/3b/3be4a26d825ffdfda52a56fc43246456989a3630093cced3fbddf4771ee58a70.tar.gz
+==> Applied patch /home/a10-kfotso/spack/spack/var/spack/repos/builtin/packages/m4/checks-198.sysval.1.patch
+==> Applied patch /home/a10-kfotso/spack/spack/var/spack/repos/builtin/packages/m4/checks-198.sysval.2.patch
+==> Ran patch() for m4
+==> m4: Executing phase: 'autoreconf'
+==> m4: Executing phase: 'configure'
+==> m4: Executing phase: 'build'
+==> m4: Executing phase: 'install'
+==> m4: Successfully installed m4-1.4.19-avqird52ab4ungwrclh25byinxjafoau
+  Stage: 1.25s.  Autoreconf: 0.02s.  Configure: 17.55s.  Build: 2.37s.  Install: 0.36s.  Post-install: 0.02s.  Total: 21.63s
+[+] /home/a10-kfotso/spack/spack/opt/spack/linux-ubuntu22.04-neoverse_v2/gcc-11.4.0/m4-1.4.19-avqird52ab4ungwrclh25byinxjafoau
+==> Installing libidn2-2.3.7-gojf746glffce4eepee5rfiiay35ey6j [37/151]
+==> No binary for libidn2-2.3.7-gojf746glffce4eepee5rfiiay35ey6j found: installing from source
+==> Fetching https://ftpmirror.gnu.org/libidn/libidn2-2.3.7.tar.gz
+==> No patches needed for libidn2
+==> libidn2: Executing phase: 'autoreconf'
+==> libidn2: Executing phase: 'configure'
+==> libidn2: Executing phase: 'build'
+==> libidn2: Executing phase: 'install'
+==> libidn2: Successfully installed libidn2-2.3.7-gojf746glffce4eepee5rfiiay35ey6j
+  Stage: 2.34s.  Autoreconf: 0.02s.  Configure: 6.50s.  Build: 2.08s.  Install: 0.31s.  Post-install: 0.03s.  Total: 11.32s
+[+] /home/a10-kfotso/spack/spack/opt/spack/linux-ubuntu22.04-neoverse_v2/gcc-11.4.0/libidn2-2.3.7-gojf746glffce4eepee5rfiiay35ey6j
+[+] /home/a10-kfotso/spack/spack/opt/spack/linux-ubuntu22.04-neoverse_v2/gcc-11.4.0/libbsd-0.12.2-cr7d4jideocdbksfbdyl4gt6lx6n523m
+[+] /home/a10-kfotso/spack/spack/opt/spack/linux-ubuntu22.04-neoverse_v2/gcc-11.4.0/curl-8.7.1-jgl64lfvpwnxv7byngpvsz7khcqq7ygt
+==> Installing libevent-2.1.12-y26dyxymep2mojnfu5zpoukq4qt4zhrt [40/151]
+==> No binary for libevent-2.1.12-y26dyxymep2mojnfu5zpoukq4qt4zhrt found: installing from source
+==> Fetching https://mirror.spack.io/_source-cache/archive/92/92e6de1be9ec176428fd2367677e61ceffc2ee1cb119035037a27d346b0403bb.tar.gz
+==> Ran patch() for libevent
+==> libevent: Executing phase: 'autoreconf'
+==> libevent: Executing phase: 'configure'
+==> libevent: Executing phase: 'build'
+==> libevent: Executing phase: 'install'
+==> libevent: Successfully installed libevent-2.1.12-y26dyxymep2mojnfu5zpoukq4qt4zhrt
+  Stage: 1.07s.  Autoreconf: 0.02s.  Configure: 5.07s.  Build: 2.50s.  Install: 0.18s.  Post-install: 0.03s.  Total: 8.93s
+[+] /home/a10-kfotso/spack/spack/opt/spack/linux-ubuntu22.04-neoverse_v2/gcc-11.4.0/libevent-2.1.12-y26dyxymep2mojnfu5zpoukq4qt4zhrt
+==> Installing libssh2-1.11.0-vkd6ina2dzx57ngtal5ihr3x3txor7p6 [41/151]
+==> No binary for libssh2-1.11.0-vkd6ina2dzx57ngtal5ihr3x3txor7p6 found: installing from source
+==> Fetching https://mirror.spack.io/_source-cache/archive/37/3736161e41e2693324deb38c26cfdc3efe6209d634ba4258db1cecff6a5ad461.tar.gz
+==> Applied patch /home/a10-kfotso/spack/spack/var/spack/repos/builtin/packages/libssh2/pr-1114.patch
+==> libssh2: Executing phase: 'autoreconf'
+==> libssh2: Executing phase: 'configure'
+==> libssh2: Executing phase: 'build'
+==> libssh2: Executing phase: 'install'
+==> libssh2: Successfully installed libssh2-1.11.0-vkd6ina2dzx57ngtal5ihr3x3txor7p6
+  Stage: 0.94s.  Autoreconf: 0.01s.  Configure: 2.53s.  Build: 1.18s.  Install: 0.11s.  Post-install: 0.04s.  Total: 4.89s
+[+] /home/a10-kfotso/spack/spack/opt/spack/linux-ubuntu22.04-neoverse_v2/gcc-11.4.0/libssh2-1.11.0-vkd6ina2dzx57ngtal5ihr3x3txor7p6
+[+] /home/a10-kfotso/spack/spack/opt/spack/linux-ubuntu22.04-neoverse_v2/gcc-11.4.0/tar-1.34-7ax3gxfiyjg3xtudybibjqrmi6nqumwn
+[+] /home/a10-kfotso/spack/spack/opt/spack/linux-ubuntu22.04-neoverse_v2/gcc-11.4.0/perl-5.38.2-nvjoca33g34quhszsyplgqlitb7u56qu
+==> Installing libtool-2.4.7-rxaft4ib5atetghxvnufsg5rzefoplrn [44/151]
+==> No binary for libtool-2.4.7-rxaft4ib5atetghxvnufsg5rzefoplrn found: installing from source
+==> Fetching https://mirror.spack.io/_source-cache/archive/04/04e96c2404ea70c590c546eba4202a4e12722c640016c12b9b2f1ce3d481e9a8.tar.gz
+==> Ran patch() for libtool
+==> libtool: Executing phase: 'autoreconf'
+==> libtool: Executing phase: 'configure'
+==> libtool: Executing phase: 'build'
+==> libtool: Executing phase: 'install'
+==> libtool: Successfully installed libtool-2.4.7-rxaft4ib5atetghxvnufsg5rzefoplrn
+  Stage: 1.03s.  Autoreconf: 0.01s.  Configure: 2.95s.  Build: 0.73s.  Install: 0.22s.  Post-install: 0.02s.  Total: 5.03s
+[+] /home/a10-kfotso/spack/spack/opt/spack/linux-ubuntu22.04-neoverse_v2/gcc-11.4.0/libtool-2.4.7-rxaft4ib5atetghxvnufsg5rzefoplrn
+==> Installing bison-3.8.2-jqxve5anrmqowihqorqjnghtkbdvx2xu [45/151]
+==> No binary for bison-3.8.2-jqxve5anrmqowihqorqjnghtkbdvx2xu found: installing from source
+==> Fetching https://mirror.spack.io/_source-cache/archive/06/06c9e13bdf7eb24d4ceb6b59205a4f67c2c7e7213119644430fe82fbd14a0abb.tar.gz
+==> No patches needed for bison
+==> bison: Executing phase: 'autoreconf'
+==> bison: Executing phase: 'configure'
+==> bison: Executing phase: 'build'
+==> bison: Executing phase: 'install'
+==> bison: Successfully installed bison-3.8.2-jqxve5anrmqowihqorqjnghtkbdvx2xu
+  Stage: 1.48s.  Autoreconf: 0.02s.  Configure: 13.47s.  Build: 1.22s.  Install: 0.60s.  Post-install: 0.05s.  Total: 16.90s
+[+] /home/a10-kfotso/spack/spack/opt/spack/linux-ubuntu22.04-neoverse_v2/gcc-11.4.0/bison-3.8.2-jqxve5anrmqowihqorqjnghtkbdvx2xu
+[+] /home/a10-kfotso/spack/spack/opt/spack/linux-ubuntu22.04-neoverse_v2/gcc-11.4.0/expat-2.6.2-uufyyi3yz3tyhsihjbj47mzxu67kt6tv
+==> Installing cmake-3.29.6-tsr7iwovrm6h35pxewbr4ff7tui2h5oc [47/151]
+==> No binary for cmake-3.29.6-tsr7iwovrm6h35pxewbr4ff7tui2h5oc found: installing from source
+==> Fetching https://github.com/Kitware/CMake/releases/download/v3.29.6/cmake-3.29.6.tar.gz
+==> Applied patch /home/a10-kfotso/spack/spack/var/spack/repos/builtin/packages/cmake/mr-9623.patch
+==> cmake: Executing phase: 'bootstrap'
+==> cmake: Executing phase: 'build'
+==> cmake: Executing phase: 'install'
+==> cmake: Successfully installed cmake-3.29.6-tsr7iwovrm6h35pxewbr4ff7tui2h5oc
+  Stage: 2.17s.  Bootstrap: 30.77s.  Build: 56.93s.  Install: 1.55s.  Post-install: 0.46s.  Total: 1m 31.94s
+[+] /home/a10-kfotso/spack/spack/opt/spack/linux-ubuntu22.04-neoverse_v2/gcc-11.4.0/cmake-3.29.6-tsr7iwovrm6h35pxewbr4ff7tui2h5oc
+[+] /home/a10-kfotso/spack/spack/opt/spack/linux-ubuntu22.04-neoverse_v2/gcc-11.4.0/gettext-0.22.5-vxsmf7titeqkkqiciheib6a7pwvmcw5v
+==> Installing autoconf-2.72-eufptuorl4xyjihpskahug7utmkpfby5 [49/151]
+==> No binary for autoconf-2.72-eufptuorl4xyjihpskahug7utmkpfby5 found: installing from source
+==> Fetching https://ftpmirror.gnu.org/autoconf/autoconf-2.72.tar.gz
+==> Ran patch() for autoconf
+==> autoconf: Executing phase: 'autoreconf'
+==> autoconf: Executing phase: 'configure'
+==> autoconf: Executing phase: 'build'
+==> autoconf: Executing phase: 'install'
+==> autoconf: Successfully installed autoconf-2.72-eufptuorl4xyjihpskahug7utmkpfby5
+  Stage: 2.23s.  Autoreconf: 0.02s.  Configure: 1.13s.  Build: 0.09s.  Install: 0.06s.  Post-install: 0.03s.  Total: 3.63s
+[+] /home/a10-kfotso/spack/spack/opt/spack/linux-ubuntu22.04-neoverse_v2/gcc-11.4.0/autoconf-2.72-eufptuorl4xyjihpskahug7utmkpfby5
+==> Installing libpciaccess-0.17-u4ii7d7yrpk5aojnrajcel655xtcji2p [50/151]
+==> No binary for libpciaccess-0.17-u4ii7d7yrpk5aojnrajcel655xtcji2p found: installing from source
+==> Fetching https://mirror.spack.io/_source-cache/archive/bf/bf6985a77d2ecb00e2c79da3edfb26b909178ffca3f2e9d14ed0620259ab733b.tar.gz
+==> No patches needed for libpciaccess
+==> libpciaccess: Executing phase: 'autoreconf'
+==> libpciaccess: Executing phase: 'configure'
+==> libpciaccess: Executing phase: 'build'
+==> libpciaccess: Executing phase: 'install'
+==> libpciaccess: Successfully installed libpciaccess-0.17-u4ii7d7yrpk5aojnrajcel655xtcji2p
+  Stage: 0.81s.  Autoreconf: 0.01s.  Configure: 2.02s.  Build: 0.47s.  Install: 0.08s.  Post-install: 0.02s.  Total: 3.47s
+[+] /home/a10-kfotso/spack/spack/opt/spack/linux-ubuntu22.04-neoverse_v2/gcc-11.4.0/libpciaccess-0.17-u4ii7d7yrpk5aojnrajcel655xtcji2p
+==> Installing libgit2-1.8.0-z272zgldvso26aiubfidtbgun6t2hrdq [51/151]
+==> No binary for libgit2-1.8.0-z272zgldvso26aiubfidtbgun6t2hrdq found: installing from source
+==> Fetching https://github.com/libgit2/libgit2/archive/v1.8.0.tar.gz
+==> No patches needed for libgit2
+==> libgit2: Executing phase: 'cmake'
+==> libgit2: Executing phase: 'build'
+==> libgit2: Executing phase: 'install'
+==> libgit2: Successfully installed libgit2-1.8.0-z272zgldvso26aiubfidtbgun6t2hrdq
+  Stage: 2.34s.  Cmake: 1.44s.  Build: 2.06s.  Install: 0.18s.  Post-install: 0.03s.  Total: 6.13s
+[+] /home/a10-kfotso/spack/spack/opt/spack/linux-ubuntu22.04-neoverse_v2/gcc-11.4.0/libgit2-1.8.0-z272zgldvso26aiubfidtbgun6t2hrdq
+==> Installing abseil-cpp-20240116.2-nfqj66uzhdbligoc4bgiedjy2yvuf7es [52/151]
+==> No binary for abseil-cpp-20240116.2-nfqj66uzhdbligoc4bgiedjy2yvuf7es found: installing from source
+==> Fetching https://github.com/abseil/abseil-cpp/archive/refs/tags/20240116.2.tar.gz
+==> Fetching https://github.com/abseil/abseil-cpp/commit/779a3565ac6c5b69dd1ab9183e500a27633117d5.patch?full_index=1
+==> Applied patch https://github.com/abseil/abseil-cpp/commit/779a3565ac6c5b69dd1ab9183e500a27633117d5.patch?full_index=1
+==> abseil-cpp: Executing phase: 'cmake'
+==> abseil-cpp: Executing phase: 'build'
+==> abseil-cpp: Executing phase: 'install'
+==> abseil-cpp: Successfully installed abseil-cpp-20240116.2-nfqj66uzhdbligoc4bgiedjy2yvuf7es
+  Stage: 2.40s.  Cmake: 0.38s.  Build: 11.92s.  Install: 0.25s.  Post-install: 0.11s.  Total: 15.12s
+[+] /home/a10-kfotso/spack/spack/opt/spack/linux-ubuntu22.04-neoverse_v2/gcc-11.4.0/abseil-cpp-20240116.2-nfqj66uzhdbligoc4bgiedjy2yvuf7es
+==> Installing c-ares-1.28.1-535yk2enlikn2y4p3i2smk2sar2ujld2 [53/151]
+==> No binary for c-ares-1.28.1-535yk2enlikn2y4p3i2smk2sar2ujld2 found: installing from source
+==> Fetching https://github.com/c-ares/c-ares/archive/cares-1_28_1.tar.gz
+==> No patches needed for c-ares
+==> c-ares: Executing phase: 'cmake'
+==> c-ares: Executing phase: 'build'
+==> c-ares: Executing phase: 'install'
+==> c-ares: Successfully installed c-ares-1.28.1-535yk2enlikn2y4p3i2smk2sar2ujld2
+  Stage: 1.52s.  Cmake: 5.59s.  Build: 0.56s.  Install: 0.08s.  Post-install: 0.04s.  Total: 7.85s
+[+] /home/a10-kfotso/spack/spack/opt/spack/linux-ubuntu22.04-neoverse_v2/gcc-11.4.0/c-ares-1.28.1-535yk2enlikn2y4p3i2smk2sar2ujld2
+==> Installing eigen-3.4.0-azvqetdvye5vk6rvobfqvslo7tjrwjij [54/151]
+==> No binary for eigen-3.4.0-azvqetdvye5vk6rvobfqvslo7tjrwjij found: installing from source
+==> Fetching https://mirror.spack.io/_source-cache/archive/85/8586084f71f9bde545ee7fa6d00288b264a2b7ac3607b974e54d13e7162c1c72.tar.gz
+==> No patches needed for eigen
+==> eigen: Executing phase: 'cmake'
+==> eigen: Executing phase: 'build'
+==> eigen: Executing phase: 'install'
+==> eigen: Successfully installed eigen-3.4.0-azvqetdvye5vk6rvobfqvslo7tjrwjij
+  Stage: 1.32s.  Cmake: 2.96s.  Build: 0.10s.  Install: 0.23s.  Post-install: 0.10s.  Total: 4.78s
+[+] /home/a10-kfotso/spack/spack/opt/spack/linux-ubuntu22.04-neoverse_v2/gcc-11.4.0/eigen-3.4.0-azvqetdvye5vk6rvobfqvslo7tjrwjij
+==> Installing protobuf-3.13.0-4nznyupaogrfiw7uu73xle7ou5vcdji2 [55/151]
+==> No binary for protobuf-3.13.0-4nznyupaogrfiw7uu73xle7ou5vcdji2 found: installing from source
+==> Fetching https://mirror.spack.io/_source-cache/archive/9b/9b4ee22c250fe31b16f1a24d61467e40780a3fbb9b91c3b65be2a376ed913a1a.tar.gz
+==> Fetching https://github.com/protocolbuffers/protobuf/commit/462964ed322503af52638d54c00a0a67d7133349.patch?full_index=1
+==> Applied patch https://github.com/protocolbuffers/protobuf/commit/462964ed322503af52638d54c00a0a67d7133349.patch?full_index=1
+==> protobuf: Executing phase: 'cmake'
+==> protobuf: Executing phase: 'build'
+==> protobuf: Executing phase: 'install'
+==> protobuf: Successfully installed protobuf-3.13.0-4nznyupaogrfiw7uu73xle7ou5vcdji2
+  Stage: 2.37s.  Cmake: 0.29s.  Build: 16.04s.  Install: 0.23s.  Post-install: 0.04s.  Total: 19.04s
+[+] /home/a10-kfotso/spack/spack/opt/spack/linux-ubuntu22.04-neoverse_v2/gcc-11.4.0/protobuf-3.13.0-4nznyupaogrfiw7uu73xle7ou5vcdji2
+==> Installing krb5-1.21.2-ovhtdwy5lgwoq35x2t7ier6trgpftvjv [56/151]
+==> No binary for krb5-1.21.2-ovhtdwy5lgwoq35x2t7ier6trgpftvjv found: installing from source
+==> Fetching https://kerberos.org/dist/krb5/1.21/krb5-1.21.2.tar.gz
+==> Ran patch() for krb5
+==> krb5: Executing phase: 'autoreconf'
+==> krb5: Executing phase: 'configure'
+==> krb5: Executing phase: 'build'
+==> krb5: Executing phase: 'install'
+==> krb5: Successfully installed krb5-1.21.2-ovhtdwy5lgwoq35x2t7ier6trgpftvjv
+  Stage: 2.58s.  Autoreconf: 0.02s.  Configure: 7.25s.  Build: 7.32s.  Install: 0.61s.  Post-install: 0.05s.  Total: 17.92s
+[+] /home/a10-kfotso/spack/spack/opt/spack/linux-ubuntu22.04-neoverse_v2/gcc-11.4.0/krb5-1.21.2-ovhtdwy5lgwoq35x2t7ier6trgpftvjv
+[+] /home/a10-kfotso/spack/spack/opt/spack/linux-ubuntu22.04-neoverse_v2/gcc-11.4.0/python-3.11.9-j6ddpuxpdvaemcpusbv54q5bkqiygf2x
+==> Installing automake-1.16.5-bsngu3vawabt5o3idxeeuclnywy3l4vb [58/151]
+==> No binary for automake-1.16.5-bsngu3vawabt5o3idxeeuclnywy3l4vb found: installing from source
+==> Fetching https://mirror.spack.io/_source-cache/archive/07/07bd24ad08a64bc17250ce09ec56e921d6343903943e99ccf63bbf0705e34605.tar.gz
+==> Ran patch() for automake
+==> automake: Executing phase: 'autoreconf'
+==> automake: Executing phase: 'configure'
+==> automake: Executing phase: 'build'
+==> automake: Executing phase: 'install'
+==> automake: Successfully installed automake-1.16.5-bsngu3vawabt5o3idxeeuclnywy3l4vb
+  Stage: 1.10s.  Autoreconf: 0.02s.  Configure: 1.14s.  Build: 0.16s.  Install: 0.08s.  Post-install: 0.04s.  Total: 2.60s
+[+] /home/a10-kfotso/spack/spack/opt/spack/linux-ubuntu22.04-neoverse_v2/gcc-11.4.0/automake-1.16.5-bsngu3vawabt5o3idxeeuclnywy3l4vb
+==> Installing hwloc-2.9.3-4xlx5is6ptxgxjbw7senxifuexppw6p6 [59/151]
+==> No binary for hwloc-2.9.3-4xlx5is6ptxgxjbw7senxifuexppw6p6 found: installing from source
+==> Fetching https://download.open-mpi.org/release/hwloc/v2.9/hwloc-2.9.3.tar.gz
+==> No patches needed for hwloc
+==> hwloc: Executing phase: 'autoreconf'
+==> hwloc: Executing phase: 'configure'
+==> hwloc: Executing phase: 'build'
+==> hwloc: Executing phase: 'install'
+==> hwloc: Successfully installed hwloc-2.9.3-4xlx5is6ptxgxjbw7senxifuexppw6p6
+  Stage: 2.14s.  Autoreconf: 0.02s.  Configure: 5.93s.  Build: 4.28s.  Install: 0.33s.  Post-install: 0.09s.  Total: 12.87s
+[+] /home/a10-kfotso/spack/spack/opt/spack/linux-ubuntu22.04-neoverse_v2/gcc-11.4.0/hwloc-2.9.3-4xlx5is6ptxgxjbw7senxifuexppw6p6
+==> Installing re2-2023-09-01-v7jxa7rbk2h6g36h6xx3twsa73follzk [60/151]
+==> No binary for re2-2023-09-01-v7jxa7rbk2h6g36h6xx3twsa73follzk found: installing from source
+==> Fetching https://mirror.spack.io/_source-cache/archive/5b/5bb6875ae1cd1e9fedde98018c346db7260655f86fdb8837e3075103acd3649b.tar.gz
+==> No patches needed for re2
+==> re2: Executing phase: 'cmake'
+==> re2: Executing phase: 'build'
+==> re2: Executing phase: 'install'
+==> re2: Successfully installed re2-2023-09-01-v7jxa7rbk2h6g36h6xx3twsa73follzk
+  Stage: 0.82s.  Cmake: 0.16s.  Build: 1.99s.  Install: 0.04s.  Post-install: 0.02s.  Total: 3.10s
+[+] /home/a10-kfotso/spack/spack/opt/spack/linux-ubuntu22.04-neoverse_v2/gcc-11.4.0/re2-2023-09-01-v7jxa7rbk2h6g36h6xx3twsa73follzk
+==> Installing openssh-9.7p1-67ej6hjoifnhenva7ymwhsf73kijg3g4 [61/151]
+==> No binary for openssh-9.7p1-67ej6hjoifnhenva7ymwhsf73kijg3g4 found: installing from source
+==> Fetching https://mirrors.sonic.net/pub/OpenBSD/OpenSSH/portable/openssh-9.7p1.tar.gz
+==> Ran patch() for openssh
+==> openssh: Executing phase: 'autoreconf'
+==> openssh: Executing phase: 'configure'
+==> openssh: Executing phase: 'build'
+==> openssh: Executing phase: 'install'
+==> openssh: Successfully installed openssh-9.7p1-67ej6hjoifnhenva7ymwhsf73kijg3g4
+  Stage: 2.00s.  Autoreconf: 0.02s.  Configure: 15.80s.  Build: 2.18s.  Install: 0.84s.  Post-install: 0.03s.  Total: 20.97s
+[+] /home/a10-kfotso/spack/spack/opt/spack/linux-ubuntu22.04-neoverse_v2/gcc-11.4.0/openssh-9.7p1-67ej6hjoifnhenva7ymwhsf73kijg3g4
+[+] /home/a10-kfotso/spack/spack/opt/spack/linux-ubuntu22.04-neoverse_v2/gcc-11.4.0/python-venv-1.0-xgi5auhrzqxy2dyputvjbclw47rgkpq2
+==> Installing ninja-1.12.0-nrmjvqpcycgw2dvxarhdc5o2qv2ed7uo [63/151]
+==> No binary for ninja-1.12.0-nrmjvqpcycgw2dvxarhdc5o2qv2ed7uo found: installing from source
+==> Fetching https://github.com/ninja-build/ninja/archive/v1.12.0.tar.gz
+==> No patches needed for ninja
+==> ninja: Executing phase: 'configure'
+==> ninja: Executing phase: 'install'
+==> ninja: Successfully installed ninja-1.12.0-nrmjvqpcycgw2dvxarhdc5o2qv2ed7uo
+  Stage: 1.43s.  Configure: 13.30s.  Install: 0.01s.  Post-install: 0.03s.  Total: 14.84s
+[+] /home/a10-kfotso/spack/spack/opt/spack/linux-ubuntu22.04-neoverse_v2/gcc-11.4.0/ninja-1.12.0-nrmjvqpcycgw2dvxarhdc5o2qv2ed7uo
+==> Installing numactl-2.0.14-6t5trqykuj34wowjfjqju6hjw4cf2jgz [64/151]
+==> No binary for numactl-2.0.14-6t5trqykuj34wowjfjqju6hjw4cf2jgz found: installing from source
+==> Fetching https://mirror.spack.io/_source-cache/archive/1e/1ee27abd07ff6ba140aaf9bc6379b37825e54496e01d6f7343330cf1a4487035.tar.gz
+==> Applied patch /home/a10-kfotso/spack/spack/var/spack/repos/builtin/packages/numactl/numactl-2.0.14-symver.patch
+==> Applied patch /home/a10-kfotso/spack/spack/var/spack/repos/builtin/packages/numactl/fix-empty-block.patch
+==> Applied patch /home/a10-kfotso/spack/spack/var/spack/repos/builtin/packages/numactl/link-with-latomic-if-needed.patch
+==> numactl: Executing phase: 'autoreconf'
+==> numactl: Executing phase: 'configure'
+==> numactl: Executing phase: 'build'
+==> numactl: Executing phase: 'install'
+==> numactl: Successfully installed numactl-2.0.14-6t5trqykuj34wowjfjqju6hjw4cf2jgz
+  Stage: 0.80s.  Autoreconf: 2.59s.  Configure: 1.50s.  Build: 0.89s.  Install: 0.12s.  Post-install: 0.02s.  Total: 6.00s
+[+] /home/a10-kfotso/spack/spack/opt/spack/linux-ubuntu22.04-neoverse_v2/gcc-11.4.0/numactl-2.0.14-6t5trqykuj34wowjfjqju6hjw4cf2jgz
+==> Installing pmix-5.0.2-hr57cqpk7fnu5egqagiyhchtlflvq325 [65/151]
+==> No binary for pmix-5.0.2-hr57cqpk7fnu5egqagiyhchtlflvq325 found: installing from source
+==> Fetching https://github.com/pmix/pmix/releases/download/v5.0.2/pmix-5.0.2.tar.bz2
+==> No patches needed for pmix
+==> pmix: Executing phase: 'autoreconf'
+==> pmix: Executing phase: 'configure'
+==> pmix: Executing phase: 'build'
+==> pmix: Executing phase: 'install'
+==> pmix: Successfully installed pmix-5.0.2-hr57cqpk7fnu5egqagiyhchtlflvq325
+  Stage: 2.67s.  Autoreconf: 0.02s.  Configure: 9.96s.  Build: 32.40s.  Install: 1.92s.  Post-install: 0.08s.  Total: 47.14s
+[+] /home/a10-kfotso/spack/spack/opt/spack/linux-ubuntu22.04-neoverse_v2/gcc-11.4.0/pmix-5.0.2-hr57cqpk7fnu5egqagiyhchtlflvq325
+==> Installing git-2.45.2-x4soj27lxip4wc4hvfwvrzk5vwmed5v3 [66/151]
+==> No binary for git-2.45.2-x4soj27lxip4wc4hvfwvrzk5vwmed5v3 found: installing from source
+==> Fetching https://mirrors.edge.kernel.org/pub/software/scm/git/git-2.45.2.tar.gz
+==> Fetching https://www.kernel.org/pub/software/scm/git/git-manpages-2.45.2.tar.gz
+==> Moving resource stage
+	source: /tmp/a10-kfotso/spack-stage/resource-git-manpages-x4soj27lxip4wc4hvfwvrzk5vwmed5v3/spack-src/
+	destination: /tmp/a10-kfotso/spack-stage/spack-stage-git-2.45.2-x4soj27lxip4wc4hvfwvrzk5vwmed5v3/spack-src/git-manpages
+==> Ran patch() for git
+==> git: Executing phase: 'autoreconf'
+==> git: Executing phase: 'configure'
+==> git: Executing phase: 'build'
+==> git: Executing phase: 'install'
+==> git: Successfully installed git-2.45.2-x4soj27lxip4wc4hvfwvrzk5vwmed5v3
+  Stage: 3.22s.  Autoreconf: 0.01s.  Configure: 2.24s.  Build: 7.96s.  Install: 1.04s.  Post-install: 1.64s.  Total: 16.22s
+[+] /home/a10-kfotso/spack/spack/opt/spack/linux-ubuntu22.04-neoverse_v2/gcc-11.4.0/git-2.45.2-x4soj27lxip4wc4hvfwvrzk5vwmed5v3
+[+] /home/a10-kfotso/spack/spack/opt/spack/linux-ubuntu22.04-neoverse_v2/gcc-11.4.0/py-pip-23.1.2-umn23wv4xwsyhq26odf7adj2gc75tezt
+==> Installing cpuinfo-2022-08-19-ca77hgq5lrqjczxrvpqssfete3xx3g3n [68/151]
+==> No binary for cpuinfo-2022-08-19-ca77hgq5lrqjczxrvpqssfete3xx3g3n found: installing from source
+==> No patches needed for cpuinfo
+==> cpuinfo: Executing phase: 'cmake'
+==> cpuinfo: Executing phase: 'build'
+==> cpuinfo: Executing phase: 'install'
+==> cpuinfo: Successfully installed cpuinfo-2022-08-19-ca77hgq5lrqjczxrvpqssfete3xx3g3n
+  Stage: 2.24s.  Cmake: 0.20s.  Build: 0.18s.  Install: 0.01s.  Post-install: 0.03s.  Total: 2.75s
+[+] /home/a10-kfotso/spack/spack/opt/spack/linux-ubuntu22.04-neoverse_v2/gcc-11.4.0/cpuinfo-2022-08-19-ca77hgq5lrqjczxrvpqssfete3xx3g3n
+==> Installing fxdiv-2020-04-17-64hdu343zw2icklqlrdntwqa3i7ebezy [69/151]
+==> No binary for fxdiv-2020-04-17-64hdu343zw2icklqlrdntwqa3i7ebezy found: installing from source
+==> No patches needed for fxdiv
+==> fxdiv: Executing phase: 'cmake'
+==> fxdiv: Executing phase: 'build'
+==> fxdiv: Executing phase: 'install'
+==> fxdiv: Successfully installed fxdiv-2020-04-17-64hdu343zw2icklqlrdntwqa3i7ebezy
+  Stage: 0.97s.  Cmake: 0.16s.  Build: 0.00s.  Install: 0.01s.  Post-install: 0.03s.  Total: 1.25s
+[+] /home/a10-kfotso/spack/spack/opt/spack/linux-ubuntu22.04-neoverse_v2/gcc-11.4.0/fxdiv-2020-04-17-64hdu343zw2icklqlrdntwqa3i7ebezy
+==> Installing gloo-2023-01-17-widi2yg7hag7qvauthymegnwkeuq77sn [70/151]
+==> No binary for gloo-2023-01-17-widi2yg7hag7qvauthymegnwkeuq77sn found: installing from source
+==> No patches needed for gloo
+==> gloo: Executing phase: 'cmake'
+==> gloo: Executing phase: 'build'
+==> gloo: Executing phase: 'install'
+==> gloo: Successfully installed gloo-2023-01-17-widi2yg7hag7qvauthymegnwkeuq77sn
+  Stage: 1.37s.  Cmake: 0.17s.  Build: 2.03s.  Install: 0.02s.  Post-install: 0.03s.  Total: 3.71s
+[+] /home/a10-kfotso/spack/spack/opt/spack/linux-ubuntu22.04-neoverse_v2/gcc-11.4.0/gloo-2023-01-17-widi2yg7hag7qvauthymegnwkeuq77sn
+==> Installing sleef-3.5.1_2020-12-22-mkhfjriw6tchl3ky4k3jl3uzxggkfnla [71/151]
+==> No binary for sleef-3.5.1_2020-12-22-mkhfjriw6tchl3ky4k3jl3uzxggkfnla found: installing from source
+==> No patches needed for sleef
+==> sleef: Executing phase: 'cmake'
+==> sleef: Executing phase: 'build'
+==> sleef: Executing phase: 'install'
+==> sleef: Successfully installed sleef-3.5.1_2020-12-22-mkhfjriw6tchl3ky4k3jl3uzxggkfnla
+  Stage: 1.70s.  Cmake: 0.49s.  Build: 1.65s.  Install: 0.01s.  Post-install: 0.03s.  Total: 3.97s
+[+] /home/a10-kfotso/spack/spack/opt/spack/linux-ubuntu22.04-neoverse_v2/gcc-11.4.0/sleef-3.5.1_2020-12-22-mkhfjriw6tchl3ky4k3jl3uzxggkfnla
+==> Installing pthreadpool-2021-04-13-ndzm3q5islzcr4ygkaerhyqs3sabc7ob [72/151]
+==> No binary for pthreadpool-2021-04-13-ndzm3q5islzcr4ygkaerhyqs3sabc7ob found: installing from source
+==> Fetching https://github.com/google/googletest/archive/release-1.12.0.zip
+==> Fetching https://mirror.spack.io/_source-cache/archive/bd/bdefa4b03c32d1a27bd50e37ca466d8127c1688d834800c38f3c587a396188ee.zip
+==> Moving resource stage
+	source: /tmp/a10-kfotso/spack-stage/resource-fxdiv-ndzm3q5islzcr4ygkaerhyqs3sabc7ob/spack-src/
+	destination: /tmp/a10-kfotso/spack-stage/spack-stage-pthreadpool-2021-04-13-ndzm3q5islzcr4ygkaerhyqs3sabc7ob/spack-src/deps/fxdiv
+==> Moving resource stage
+	source: /tmp/a10-kfotso/spack-stage/resource-googletest-ndzm3q5islzcr4ygkaerhyqs3sabc7ob/spack-src/
+	destination: /tmp/a10-kfotso/spack-stage/spack-stage-pthreadpool-2021-04-13-ndzm3q5islzcr4ygkaerhyqs3sabc7ob/spack-src/deps/googletest
+==> Moving resource stage
+	source: /tmp/a10-kfotso/spack-stage/resource-googlebenchark-ndzm3q5islzcr4ygkaerhyqs3sabc7ob/spack-src/
+	destination: /tmp/a10-kfotso/spack-stage/spack-stage-pthreadpool-2021-04-13-ndzm3q5islzcr4ygkaerhyqs3sabc7ob/spack-src/deps/googlebenchmark
+==> No patches needed for pthreadpool
+==> pthreadpool: Executing phase: 'cmake'
+==> pthreadpool: Executing phase: 'build'
+==> pthreadpool: Executing phase: 'install'
+==> pthreadpool: Successfully installed pthreadpool-2021-04-13-ndzm3q5islzcr4ygkaerhyqs3sabc7ob
+  Stage: 4.36s.  Cmake: 0.20s.  Build: 0.61s.  Install: 0.01s.  Post-install: 0.03s.  Total: 5.28s
+[+] /home/a10-kfotso/spack/spack/opt/spack/linux-ubuntu22.04-neoverse_v2/gcc-11.4.0/pthreadpool-2021-04-13-ndzm3q5islzcr4ygkaerhyqs3sabc7ob
+==> Installing psimd-2020-05-17-27memguugvfqgscbq4csj44jrrpzroks [73/151]
+==> No binary for psimd-2020-05-17-27memguugvfqgscbq4csj44jrrpzroks found: installing from source
+==> No patches needed for psimd
+==> psimd: Executing phase: 'cmake'
+==> psimd: Executing phase: 'build'
+==> psimd: Executing phase: 'install'
+==> psimd: Successfully installed psimd-2020-05-17-27memguugvfqgscbq4csj44jrrpzroks
+  Stage: 0.91s.  Cmake: 0.09s.  Build: 0.00s.  Install: 0.01s.  Post-install: 0.03s.  Total: 1.11s
+[+] /home/a10-kfotso/spack/spack/opt/spack/linux-ubuntu22.04-neoverse_v2/gcc-11.4.0/psimd-2020-05-17-27memguugvfqgscbq4csj44jrrpzroks
+==> Installing rust-1.78.0-sciiv3qsislnysqqs6jbexyznfbbwi2v [74/151]
+==> No binary for rust-1.78.0-sciiv3qsislnysqqs6jbexyznfbbwi2v found: installing from source
+==> Fetching https://static.rust-lang.org/dist/rustc-1.78.0-src.tar.gz
+==> No patches needed for rust
+==> rust: Executing phase: 'configure'
+==> rust: Executing phase: 'build'
+==> rust: Executing phase: 'install'
+==> rust: Successfully installed rust-1.78.0-sciiv3qsislnysqqs6jbexyznfbbwi2v
+  Stage: 27.03s.  Configure: 0.05s.  Build: 10m 18.34s.  Install: 58.93s.  Post-install: 0.57s.  Total: 11m 45.02s
+[+] /home/a10-kfotso/spack/spack/opt/spack/linux-ubuntu22.04-neoverse_v2/gcc-11.4.0/rust-1.78.0-sciiv3qsislnysqqs6jbexyznfbbwi2v
+==> Installing fp16-2020-05-14-3pdliggga5zxas4h2z4sftu226jrm4fl [75/151]
+==> No binary for fp16-2020-05-14-3pdliggga5zxas4h2z4sftu226jrm4fl found: installing from source
+==> Moving resource stage
+	source: /tmp/a10-kfotso/spack-stage/resource-psimd-3pdliggga5zxas4h2z4sftu226jrm4fl/spack-src/
+	destination: /tmp/a10-kfotso/spack-stage/spack-stage-fp16-2020-05-14-3pdliggga5zxas4h2z4sftu226jrm4fl/spack-src/deps/psimd
+==> No patches needed for fp16
+==> fp16: Executing phase: 'cmake'
+==> fp16: Executing phase: 'build'
+==> fp16: Executing phase: 'install'
+==> fp16: Successfully installed fp16-2020-05-14-3pdliggga5zxas4h2z4sftu226jrm4fl
+  Stage: 2.11s.  Cmake: 0.17s.  Build: 0.00s.  Install: 0.01s.  Post-install: 0.03s.  Total: 2.40s
+[+] /home/a10-kfotso/spack/spack/opt/spack/linux-ubuntu22.04-neoverse_v2/gcc-11.4.0/fp16-2020-05-14-3pdliggga5zxas4h2z4sftu226jrm4fl
+==> Installing openmpi-5.0.3-c2hveemjxlku2e7jzhnx3bfflkbdhcxn [76/151]
+==> No binary for openmpi-5.0.3-c2hveemjxlku2e7jzhnx3bfflkbdhcxn found: installing from source
+==> Fetching https://download.open-mpi.org/release/open-mpi/v5.0/openmpi-5.0.3.tar.bz2
+==> Applied patch /home/a10-kfotso/spack/spack/var/spack/repos/builtin/packages/openmpi/pmix_getline_pmix_version.patch
+==> Applied patch /home/a10-kfotso/spack/spack/var/spack/repos/builtin/packages/openmpi/pmix_getline_pmix_version-prte.patch
+==> openmpi: Executing phase: 'autoreconf'
+==> openmpi: Executing phase: 'configure'
+==> openmpi: Executing phase: 'build'
+==> openmpi: Executing phase: 'install'
+==> openmpi: Successfully installed openmpi-5.0.3-c2hveemjxlku2e7jzhnx3bfflkbdhcxn
+  Stage: 6.44s.  Autoreconf: 0.09s.  Configure: 42.56s.  Build: 58.72s.  Install: 8.87s.  Post-install: 0.42s.  Total: 1m 57.27s
+[+] /home/a10-kfotso/spack/spack/opt/spack/linux-ubuntu22.04-neoverse_v2/gcc-11.4.0/openmpi-5.0.3-c2hveemjxlku2e7jzhnx3bfflkbdhcxn
+[+] /home/a10-kfotso/spack/spack/opt/spack/linux-ubuntu22.04-neoverse_v2/gcc-11.4.0/py-wheel-0.41.2-5qofncupsc52p6kakr2igpsckghhcn7k
+[+] /home/a10-kfotso/spack/spack/opt/spack/linux-ubuntu22.04-neoverse_v2/gcc-11.4.0/py-setuptools-69.2.0-xhytqwbgfr2hdn5mj6at7m7kredmawtu
+==> Installing valgrind-3.23.0-gcrmysvewelp7m4msfv4ywfmqbytkkku [79/151]
+==> No binary for valgrind-3.23.0-gcrmysvewelp7m4msfv4ywfmqbytkkku found: installing from source
+==> Fetching https://sourceware.org/pub/valgrind/valgrind-3.23.0.tar.bz2
+==> Ran patch() for valgrind
+==> valgrind: Executing phase: 'autoreconf'
+==> valgrind: Executing phase: 'configure'
+==> valgrind: Executing phase: 'build'
+==> valgrind: Executing phase: 'install'
+==> valgrind: Successfully installed valgrind-3.23.0-gcrmysvewelp7m4msfv4ywfmqbytkkku
+  Stage: 4.89s.  Autoreconf: 0.02s.  Configure: 11.05s.  Build: 23.15s.  Install: 0.68s.  Post-install: 0.18s.  Total: 40.07s
+[+] /home/a10-kfotso/spack/spack/opt/spack/linux-ubuntu22.04-neoverse_v2/gcc-11.4.0/valgrind-3.23.0-gcrmysvewelp7m4msfv4ywfmqbytkkku
+==> Installing py-flit-core-3.9.0-7begqlfxcxqpvqqizjvj23qkwkcd2bia [80/151]
+==> No binary for py-flit-core-3.9.0-7begqlfxcxqpvqqizjvj23qkwkcd2bia found: installing from source
+==> Fetching https://mirror.spack.io/_source-cache/archive/72/72ad266176c4a3fcfab5f2930d76896059851240570ce9a98733b658cb786eba.tar.gz
+==> No patches needed for py-flit-core
+==> py-flit-core: Executing phase: 'install'
+==> py-flit-core: Successfully installed py-flit-core-3.9.0-7begqlfxcxqpvqqizjvj23qkwkcd2bia
+  Stage: 0.56s.  Install: 0.42s.  Post-install: 0.05s.  Total: 1.10s
+[+] /home/a10-kfotso/spack/spack/opt/spack/linux-ubuntu22.04-neoverse_v2/gcc-11.4.0/py-flit-core-3.9.0-7begqlfxcxqpvqqizjvj23qkwkcd2bia
+==> Installing py-poetry-core-1.8.1-a5vgcdama2jajxjk5cvdc473xbx6jtua [81/151]
+==> No binary for py-poetry-core-1.8.1-a5vgcdama2jajxjk5cvdc473xbx6jtua found: installing from source
+==> Fetching https://files.pythonhosted.org/packages/source/p/poetry-core/poetry_core-1.8.1.tar.gz
+==> No patches needed for py-poetry-core
+==> py-poetry-core: Executing phase: 'install'
+==> py-poetry-core: Successfully installed py-poetry-core-1.8.1-a5vgcdama2jajxjk5cvdc473xbx6jtua
+  Stage: 1.05s.  Install: 0.81s.  Post-install: 0.07s.  Total: 2.00s
+[+] /home/a10-kfotso/spack/spack/opt/spack/linux-ubuntu22.04-neoverse_v2/gcc-11.4.0/py-poetry-core-1.8.1-a5vgcdama2jajxjk5cvdc473xbx6jtua
+==> Installing py-calver-2022.6.26-7xlgtfwezn72r6rwpdxdhpvobhi52dqu [82/151]
+==> No binary for py-calver-2022.6.26-7xlgtfwezn72r6rwpdxdhpvobhi52dqu found: installing from source
+==> Fetching https://mirror.spack.io/_source-cache/archive/e0/e05493a3b17517ef1748fbe610da11f10485faa7c416b9d33fd4a52d74894f8b.tar.gz
+==> No patches needed for py-calver
+==> py-calver: Executing phase: 'install'
+==> py-calver: Successfully installed py-calver-2022.6.26-7xlgtfwezn72r6rwpdxdhpvobhi52dqu
+  Stage: 0.60s.  Install: 0.50s.  Post-install: 0.03s.  Total: 1.20s
+[+] /home/a10-kfotso/spack/spack/opt/spack/linux-ubuntu22.04-neoverse_v2/gcc-11.4.0/py-calver-2022.6.26-7xlgtfwezn72r6rwpdxdhpvobhi52dqu
+==> Installing meson-1.3.2-ajkbxhdvtomavxdxmia24ijhskk36rzt [83/151]
+==> No binary for meson-1.3.2-ajkbxhdvtomavxdxmia24ijhskk36rzt found: installing from source
+==> Fetching https://github.com/mesonbuild/meson/archive/1.3.2.tar.gz
+==> Applied patch /home/a10-kfotso/spack/spack/var/spack/repos/builtin/packages/meson/rpath-0.64.patch
+==> meson: Executing phase: 'install'
+==> meson: Successfully installed meson-1.3.2-ajkbxhdvtomavxdxmia24ijhskk36rzt
+  Stage: 1.72s.  Install: 1.23s.  Post-install: 0.09s.  Total: 3.11s
+[+] /home/a10-kfotso/spack/spack/opt/spack/linux-ubuntu22.04-neoverse_v2/gcc-11.4.0/meson-1.3.2-ajkbxhdvtomavxdxmia24ijhskk36rzt
+==> Installing py-coverage-7.2.6-aj764gw5gzxwlma7x23xexpfuvbdw6sl [84/151]
+==> No binary for py-coverage-7.2.6-aj764gw5gzxwlma7x23xexpfuvbdw6sl found: installing from source
+==> Fetching https://mirror.spack.io/_source-cache/archive/20/2025f913f2edb0272ef15d00b1f335ff8908c921c8eb2013536fcaf61f5a683d.tar.gz
+==> No patches needed for py-coverage
+==> py-coverage: Executing phase: 'install'
+==> py-coverage: Successfully installed py-coverage-7.2.6-aj764gw5gzxwlma7x23xexpfuvbdw6sl
+  Stage: 0.99s.  Install: 0.97s.  Post-install: 0.04s.  Total: 2.06s
+[+] /home/a10-kfotso/spack/spack/opt/spack/linux-ubuntu22.04-neoverse_v2/gcc-11.4.0/py-coverage-7.2.6-aj764gw5gzxwlma7x23xexpfuvbdw6sl
+==> Installing py-pycparser-2.21-xgilzsurzrphqnwchnzruldriu6warqc [85/151]
+==> No binary for py-pycparser-2.21-xgilzsurzrphqnwchnzruldriu6warqc found: installing from source
+==> Fetching https://mirror.spack.io/_source-cache/archive/e6/e644fdec12f7872f86c58ff790da456218b10f863970249516d60a5eaca77206.tar.gz
+==> No patches needed for py-pycparser
+==> py-pycparser: Executing phase: 'install'
+==> py-pycparser: Successfully installed py-pycparser-2.21-xgilzsurzrphqnwchnzruldriu6warqc
+  Stage: 0.84s.  Install: 0.71s.  Post-install: 0.03s.  Total: 1.65s
+[+] /home/a10-kfotso/spack/spack/opt/spack/linux-ubuntu22.04-neoverse_v2/gcc-11.4.0/py-pycparser-2.21-xgilzsurzrphqnwchnzruldriu6warqc
+==> Installing py-markdown-3.4.1-mvrccbrcvxrta46z3poo4u5biumwll6g [86/151]
+==> No binary for py-markdown-3.4.1-mvrccbrcvxrta46z3poo4u5biumwll6g found: installing from source
+==> Fetching https://mirror.spack.io/_source-cache/archive/3b/3b809086bb6efad416156e00a0da66fe47618a5d6918dd688f53f40c8e4cfeff.tar.gz
+==> No patches needed for py-markdown
+==> py-markdown: Executing phase: 'install'
+==> py-markdown: Successfully installed py-markdown-3.4.1-mvrccbrcvxrta46z3poo4u5biumwll6g
+  Stage: 0.82s.  Install: 0.57s.  Post-install: 0.03s.  Total: 1.49s
+[+] /home/a10-kfotso/spack/spack/opt/spack/linux-ubuntu22.04-neoverse_v2/gcc-11.4.0/py-markdown-3.4.1-mvrccbrcvxrta46z3poo4u5biumwll6g
+==> Installing py-tensorboard-plugin-wit-1.8.1-xxpybbkyoeafckjseo5oqu7qsavevwel [87/151]
+==> No binary for py-tensorboard-plugin-wit-1.8.1-xxpybbkyoeafckjseo5oqu7qsavevwel found: installing from source
+==> Fetching https://pypi.io/packages/py3/t/tensorboard_plugin_wit/tensorboard_plugin_wit-1.8.1-py3-none-any.whl
+==> No patches needed for py-tensorboard-plugin-wit
+==> py-tensorboard-plugin-wit: Executing phase: 'install'
+==> py-tensorboard-plugin-wit: Successfully installed py-tensorboard-plugin-wit-1.8.1-xxpybbkyoeafckjseo5oqu7qsavevwel
+  Stage: 1.45s.  Install: 0.31s.  Post-install: 0.04s.  Total: 1.86s
+[+] /home/a10-kfotso/spack/spack/opt/spack/linux-ubuntu22.04-neoverse_v2/gcc-11.4.0/py-tensorboard-plugin-wit-1.8.1-xxpybbkyoeafckjseo5oqu7qsavevwel
+==> Installing py-cachetools-5.2.0-qjsd3ssivrsll3uacbr4qd6me3ap5qss [88/151]
+==> No binary for py-cachetools-5.2.0-qjsd3ssivrsll3uacbr4qd6me3ap5qss found: installing from source
+==> Fetching https://mirror.spack.io/_source-cache/archive/6a/6a94c6402995a99c3970cc7e4884bb60b4a8639938157eeed436098bf9831757.tar.gz
+==> No patches needed for py-cachetools
+==> py-cachetools: Executing phase: 'install'
+==> py-cachetools: Successfully installed py-cachetools-5.2.0-qjsd3ssivrsll3uacbr4qd6me3ap5qss
+  Stage: 0.64s.  Install: 0.52s.  Post-install: 0.03s.  Total: 1.25s
+[+] /home/a10-kfotso/spack/spack/opt/spack/linux-ubuntu22.04-neoverse_v2/gcc-11.4.0/py-cachetools-5.2.0-qjsd3ssivrsll3uacbr4qd6me3ap5qss
+==> Installing py-certifi-2023.7.22-uyiawdli77jranrs6ba2lwxdvhsrq5vl [89/151]
+==> No binary for py-certifi-2023.7.22-uyiawdli77jranrs6ba2lwxdvhsrq5vl found: installing from source
+==> Fetching https://mirror.spack.io/_source-cache/archive/53/539cc1d13202e33ca466e88b2807e29f4c13049d6d87031a3c110744495cb082.tar.gz
+==> No patches needed for py-certifi
+==> py-certifi: Executing phase: 'install'
+==> py-certifi: Successfully installed py-certifi-2023.7.22-uyiawdli77jranrs6ba2lwxdvhsrq5vl
+  Stage: 0.67s.  Install: 0.49s.  Post-install: 0.03s.  Total: 1.25s
+[+] /home/a10-kfotso/spack/spack/opt/spack/linux-ubuntu22.04-neoverse_v2/gcc-11.4.0/py-certifi-2023.7.22-uyiawdli77jranrs6ba2lwxdvhsrq5vl
+==> Installing py-oauthlib-3.2.2-kpr5o6o4vmdhyuxg5v45h2psuoodjmsb [90/151]
+==> No binary for py-oauthlib-3.2.2-kpr5o6o4vmdhyuxg5v45h2psuoodjmsb found: installing from source
+==> Fetching https://files.pythonhosted.org/packages/source/o/oauthlib/oauthlib-3.2.2.tar.gz
+==> No patches needed for py-oauthlib
+==> py-oauthlib: Executing phase: 'install'
+==> py-oauthlib: Successfully installed py-oauthlib-3.2.2-kpr5o6o4vmdhyuxg5v45h2psuoodjmsb
+  Stage: 0.98s.  Install: 0.58s.  Post-install: 0.05s.  Total: 1.67s
+[+] /home/a10-kfotso/spack/spack/opt/spack/linux-ubuntu22.04-neoverse_v2/gcc-11.4.0/py-oauthlib-3.2.2-kpr5o6o4vmdhyuxg5v45h2psuoodjmsb
+==> Installing py-absl-py-1.4.0-ouontue4qqajhnvjuaui4g2bg537mglg [91/151]
+==> No binary for py-absl-py-1.4.0-ouontue4qqajhnvjuaui4g2bg537mglg found: installing from source
+==> Fetching https://mirror.spack.io/_source-cache/archive/d2/d2c244d01048ba476e7c080bd2c6df5e141d211de80223460d5b3b8a2a58433d.tar.gz
+==> No patches needed for py-absl-py
+==> py-absl-py: Executing phase: 'install'
+==> py-absl-py: Successfully installed py-absl-py-1.4.0-ouontue4qqajhnvjuaui4g2bg537mglg
+  Stage: 1.00s.  Install: 0.53s.  Post-install: 0.03s.  Total: 1.63s
+[+] /home/a10-kfotso/spack/spack/opt/spack/linux-ubuntu22.04-neoverse_v2/gcc-11.4.0/py-absl-py-1.4.0-ouontue4qqajhnvjuaui4g2bg537mglg
+==> Installing py-charset-normalizer-3.3.0-rbfgxuabv3zdo323ynlhgzt3ufbuwjho [92/151]
+==> No binary for py-charset-normalizer-3.3.0-rbfgxuabv3zdo323ynlhgzt3ufbuwjho found: installing from source
+==> Fetching https://mirror.spack.io/_source-cache/archive/63/63563193aec44bce707e0c5ca64ff69fa72ed7cf34ce6e11d5127555756fd2f6.tar.gz
+==> No patches needed for py-charset-normalizer
+==> py-charset-normalizer: Executing phase: 'install'
+==> py-charset-normalizer: Successfully installed py-charset-normalizer-3.3.0-rbfgxuabv3zdo323ynlhgzt3ufbuwjho
+  Stage: 0.77s.  Install: 0.54s.  Post-install: 0.03s.  Total: 1.40s
+[+] /home/a10-kfotso/spack/spack/opt/spack/linux-ubuntu22.04-neoverse_v2/gcc-11.4.0/py-charset-normalizer-3.3.0-rbfgxuabv3zdo323ynlhgzt3ufbuwjho
+==> Installing py-cython-0.29.36-l66bxoxme6idrqcof3g5l2z33tgbarht [93/151]
+==> No binary for py-cython-0.29.36-l66bxoxme6idrqcof3g5l2z33tgbarht found: installing from source
+==> Fetching https://mirror.spack.io/_source-cache/archive/41/41c0cfd2d754e383c9eeb95effc9aa4ab847d0c9747077ddd7c0dcb68c3bc01f.tar.gz
+==> Applied patch /home/a10-kfotso/spack/spack/var/spack/repos/builtin/packages/py-cython/5712.patch
+==> py-cython: Executing phase: 'install'
+==> py-cython: Successfully installed py-cython-0.29.36-l66bxoxme6idrqcof3g5l2z33tgbarht
+  Stage: 1.15s.  Install: 41.91s.  Post-install: 0.09s.  Total: 43.23s
+[+] /home/a10-kfotso/spack/spack/opt/spack/linux-ubuntu22.04-neoverse_v2/gcc-11.4.0/py-cython-0.29.36-l66bxoxme6idrqcof3g5l2z33tgbarht
+==> Installing py-future-0.18.3-iszqyq2avxzcmsjpvnuiympczirldj4k [94/151]
+==> No binary for py-future-0.18.3-iszqyq2avxzcmsjpvnuiympczirldj4k found: installing from source
+==> Fetching https://mirror.spack.io/_source-cache/archive/34/34a17436ed1e96697a86f9de3d15a3b0be01d8bc8de9c1dffd59fb8234ed5307.tar.gz
+==> No patches needed for py-future
+==> py-future: Executing phase: 'install'
+==> py-future: Successfully installed py-future-0.18.3-iszqyq2avxzcmsjpvnuiympczirldj4k
+  Stage: 1.00s.  Install: 0.80s.  Post-install: 0.08s.  Total: 1.94s
+[+] /home/a10-kfotso/spack/spack/opt/spack/linux-ubuntu22.04-neoverse_v2/gcc-11.4.0/py-future-0.18.3-iszqyq2avxzcmsjpvnuiympczirldj4k
+==> Installing py-multidict-6.0.4-z4tudqxlobd36bbzzcj2xyds25y2l4ee [95/151]
+==> No binary for py-multidict-6.0.4-z4tudqxlobd36bbzzcj2xyds25y2l4ee found: installing from source
+==> Fetching https://mirror.spack.io/_source-cache/archive/36/3666906492efb76453c0e7b97f2cf459b0682e7402c0489a95484965dbc1da49.tar.gz
+==> No patches needed for py-multidict
+==> py-multidict: Executing phase: 'install'
+==> py-multidict: Successfully installed py-multidict-6.0.4-z4tudqxlobd36bbzzcj2xyds25y2l4ee
+  Stage: 0.66s.  Install: 1.20s.  Post-install: 0.03s.  Total: 1.95s
+[+] /home/a10-kfotso/spack/spack/opt/spack/linux-ubuntu22.04-neoverse_v2/gcc-11.4.0/py-multidict-6.0.4-z4tudqxlobd36bbzzcj2xyds25y2l4ee
+==> Installing py-mpmath-1.3.0-r2cybfisrfbpaifliolm3ylketm3fbku [96/151]
+==> No binary for py-mpmath-1.3.0-r2cybfisrfbpaifliolm3ylketm3fbku found: installing from source
+==> Fetching https://files.pythonhosted.org/packages/source/m/mpmath/mpmath-1.3.0.tar.gz
+==> No patches needed for py-mpmath
+==> py-mpmath: Executing phase: 'install'
+==> py-mpmath: Successfully installed py-mpmath-1.3.0-r2cybfisrfbpaifliolm3ylketm3fbku
+  Stage: 1.17s.  Install: 0.83s.  Post-install: 0.05s.  Total: 2.12s
+[+] /home/a10-kfotso/spack/spack/opt/spack/linux-ubuntu22.04-neoverse_v2/gcc-11.4.0/py-mpmath-1.3.0-r2cybfisrfbpaifliolm3ylketm3fbku
+==> Installing py-tensorboard-data-server-0.6.1-m6gsyzohju23gq6uw7eygbk44fb4yccj [97/151]
+==> No binary for py-tensorboard-data-server-0.6.1-m6gsyzohju23gq6uw7eygbk44fb4yccj found: installing from source
+==> Fetching https://mirror.spack.io/_source-cache/archive/87/878bbd60fd9c38216a372792f02a65c1b422b6c546050fdf335b264ab263cd8a
+==> Fetching https://mirror.spack.io/_source-cache/archive/4b/4b3bcc2ed656699e9faad7937d013b65fa65fed58fbe58d2ae38e0e7b8006ad8
+==> Applied patch https://github.com/tensorflow/tensorboard/pull/5715.patch?full_index=1
+==> Applied patch https://github.com/tensorflow/tensorboard/pull/6101.patch?full_index=1
+==> py-tensorboard-data-server: Executing phase: 'install'
+==> py-tensorboard-data-server: Successfully installed py-tensorboard-data-server-0.6.1-m6gsyzohju23gq6uw7eygbk44fb4yccj
+  Stage: 7.01s.  Install: 23.08s.  Post-install: 0.03s.  Total: 30.20s
+[+] /home/a10-kfotso/spack/spack/opt/spack/linux-ubuntu22.04-neoverse_v2/gcc-11.4.0/py-tensorboard-data-server-0.6.1-m6gsyzohju23gq6uw7eygbk44fb4yccj
+==> Installing py-markupsafe-2.1.3-yza7xfgewpwg26laz6d3buuipf5jpfj3 [98/151]
+==> No binary for py-markupsafe-2.1.3-yza7xfgewpwg26laz6d3buuipf5jpfj3 found: installing from source
+==> Fetching https://mirror.spack.io/_source-cache/archive/af/af598ed32d6ae86f1b747b82783958b1a4ab8f617b06fe68795c7f026abbdcad.tar.gz
+==> No patches needed for py-markupsafe
+==> py-markupsafe: Executing phase: 'install'
+==> py-markupsafe: Successfully installed py-markupsafe-2.1.3-yza7xfgewpwg26laz6d3buuipf5jpfj3
+  Stage: 0.70s.  Install: 0.66s.  Post-install: 0.03s.  Total: 1.45s
+[+] /home/a10-kfotso/spack/spack/opt/spack/linux-ubuntu22.04-neoverse_v2/gcc-11.4.0/py-markupsafe-2.1.3-yza7xfgewpwg26laz6d3buuipf5jpfj3
+==> Installing py-frozenlist-1.3.1-qad5vuzeqhv5hw5gzlfklk3k7be7icer [99/151]
+==> No binary for py-frozenlist-1.3.1-qad5vuzeqhv5hw5gzlfklk3k7be7icer found: installing from source
+==> Fetching https://mirror.spack.io/_source-cache/archive/3a/3a735e4211a04ccfa3f4833547acdf5d2f863bfeb01cfd3edaffbc251f15cec8.tar.gz
+==> No patches needed for py-frozenlist
+==> py-frozenlist: Executing phase: 'install'
+==> py-frozenlist: Successfully installed py-frozenlist-1.3.1-qad5vuzeqhv5hw5gzlfklk3k7be7icer
+  Stage: 0.70s.  Install: 1.39s.  Post-install: 0.03s.  Total: 2.18s
+[+] /home/a10-kfotso/spack/spack/opt/spack/linux-ubuntu22.04-neoverse_v2/gcc-11.4.0/py-frozenlist-1.3.1-qad5vuzeqhv5hw5gzlfklk3k7be7icer
+==> Installing py-psutil-5.9.5-pgwsd3p2e4lbn6kijwnu5fxcnpcqgela [100/151]
+==> No binary for py-psutil-5.9.5-pgwsd3p2e4lbn6kijwnu5fxcnpcqgela found: installing from source
+==> Fetching https://mirror.spack.io/_source-cache/archive/54/5410638e4df39c54d957fc51ce03048acd8e6d60abc0f5107af51e5fb566eb3c.tar.gz
+==> No patches needed for py-psutil
+==> py-psutil: Executing phase: 'install'
+==> py-psutil: Successfully installed py-psutil-5.9.5-pgwsd3p2e4lbn6kijwnu5fxcnpcqgela
+  Stage: 0.95s.  Install: 1.22s.  Post-install: 0.03s.  Total: 2.27s
+[+] /home/a10-kfotso/spack/spack/opt/spack/linux-ubuntu22.04-neoverse_v2/gcc-11.4.0/py-psutil-5.9.5-pgwsd3p2e4lbn6kijwnu5fxcnpcqgela
+==> Installing py-pyasn1-0.4.8-7eqmo5s3fbuy3qfsoaktmmpfb74wvwek [101/151]
+==> No binary for py-pyasn1-0.4.8-7eqmo5s3fbuy3qfsoaktmmpfb74wvwek found: installing from source
+==> Fetching https://mirror.spack.io/_source-cache/archive/ae/aef77c9fb94a3ac588e87841208bdec464471d9871bd5050a287cc9a475cd0ba.tar.gz
+==> No patches needed for py-pyasn1
+==> py-pyasn1: Executing phase: 'install'
+==> py-pyasn1: Successfully installed py-pyasn1-0.4.8-7eqmo5s3fbuy3qfsoaktmmpfb74wvwek
+  Stage: 0.83s.  Install: 0.55s.  Post-install: 0.04s.  Total: 1.49s
+[+] /home/a10-kfotso/spack/spack/opt/spack/linux-ubuntu22.04-neoverse_v2/gcc-11.4.0/py-pyasn1-0.4.8-7eqmo5s3fbuy3qfsoaktmmpfb74wvwek
+==> Installing py-six-1.16.0-faxqpotfdxv7sisxwmxprq3za3ovhjtp [102/151]
+==> No binary for py-six-1.16.0-faxqpotfdxv7sisxwmxprq3za3ovhjtp found: installing from source
+==> Fetching https://mirror.spack.io/_source-cache/archive/1e/1e61c37477a1626458e36f7b1d82aa5c9b094fa4802892072e49de9c60c4c926.tar.gz
+==> No patches needed for py-six
+==> py-six: Executing phase: 'install'
+==> py-six: Successfully installed py-six-1.16.0-faxqpotfdxv7sisxwmxprq3za3ovhjtp
+  Stage: 0.50s.  Install: 0.49s.  Post-install: 0.03s.  Total: 1.08s
+[+] /home/a10-kfotso/spack/spack/opt/spack/linux-ubuntu22.04-neoverse_v2/gcc-11.4.0/py-six-1.16.0-faxqpotfdxv7sisxwmxprq3za3ovhjtp
+==> Installing py-pydeprecate-0.3.1-oh6ecbvv4gqgw4xo6vblsu6pedojnlzn [103/151]
+==> No binary for py-pydeprecate-0.3.1-oh6ecbvv4gqgw4xo6vblsu6pedojnlzn found: installing from source
+==> Fetching https://mirror.spack.io/_source-cache/archive/fa/fa26870924d3475621c344045c2c01a16ba034113a902600c78e75b3fac5f72c.tar.gz
+==> No patches needed for py-pydeprecate
+==> py-pydeprecate: Executing phase: 'install'
+==> py-pydeprecate: Successfully installed py-pydeprecate-0.3.1-oh6ecbvv4gqgw4xo6vblsu6pedojnlzn
+  Stage: 0.63s.  Install: 0.51s.  Post-install: 0.03s.  Total: 1.24s
+[+] /home/a10-kfotso/spack/spack/opt/spack/linux-ubuntu22.04-neoverse_v2/gcc-11.4.0/py-pydeprecate-0.3.1-oh6ecbvv4gqgw4xo6vblsu6pedojnlzn
+==> Installing py-pybind11-2.10.1-xz4hzgl4wbsqmqtvavcoz4odtqnln2bs [104/151]
+==> No binary for py-pybind11-2.10.1-xz4hzgl4wbsqmqtvavcoz4odtqnln2bs found: installing from source
+==> Fetching https://mirror.spack.io/_source-cache/archive/11/111014b516b625083bef701df7880f78c2243835abdb263065b6b59b960b6bad.tar.gz
+==> No patches needed for py-pybind11
+==> py-pybind11: Executing phase: 'cmake'
+==> py-pybind11: Executing phase: 'build'
+==> py-pybind11: Executing phase: 'install'
+==> py-pybind11: Successfully installed py-pybind11-2.10.1-xz4hzgl4wbsqmqtvavcoz4odtqnln2bs
+  Stage: 0.97s.  Cmake: 0.19s.  Build: 0.01s.  Install: 0.91s.  Post-install: 0.04s.  Total: 2.20s
+[+] /home/a10-kfotso/spack/spack/opt/spack/linux-ubuntu22.04-neoverse_v2/gcc-11.4.0/py-pybind11-2.10.1-xz4hzgl4wbsqmqtvavcoz4odtqnln2bs
+==> Installing py-typing-extensions-4.8.0-wi4xvethwmn6f26rxg5z76axbiecfzrd [105/151]
+==> No binary for py-typing-extensions-4.8.0-wi4xvethwmn6f26rxg5z76axbiecfzrd found: installing from source
+==> Fetching https://mirror.spack.io/_source-cache/archive/df/df8e4339e9cb77357558cbdbceca33c303714cf861d1eef15e1070055ae8b7ef.tar.gz
+==> No patches needed for py-typing-extensions
+==> py-typing-extensions: Executing phase: 'install'
+==> py-typing-extensions: Successfully installed py-typing-extensions-4.8.0-wi4xvethwmn6f26rxg5z76axbiecfzrd
+  Stage: 0.63s.  Install: 0.38s.  Post-install: 0.03s.  Total: 1.11s
+[+] /home/a10-kfotso/spack/spack/opt/spack/linux-ubuntu22.04-neoverse_v2/gcc-11.4.0/py-typing-extensions-4.8.0-wi4xvethwmn6f26rxg5z76axbiecfzrd
+==> Installing py-editables-0.5-7op3da7wasx6s4gv3aovolrwmuqi2rxq [106/151]
+==> No binary for py-editables-0.5-7op3da7wasx6s4gv3aovolrwmuqi2rxq found: installing from source
+==> Fetching https://files.pythonhosted.org/packages/source/e/editables/editables-0.5.tar.gz
+==> No patches needed for py-editables
+==> py-editables: Executing phase: 'install'
+==> py-editables: Successfully installed py-editables-0.5-7op3da7wasx6s4gv3aovolrwmuqi2rxq
+  Stage: 0.99s.  Install: 0.37s.  Post-install: 0.03s.  Total: 1.45s
+[+] /home/a10-kfotso/spack/spack/opt/spack/linux-ubuntu22.04-neoverse_v2/gcc-11.4.0/py-editables-0.5-7op3da7wasx6s4gv3aovolrwmuqi2rxq
+==> Installing py-pathspec-0.11.1-z76q2wjnegrwlv3j26j5fsptrah5xq64 [107/151]
+==> No binary for py-pathspec-0.11.1-z76q2wjnegrwlv3j26j5fsptrah5xq64 found: installing from source
+==> Fetching https://mirror.spack.io/_source-cache/archive/27/2798de800fa92780e33acca925945e9a19a133b715067cf165b8866c15a31687.tar.gz
+==> No patches needed for py-pathspec
+==> py-pathspec: Executing phase: 'install'
+==> py-pathspec: Successfully installed py-pathspec-0.11.1-z76q2wjnegrwlv3j26j5fsptrah5xq64
+  Stage: 0.57s.  Install: 0.40s.  Post-install: 0.03s.  Total: 1.07s
+[+] /home/a10-kfotso/spack/spack/opt/spack/linux-ubuntu22.04-neoverse_v2/gcc-11.4.0/py-pathspec-0.11.1-z76q2wjnegrwlv3j26j5fsptrah5xq64
+==> Installing py-packaging-23.1-2ljpervzp3isgnwt4hcs64vrt772qwwn [108/151]
+==> No binary for py-packaging-23.1-2ljpervzp3isgnwt4hcs64vrt772qwwn found: installing from source
+==> Fetching https://mirror.spack.io/_source-cache/archive/a3/a392980d2b6cffa644431898be54b0045151319d1e7ec34f0cfed48767dd334f.tar.gz
+==> No patches needed for py-packaging
+==> py-packaging: Executing phase: 'install'
+==> py-packaging: Successfully installed py-packaging-23.1-2ljpervzp3isgnwt4hcs64vrt772qwwn
+  Stage: 0.65s.  Install: 0.40s.  Post-install: 0.03s.  Total: 1.14s
+[+] /home/a10-kfotso/spack/spack/opt/spack/linux-ubuntu22.04-neoverse_v2/gcc-11.4.0/py-packaging-23.1-2ljpervzp3isgnwt4hcs64vrt772qwwn
+==> Installing py-tomli-2.0.1-epqs5ghg4ep53qfkg5ro2mk2kqjc4vmd [109/151]
+==> No binary for py-tomli-2.0.1-epqs5ghg4ep53qfkg5ro2mk2kqjc4vmd found: installing from source
+==> Fetching https://mirror.spack.io/_source-cache/archive/de/de526c12914f0c550d15924c62d72abc48d6fe7364aa87328337a31007fe8a4f.tar.gz
+==> No patches needed for py-tomli
+==> py-tomli: Executing phase: 'install'
+==> py-tomli: Successfully installed py-tomli-2.0.1-epqs5ghg4ep53qfkg5ro2mk2kqjc4vmd
+  Stage: 0.50s.  Install: 0.38s.  Post-install: 0.03s.  Total: 0.97s
+[+] /home/a10-kfotso/spack/spack/opt/spack/linux-ubuntu22.04-neoverse_v2/gcc-11.4.0/py-tomli-2.0.1-epqs5ghg4ep53qfkg5ro2mk2kqjc4vmd
+==> Installing py-idna-3.4-kubde7r2by24rtfomwa46ztvx47gcve2 [110/151]
+==> No binary for py-idna-3.4-kubde7r2by24rtfomwa46ztvx47gcve2 found: installing from source
+==> Fetching https://mirror.spack.io/_source-cache/archive/81/814f528e8dead7d329833b91c5faa87d60bf71824cd12a7530b5526063d02cb4.tar.gz
+==> No patches needed for py-idna
+==> py-idna: Executing phase: 'install'
+==> py-idna: Successfully installed py-idna-3.4-kubde7r2by24rtfomwa46ztvx47gcve2
+  Stage: 0.81s.  Install: 0.44s.  Post-install: 0.03s.  Total: 1.35s
+[+] /home/a10-kfotso/spack/spack/opt/spack/linux-ubuntu22.04-neoverse_v2/gcc-11.4.0/py-idna-3.4-kubde7r2by24rtfomwa46ztvx47gcve2
+==> Installing py-cloudpickle-3.0.0-vmq466r7idxw7gzsjnfovdgjck64zpnp [111/151]
+==> No binary for py-cloudpickle-3.0.0-vmq466r7idxw7gzsjnfovdgjck64zpnp found: installing from source
+==> Fetching https://files.pythonhosted.org/packages/source/c/cloudpickle/cloudpickle-3.0.0.tar.gz
+==> No patches needed for py-cloudpickle
+==> py-cloudpickle: Executing phase: 'install'
+==> py-cloudpickle: Successfully installed py-cloudpickle-3.0.0-vmq466r7idxw7gzsjnfovdgjck64zpnp
+  Stage: 1.05s.  Install: 0.39s.  Post-install: 0.03s.  Total: 1.53s
+[+] /home/a10-kfotso/spack/spack/opt/spack/linux-ubuntu22.04-neoverse_v2/gcc-11.4.0/py-cloudpickle-3.0.0-vmq466r7idxw7gzsjnfovdgjck64zpnp
+==> Installing py-trove-classifiers-2023.8.7-5kcuwvf5kjdv6ukadgjn5vhle5b724r7 [112/151]
+==> No binary for py-trove-classifiers-2023.8.7-5kcuwvf5kjdv6ukadgjn5vhle5b724r7 found: installing from source
+==> Fetching https://mirror.spack.io/_source-cache/archive/c9/c9f2a0a85d545e5362e967e4f069f56fddfd91215e22ffa48c66fb283521319a.tar.gz
+==> No patches needed for py-trove-classifiers
+==> py-trove-classifiers: Executing phase: 'install'
+==> py-trove-classifiers: Successfully installed py-trove-classifiers-2023.8.7-5kcuwvf5kjdv6ukadgjn5vhle5b724r7
+  Stage: 0.48s.  Install: 0.50s.  Post-install: 0.03s.  Total: 1.08s
+[+] /home/a10-kfotso/spack/spack/opt/spack/linux-ubuntu22.04-neoverse_v2/gcc-11.4.0/py-trove-classifiers-2023.8.7-5kcuwvf5kjdv6ukadgjn5vhle5b724r7
+==> Installing py-cffi-1.15.1-vyychbsmrqnrcfl7f3amgkegrclct66d [113/151]
+==> No binary for py-cffi-1.15.1-vyychbsmrqnrcfl7f3amgkegrclct66d found: installing from source
+==> Fetching https://mirror.spack.io/_source-cache/archive/d4/d400bfb9a37b1351253cb402671cea7e89bdecc294e8016a707f6d1d8ac934f9.tar.gz
+==> No patches needed for py-cffi
+==> py-cffi: Executing phase: 'install'
+==> py-cffi: Successfully installed py-cffi-1.15.1-vyychbsmrqnrcfl7f3amgkegrclct66d
+  Stage: 0.85s.  Install: 2.98s.  Post-install: 0.03s.  Total: 3.92s
+[+] /home/a10-kfotso/spack/spack/opt/spack/linux-ubuntu22.04-neoverse_v2/gcc-11.4.0/py-cffi-1.15.1-vyychbsmrqnrcfl7f3amgkegrclct66d
+==> Installing py-pyyaml-6.0.1-qzvg2ilr6doufca7kku2ygrd62zi2lij [114/151]
+==> No binary for py-pyyaml-6.0.1-qzvg2ilr6doufca7kku2ygrd62zi2lij found: installing from source
+==> Fetching https://files.pythonhosted.org/packages/source/P/PyYAML/PyYAML-6.0.1.tar.gz
+==> No patches needed for py-pyyaml
+==> py-pyyaml: Executing phase: 'install'
+==> py-pyyaml: Successfully installed py-pyyaml-6.0.1-qzvg2ilr6doufca7kku2ygrd62zi2lij
+  Stage: 0.99s.  Install: 4.84s.  Post-install: 0.03s.  Total: 5.93s
+[+] /home/a10-kfotso/spack/spack/opt/spack/linux-ubuntu22.04-neoverse_v2/gcc-11.4.0/py-pyyaml-6.0.1-qzvg2ilr6doufca7kku2ygrd62zi2lij
+==> Installing py-sympy-1.12-2fkutojhjgatrm74sohjrgditvyvfw5r [115/151]
+==> No binary for py-sympy-1.12-2fkutojhjgatrm74sohjrgditvyvfw5r found: installing from source
+==> Fetching https://files.pythonhosted.org/packages/source/s/sympy/sympy-1.12.tar.gz
+==> No patches needed for py-sympy
+==> py-sympy: Executing phase: 'install'
+==> py-sympy: Successfully installed py-sympy-1.12-2fkutojhjgatrm74sohjrgditvyvfw5r
+  Stage: 1.34s.  Install: 4.66s.  Post-install: 0.44s.  Total: 6.52s
+[+] /home/a10-kfotso/spack/spack/opt/spack/linux-ubuntu22.04-neoverse_v2/gcc-11.4.0/py-sympy-1.12-2fkutojhjgatrm74sohjrgditvyvfw5r
+==> Installing py-jinja2-3.1.2-ofrjrbricnhqxmu4nvsle3mdv6shcp4p [116/151]
+==> No binary for py-jinja2-3.1.2-ofrjrbricnhqxmu4nvsle3mdv6shcp4p found: installing from source
+==> Fetching https://mirror.spack.io/_source-cache/archive/31/31351a702a408a9e7595a8fc6150fc3f43bb6bf7e319770cbc0db9df9437e852.tar.gz
+==> No patches needed for py-jinja2
+==> py-jinja2: Executing phase: 'install'
+==> py-jinja2: Successfully installed py-jinja2-3.1.2-ofrjrbricnhqxmu4nvsle3mdv6shcp4p
+  Stage: 0.77s.  Install: 0.60s.  Post-install: 0.03s.  Total: 1.48s
+[+] /home/a10-kfotso/spack/spack/opt/spack/linux-ubuntu22.04-neoverse_v2/gcc-11.4.0/py-jinja2-3.1.2-ofrjrbricnhqxmu4nvsle3mdv6shcp4p
+==> Installing py-werkzeug-3.0.0-xo2clljzk2qa5wzdurkgxnkpy4hw66dr [117/151]
+==> No binary for py-werkzeug-3.0.0-xo2clljzk2qa5wzdurkgxnkpy4hw66dr found: installing from source
+==> Fetching https://mirror.spack.io/_source-cache/archive/3f/3ffff4dcc32db52ef3cc94dff3000a3c2846890f3a5a51800a27b909c5e770f0.tar.gz
+==> No patches needed for py-werkzeug
+==> py-werkzeug: Executing phase: 'install'
+==> py-werkzeug: Successfully installed py-werkzeug-3.0.0-xo2clljzk2qa5wzdurkgxnkpy4hw66dr
+  Stage: 0.89s.  Install: 0.48s.  Post-install: 0.04s.  Total: 1.48s
+[+] /home/a10-kfotso/spack/spack/opt/spack/linux-ubuntu22.04-neoverse_v2/gcc-11.4.0/py-werkzeug-3.0.0-xo2clljzk2qa5wzdurkgxnkpy4hw66dr
+==> Installing py-aiosignal-1.2.0-ayryuz5srda7s2gbafudwc4k2gle753m [118/151]
+==> No binary for py-aiosignal-1.2.0-ayryuz5srda7s2gbafudwc4k2gle753m found: installing from source
+==> Fetching https://mirror.spack.io/_source-cache/archive/78/78ed67db6c7b7ced4f98e495e572106d5c432a93e1ddd1bf475e1dc05f5b7df2.tar.gz
+==> No patches needed for py-aiosignal
+==> py-aiosignal: Executing phase: 'install'
+==> py-aiosignal: Successfully installed py-aiosignal-1.2.0-ayryuz5srda7s2gbafudwc4k2gle753m
+  Stage: 0.59s.  Install: 0.52s.  Post-install: 0.03s.  Total: 1.21s
+[+] /home/a10-kfotso/spack/spack/opt/spack/linux-ubuntu22.04-neoverse_v2/gcc-11.4.0/py-aiosignal-1.2.0-ayryuz5srda7s2gbafudwc4k2gle753m
+==> Installing py-rsa-4.9-enoe7jz5lbyimuff6byko44m642df5rk [119/151]
+==> No binary for py-rsa-4.9-enoe7jz5lbyimuff6byko44m642df5rk found: installing from source
+==> Fetching https://mirror.spack.io/_source-cache/archive/e3/e38464a49c6c85d7f1351b0126661487a7e0a14a50f1675ec50eb34d4f20ef21.tar.gz
+==> No patches needed for py-rsa
+==> py-rsa: Executing phase: 'install'
+==> py-rsa: Successfully installed py-rsa-4.9-enoe7jz5lbyimuff6byko44m642df5rk
+  Stage: 0.56s.  Install: 0.56s.  Post-install: 0.03s.  Total: 1.22s
+[+] /home/a10-kfotso/spack/spack/opt/spack/linux-ubuntu22.04-neoverse_v2/gcc-11.4.0/py-rsa-4.9-enoe7jz5lbyimuff6byko44m642df5rk
+==> Installing py-pyasn1-modules-0.2.8-ohywip32nt7vuwpeunzedvxzb2bgzsz2 [120/151]
+==> No binary for py-pyasn1-modules-0.2.8-ohywip32nt7vuwpeunzedvxzb2bgzsz2 found: installing from source
+==> Fetching https://mirror.spack.io/_source-cache/archive/90/905f84c712230b2c592c19470d3ca8d552de726050d1d1716282a1f6146be65e.tar.gz
+==> No patches needed for py-pyasn1-modules
+==> py-pyasn1-modules: Executing phase: 'install'
+==> py-pyasn1-modules: Successfully installed py-pyasn1-modules-0.2.8-ohywip32nt7vuwpeunzedvxzb2bgzsz2
+  Stage: 0.78s.  Install: 0.62s.  Post-install: 0.05s.  Total: 1.52s
+[+] /home/a10-kfotso/spack/spack/opt/spack/linux-ubuntu22.04-neoverse_v2/gcc-11.4.0/py-pyasn1-modules-0.2.8-ohywip32nt7vuwpeunzedvxzb2bgzsz2
+==> Installing py-protobuf-3.13.0-3dcpuyeczaelezfcdad6rqqshajgxvzp [121/151]
+==> No binary for py-protobuf-3.13.0-3dcpuyeczaelezfcdad6rqqshajgxvzp found: installing from source
+==> Fetching https://files.pythonhosted.org/packages/source/p/protobuf/protobuf-3.13.0.tar.gz
+==> No patches needed for py-protobuf
+==> py-protobuf: Executing phase: 'install'
+==> py-protobuf: Successfully installed py-protobuf-3.13.0-3dcpuyeczaelezfcdad6rqqshajgxvzp
+  Stage: 0.97s.  Install: 0.66s.  Post-install: 0.04s.  Total: 1.74s
+[+] /home/a10-kfotso/spack/spack/opt/spack/linux-ubuntu22.04-neoverse_v2/gcc-11.4.0/py-protobuf-3.13.0-3dcpuyeczaelezfcdad6rqqshajgxvzp
+==> Installing py-astunparse-1.6.3-7mqhnjto3r3g2dpmiq3xs4xmow3junqj [122/151]
+==> No binary for py-astunparse-1.6.3-7mqhnjto3r3g2dpmiq3xs4xmow3junqj found: installing from source
+==> Fetching https://mirror.spack.io/_source-cache/archive/5a/5ad93a8456f0d084c3456d059fd9a92cce667963232cbf763eac3bc5b7940872.tar.gz
+==> No patches needed for py-astunparse
+==> py-astunparse: Executing phase: 'install'
+==> py-astunparse: Successfully installed py-astunparse-1.6.3-7mqhnjto3r3g2dpmiq3xs4xmow3junqj
+  Stage: 0.58s.  Install: 0.49s.  Post-install: 0.03s.  Total: 1.16s
+[+] /home/a10-kfotso/spack/spack/opt/spack/linux-ubuntu22.04-neoverse_v2/gcc-11.4.0/py-astunparse-1.6.3-7mqhnjto3r3g2dpmiq3xs4xmow3junqj
+==> Installing py-pyproject-metadata-0.7.1-5326fiuhll6pukkfm3f4ov33pil5apx2 [123/151]
+==> No binary for py-pyproject-metadata-0.7.1-5326fiuhll6pukkfm3f4ov33pil5apx2 found: installing from source
+==> Fetching https://mirror.spack.io/_source-cache/archive/0a/0a94f18b108b9b21f3a26a3d541f056c34edcb17dc872a144a15618fed7aef67.tar.gz
+==> No patches needed for py-pyproject-metadata
+==> py-pyproject-metadata: Executing phase: 'install'
+==> py-pyproject-metadata: Successfully installed py-pyproject-metadata-0.7.1-5326fiuhll6pukkfm3f4ov33pil5apx2
+  Stage: 0.50s.  Install: 0.52s.  Post-install: 0.03s.  Total: 1.12s
+[+] /home/a10-kfotso/spack/spack/opt/spack/linux-ubuntu22.04-neoverse_v2/gcc-11.4.0/py-pyproject-metadata-0.7.1-5326fiuhll6pukkfm3f4ov33pil5apx2
+==> Installing py-lightning-utilities-0.8.0-5yulxwe7hwxwomjzrthp3xf22mkjx7gu [124/151]
+==> No binary for py-lightning-utilities-0.8.0-5yulxwe7hwxwomjzrthp3xf22mkjx7gu found: installing from source
+==> Fetching https://mirror.spack.io/_source-cache/archive/8e/8e5d95c7c57f026cdfed7c154303e88c93a7a5e868c9944cb02cf71f1db29720.tar.gz
+==> No patches needed for py-lightning-utilities
+==> py-lightning-utilities: Executing phase: 'install'
+==> py-lightning-utilities: Successfully installed py-lightning-utilities-0.8.0-5yulxwe7hwxwomjzrthp3xf22mkjx7gu
+  Stage: 0.81s.  Install: 0.55s.  Post-install: 0.03s.  Total: 1.47s
+[+] /home/a10-kfotso/spack/spack/opt/spack/linux-ubuntu22.04-neoverse_v2/gcc-11.4.0/py-lightning-utilities-0.8.0-5yulxwe7hwxwomjzrthp3xf22mkjx7gu
+==> Installing py-setuptools-scm-8.0.4-hsah7tktiu6o2kd734nvitfoldvpeqpm [125/151]
+==> No binary for py-setuptools-scm-8.0.4-hsah7tktiu6o2kd734nvitfoldvpeqpm found: installing from source
+==> Fetching https://files.pythonhosted.org/packages/source/s/setuptools-scm/setuptools-scm-8.0.4.tar.gz
+==> No patches needed for py-setuptools-scm
+==> py-setuptools-scm: Executing phase: 'install'
+==> py-setuptools-scm: Successfully installed py-setuptools-scm-8.0.4-hsah7tktiu6o2kd734nvitfoldvpeqpm
+  Stage: 0.99s.  Install: 0.68s.  Post-install: 0.04s.  Total: 1.79s
+[+] /home/a10-kfotso/spack/spack/opt/spack/linux-ubuntu22.04-neoverse_v2/gcc-11.4.0/py-setuptools-scm-8.0.4-hsah7tktiu6o2kd734nvitfoldvpeqpm
+==> Installing py-yarl-1.9.2-pdbon4352aftgocy546vrpijgypuvm63 [126/151]
+==> No binary for py-yarl-1.9.2-pdbon4352aftgocy546vrpijgypuvm63 found: installing from source
+==> Fetching https://mirror.spack.io/_source-cache/archive/04/04ab9d4b9f587c06d801c2abfe9317b77cdf996c65a90d5e84ecc45010823571.tar.gz
+==> No patches needed for py-yarl
+==> py-yarl: Executing phase: 'install'
+==> py-yarl: Successfully installed py-yarl-1.9.2-pdbon4352aftgocy546vrpijgypuvm63
+  Stage: 0.96s.  Install: 2.64s.  Post-install: 0.03s.  Total: 3.70s
+[+] /home/a10-kfotso/spack/spack/opt/spack/linux-ubuntu22.04-neoverse_v2/gcc-11.4.0/py-yarl-1.9.2-pdbon4352aftgocy546vrpijgypuvm63
+==> Installing py-google-auth-2.27.0-zczb6lfqmrgvz4vnwrqu275avvcqucpp [127/151]
+==> No binary for py-google-auth-2.27.0-zczb6lfqmrgvz4vnwrqu275avvcqucpp found: installing from source
+==> Fetching https://files.pythonhosted.org/packages/source/g/google-auth/google-auth-2.27.0.tar.gz
+==> No patches needed for py-google-auth
+==> py-google-auth: Executing phase: 'install'
+==> py-google-auth: Successfully installed py-google-auth-2.27.0-zczb6lfqmrgvz4vnwrqu275avvcqucpp
+  Stage: 0.97s.  Install: 0.58s.  Post-install: 0.04s.  Total: 1.67s
+[+] /home/a10-kfotso/spack/spack/opt/spack/linux-ubuntu22.04-neoverse_v2/gcc-11.4.0/py-google-auth-2.27.0-zczb6lfqmrgvz4vnwrqu275avvcqucpp
+==> Installing py-grpcio-1.48.2-wodnsxpvk43ydfvjymgrmj67jd3hfafa [128/151]
+==> No binary for py-grpcio-1.48.2-wodnsxpvk43ydfvjymgrmj67jd3hfafa found: installing from source
+==> Fetching https://files.pythonhosted.org/packages/source/g/grpcio/grpcio-1.48.2.tar.gz
+==> Applied patch /home/a10-kfotso/spack/spack/var/spack/repos/builtin/packages/py-grpcio/30522.diff
+==> Ran patch() for py-grpcio
+==> py-grpcio: Executing phase: 'install'
+==> py-grpcio: Successfully installed py-grpcio-1.48.2-wodnsxpvk43ydfvjymgrmj67jd3hfafa
+  Stage: 2.36s.  Install: 1m 1.83s.  Post-install: 0.14s.  Total: 1m 4.43s
+[+] /home/a10-kfotso/spack/spack/opt/spack/linux-ubuntu22.04-neoverse_v2/gcc-11.4.0/py-grpcio-1.48.2-wodnsxpvk43ydfvjymgrmj67jd3hfafa
+==> Installing py-meson-python-0.16.0-fxtqpv2v2pbp52speskwdutn5po2v5sv [129/151]
+==> No binary for py-meson-python-0.16.0-fxtqpv2v2pbp52speskwdutn5po2v5sv found: installing from source
+==> Fetching https://files.pythonhosted.org/packages/source/m/meson_python/meson_python-0.16.0.tar.gz
+==> No patches needed for py-meson-python
+==> py-meson-python: Executing phase: 'install'
+==> py-meson-python: Successfully installed py-meson-python-0.16.0-fxtqpv2v2pbp52speskwdutn5po2v5sv
+  Stage: 1.00s.  Install: 0.74s.  Post-install: 0.03s.  Total: 1.85s
+[+] /home/a10-kfotso/spack/spack/opt/spack/linux-ubuntu22.04-neoverse_v2/gcc-11.4.0/py-meson-python-0.16.0-fxtqpv2v2pbp52speskwdutn5po2v5sv
+==> Installing py-tqdm-4.66.3-mgrl3lp2jvehdwbjv7srcuggfuz7yztv [130/151]
+==> No binary for py-tqdm-4.66.3-mgrl3lp2jvehdwbjv7srcuggfuz7yztv found: installing from source
+==> Fetching https://files.pythonhosted.org/packages/source/t/tqdm/tqdm-4.66.3.tar.gz
+==> No patches needed for py-tqdm
+==> py-tqdm: Executing phase: 'install'
+==> py-tqdm: Successfully installed py-tqdm-4.66.3-mgrl3lp2jvehdwbjv7srcuggfuz7yztv
+  Stage: 0.94s.  Install: 0.67s.  Post-install: 0.04s.  Total: 1.75s
+[+] /home/a10-kfotso/spack/spack/opt/spack/linux-ubuntu22.04-neoverse_v2/gcc-11.4.0/py-tqdm-4.66.3-mgrl3lp2jvehdwbjv7srcuggfuz7yztv
+==> Installing py-pluggy-1.5.0-e2czoepqrbhh2ev5xxaf5onlekhyfrwp [131/151]
+==> No binary for py-pluggy-1.5.0-e2czoepqrbhh2ev5xxaf5onlekhyfrwp found: installing from source
+==> Fetching https://files.pythonhosted.org/packages/source/p/pluggy/pluggy-1.5.0.tar.gz
+==> No patches needed for py-pluggy
+==> py-pluggy: Executing phase: 'install'
+==> py-pluggy: Successfully installed py-pluggy-1.5.0-e2czoepqrbhh2ev5xxaf5onlekhyfrwp
+  Stage: 0.95s.  Install: 0.55s.  Post-install: 0.03s.  Total: 1.64s
+[+] /home/a10-kfotso/spack/spack/opt/spack/linux-ubuntu22.04-neoverse_v2/gcc-11.4.0/py-pluggy-1.5.0-e2czoepqrbhh2ev5xxaf5onlekhyfrwp
+==> Installing py-numpy-1.26.4-ctd3432gtfmknujih3wrfzmsaohc7qzr [132/151]
+==> No binary for py-numpy-1.26.4-ctd3432gtfmknujih3wrfzmsaohc7qzr found: installing from source
+==> Fetching https://files.pythonhosted.org/packages/source/n/numpy/numpy-1.26.4.tar.gz
+==> Applied patch /home/a10-kfotso/spack/spack/var/spack/repos/builtin/packages/py-numpy/check_executables.patch
+==> py-numpy: Executing phase: 'install'
+==> Error: NoHeadersError: Unable to locate nvhpc headers in /home/a10-kfotso/spack/spack/opt/spack/linux-ubuntu22.04-neoverse_v2/gcc-11.4.0/nvhpc-24.5-lwy544yxfvbzqufhsdp5mubg2swkt74j
+
+/home/a10-kfotso/spack/spack/var/spack/repos/builtin/packages/py-numpy/package.py:294, in blas_lapack_site_cfg:
+        291                f.write("rpath = {0}\n".format(dirs))
+        292
+        293        blas_libs = spec["blas"].libs
+  >>    294        blas_headers = spec["blas"].headers
+        295
+        296        lapack_libs = spec["lapack"].libs
+        297        lapack_headers = spec["lapack"].headers
+
+See build log for details:
+  /tmp/a10-kfotso/spack-stage/spack-stage-py-numpy-1.26.4-ctd3432gtfmknujih3wrfzmsaohc7qzr/spack-build-out.txt
+
+==> Warning: Skipping build of py-tensorboard-2.11.2-fwrxj55po2ccenk2i3dqn5hsbq5setxp since py-numpy-1.26.4-ctd3432gtfmknujih3wrfzmsaohc7qzr failed
+==> Warning: Skipping build of py-pytorch-lightning-1.5.3-jwshizg4go7rmhzeb4k7opf5hcrw3tiu since py-tensorboard-2.11.2-fwrxj55po2ccenk2i3dqn5hsbq5setxp failed
+==> Warning: Skipping build of py-horovod-0.28.1-ghgpqsyk7yalacm35sz6fmnyudta6oqt since py-pytorch-lightning-1.5.3-jwshizg4go7rmhzeb4k7opf5hcrw3tiu failed
+==> Warning: Skipping build of py-torchmetrics-1.4.0-24f2ymkxy4vtb67mwrb7tox6frpe4pmd since py-numpy-1.26.4-ctd3432gtfmknujih3wrfzmsaohc7qzr failed
+==> Warning: Skipping build of py-networkx-2.7.1-fkdtmfiqmug6rsyefhbk2ovvs4teeclc since py-numpy-1.26.4-ctd3432gtfmknujih3wrfzmsaohc7qzr failed
+==> Warning: Skipping build of py-torch-2.0.1-i77jdvjil3aojdnvjikf46iiwanv4byp since py-networkx-2.7.1-fkdtmfiqmug6rsyefhbk2ovvs4teeclc failed
+==> Installing py-hatchling-1.21.0-r3kuxmk4btgsevxhgxpvzmssedlfco2m [133/151]
+==> No binary for py-hatchling-1.21.0-r3kuxmk4btgsevxhgxpvzmssedlfco2m found: installing from source
+==> Fetching https://files.pythonhosted.org/packages/source/h/hatchling/hatchling-1.21.0.tar.gz
+==> No patches needed for py-hatchling
+==> py-hatchling: Executing phase: 'install'
+==> py-hatchling: Successfully installed py-hatchling-1.21.0-r3kuxmk4btgsevxhgxpvzmssedlfco2m
+  Stage: 0.88s.  Install: 0.46s.  Post-install: 0.05s.  Total: 1.50s
+[+] /home/a10-kfotso/spack/spack/opt/spack/linux-ubuntu22.04-neoverse_v2/gcc-11.4.0/py-hatchling-1.21.0-r3kuxmk4btgsevxhgxpvzmssedlfco2m
+==> Installing py-hatch-fancy-pypi-readme-23.1.0-ejmfk4sbtv67dl5fgxwmvs4hizv6kmxw [134/151]
+==> No binary for py-hatch-fancy-pypi-readme-23.1.0-ejmfk4sbtv67dl5fgxwmvs4hizv6kmxw found: installing from source
+==> Fetching https://mirror.spack.io/_source-cache/archive/b1/b1df44063094af1e8248ceacd47a92c9cf313d6b9823bf66af8a927c3960287d.tar.gz
+==> No patches needed for py-hatch-fancy-pypi-readme
+==> py-hatch-fancy-pypi-readme: Executing phase: 'install'
+==> py-hatch-fancy-pypi-readme: Successfully installed py-hatch-fancy-pypi-readme-23.1.0-ejmfk4sbtv67dl5fgxwmvs4hizv6kmxw
+  Stage: 0.61s.  Install: 0.38s.  Post-install: 0.04s.  Total: 1.13s
+[+] /home/a10-kfotso/spack/spack/opt/spack/linux-ubuntu22.04-neoverse_v2/gcc-11.4.0/py-hatch-fancy-pypi-readme-23.1.0-ejmfk4sbtv67dl5fgxwmvs4hizv6kmxw
+==> Installing py-hatch-vcs-0.3.0-vfma5ztt5zd6yqinnzda5wcdtldz3hk2 [135/151]
+==> No binary for py-hatch-vcs-0.3.0-vfma5ztt5zd6yqinnzda5wcdtldz3hk2 found: installing from source
+==> Fetching https://mirror.spack.io/_source-cache/archive/ce/cec5107cfce482c67f8bc96f18bbc320c9aa0d068180e14ad317bbee5a153fee.tar.gz
+==> No patches needed for py-hatch-vcs
+==> py-hatch-vcs: Executing phase: 'install'
+==> py-hatch-vcs: Successfully installed py-hatch-vcs-0.3.0-vfma5ztt5zd6yqinnzda5wcdtldz3hk2
+  Stage: 0.50s.  Install: 0.39s.  Post-install: 0.04s.  Total: 1.02s
+[+] /home/a10-kfotso/spack/spack/opt/spack/linux-ubuntu22.04-neoverse_v2/gcc-11.4.0/py-hatch-vcs-0.3.0-vfma5ztt5zd6yqinnzda5wcdtldz3hk2
+==> Installing py-colorama-0.4.6-ylpcv7hdbuql2pawd3ii6zahuom4k47p [136/151]
+==> No binary for py-colorama-0.4.6-ylpcv7hdbuql2pawd3ii6zahuom4k47p found: installing from source
+==> Fetching https://mirror.spack.io/_source-cache/archive/08/08695f5cb7ed6e0531a20572697297273c47b8cae5a63ffc6d6ed5c201be6e44.tar.gz
+==> No patches needed for py-colorama
+==> py-colorama: Executing phase: 'install'
+==> py-colorama: Successfully installed py-colorama-0.4.6-ylpcv7hdbuql2pawd3ii6zahuom4k47p
+  Stage: 0.59s.  Install: 0.39s.  Post-install: 0.04s.  Total: 1.13s
+[+] /home/a10-kfotso/spack/spack/opt/spack/linux-ubuntu22.04-neoverse_v2/gcc-11.4.0/py-colorama-0.4.6-ylpcv7hdbuql2pawd3ii6zahuom4k47p
+==> Installing py-urllib3-2.1.0-jor3sghgbvkegmgwt37r663sr3t6jxna [137/151]
+==> No binary for py-urllib3-2.1.0-jor3sghgbvkegmgwt37r663sr3t6jxna found: installing from source
+==> Fetching https://files.pythonhosted.org/packages/source/u/urllib3/urllib3-2.1.0.tar.gz
+==> No patches needed for py-urllib3
+==> py-urllib3: Executing phase: 'install'
+==> py-urllib3: Successfully installed py-urllib3-2.1.0-jor3sghgbvkegmgwt37r663sr3t6jxna
+  Stage: 0.98s.  Install: 0.42s.  Post-install: 0.04s.  Total: 1.55s
+[+] /home/a10-kfotso/spack/spack/opt/spack/linux-ubuntu22.04-neoverse_v2/gcc-11.4.0/py-urllib3-2.1.0-jor3sghgbvkegmgwt37r663sr3t6jxna
+==> Installing py-filelock-3.12.4-yruxmnk6qavrajonqv5zxc5ekh7blw24 [138/151]
+==> No binary for py-filelock-3.12.4-yruxmnk6qavrajonqv5zxc5ekh7blw24 found: installing from source
+==> Fetching https://mirror.spack.io/_source-cache/archive/2e/2e6f249f1f3654291606e046b09f1fd5eac39b360664c27f5aad072012f8bcbd.tar.gz
+==> No patches needed for py-filelock
+==> py-filelock: Executing phase: 'install'
+==> py-filelock: Successfully installed py-filelock-3.12.4-yruxmnk6qavrajonqv5zxc5ekh7blw24
+  Stage: 0.57s.  Install: 0.43s.  Post-install: 0.04s.  Total: 1.14s
+[+] /home/a10-kfotso/spack/spack/opt/spack/linux-ubuntu22.04-neoverse_v2/gcc-11.4.0/py-filelock-3.12.4-yruxmnk6qavrajonqv5zxc5ekh7blw24
+==> Installing py-attrs-23.1.0-rozikwg626sefrwdwoazseqfdacs33b4 [139/151]
+==> No binary for py-attrs-23.1.0-rozikwg626sefrwdwoazseqfdacs33b4 found: installing from source
+==> Fetching https://mirror.spack.io/_source-cache/archive/62/6279836d581513a26f1bf235f9acd333bc9115683f14f7e8fae46c98fc50e015.tar.gz
+==> No patches needed for py-attrs
+==> py-attrs: Executing phase: 'install'
+==> py-attrs: Successfully installed py-attrs-23.1.0-rozikwg626sefrwdwoazseqfdacs33b4
+  Stage: 0.83s.  Install: 0.46s.  Post-install: 0.04s.  Total: 1.44s
+[+] /home/a10-kfotso/spack/spack/opt/spack/linux-ubuntu22.04-neoverse_v2/gcc-11.4.0/py-attrs-23.1.0-rozikwg626sefrwdwoazseqfdacs33b4
+==> Installing py-pretty-errors-1.2.25-rykwn43uf7iij34kkpqyep4ti7jflncj [140/151]
+==> No binary for py-pretty-errors-1.2.25-rykwn43uf7iij34kkpqyep4ti7jflncj found: installing from source
+==> Fetching https://files.pythonhosted.org/packages/source/p/pretty-errors/pretty_errors-1.2.25.tar.gz
+==> No patches needed for py-pretty-errors
+==> py-pretty-errors: Executing phase: 'install'
+==> py-pretty-errors: Successfully installed py-pretty-errors-1.2.25-rykwn43uf7iij34kkpqyep4ti7jflncj
+  Stage: 0.96s.  Install: 0.48s.  Post-install: 0.03s.  Total: 1.58s
+[+] /home/a10-kfotso/spack/spack/opt/spack/linux-ubuntu22.04-neoverse_v2/gcc-11.4.0/py-pretty-errors-1.2.25-rykwn43uf7iij34kkpqyep4ti7jflncj
+==> Installing py-requests-2.32.2-5rx2nrvfvq4htvarrcwe4ylmkqo7rzwh [141/151]
+==> No binary for py-requests-2.32.2-5rx2nrvfvq4htvarrcwe4ylmkqo7rzwh found: installing from source
+==> Fetching https://files.pythonhosted.org/packages/source/r/requests/requests-2.32.2.tar.gz
+==> No patches needed for py-requests
+==> py-requests: Executing phase: 'install'
+==> py-requests: Successfully installed py-requests-2.32.2-5rx2nrvfvq4htvarrcwe4ylmkqo7rzwh
+  Stage: 0.93s.  Install: 0.59s.  Post-install: 0.04s.  Total: 1.67s
+[+] /home/a10-kfotso/spack/spack/opt/spack/linux-ubuntu22.04-neoverse_v2/gcc-11.4.0/py-requests-2.32.2-5rx2nrvfvq4htvarrcwe4ylmkqo7rzwh
+==> Installing py-aiohttp-3.9.5-p3npacetyadef3cgv26i4zaapeawko3z [142/151]
+==> No binary for py-aiohttp-3.9.5-p3npacetyadef3cgv26i4zaapeawko3z found: installing from source
+==> Fetching https://files.pythonhosted.org/packages/source/a/aiohttp/aiohttp-3.9.5.tar.gz
+==> No patches needed for py-aiohttp
+==> py-aiohttp: Executing phase: 'install'
+==> py-aiohttp: Successfully installed py-aiohttp-3.9.5-p3npacetyadef3cgv26i4zaapeawko3z
+  Stage: 1.18s.  Install: 12.43s.  Post-install: 0.05s.  Total: 13.78s
+[+] /home/a10-kfotso/spack/spack/opt/spack/linux-ubuntu22.04-neoverse_v2/gcc-11.4.0/py-aiohttp-3.9.5-p3npacetyadef3cgv26i4zaapeawko3z
+==> Installing py-requests-oauthlib-1.3.1-hdvf73chh4brdtew273qgbf6z7sb56bn [143/151]
+==> No binary for py-requests-oauthlib-1.3.1-hdvf73chh4brdtew273qgbf6z7sb56bn found: installing from source
+==> Fetching https://mirror.spack.io/_source-cache/archive/75/75beac4a47881eeb94d5ea5d6ad31ef88856affe2332b9aafb52c6452ccf0d7a.tar.gz
+==> No patches needed for py-requests-oauthlib
+==> py-requests-oauthlib: Executing phase: 'install'
+==> py-requests-oauthlib: Successfully installed py-requests-oauthlib-1.3.1-hdvf73chh4brdtew273qgbf6z7sb56bn
+  Stage: 0.62s.  Install: 0.52s.  Post-install: 0.04s.  Total: 1.29s
+[+] /home/a10-kfotso/spack/spack/opt/spack/linux-ubuntu22.04-neoverse_v2/gcc-11.4.0/py-requests-oauthlib-1.3.1-hdvf73chh4brdtew273qgbf6z7sb56bn
+==> Installing py-fsspec-2024.5.0-vd2cogl7k2hzvshqi6jw44iekeppi5l6 [144/151]
+==> No binary for py-fsspec-2024.5.0-vd2cogl7k2hzvshqi6jw44iekeppi5l6 found: installing from source
+==> Fetching https://files.pythonhosted.org/packages/source/f/fsspec/fsspec-2024.5.0.tar.gz
+==> No patches needed for py-fsspec
+==> py-fsspec: Executing phase: 'install'
+==> py-fsspec: Successfully installed py-fsspec-2024.5.0-vd2cogl7k2hzvshqi6jw44iekeppi5l6
+  Stage: 1.08s.  Install: 0.67s.  Post-install: 0.07s.  Total: 1.94s
+[+] /home/a10-kfotso/spack/spack/opt/spack/linux-ubuntu22.04-neoverse_v2/gcc-11.4.0/py-fsspec-2024.5.0-vd2cogl7k2hzvshqi6jw44iekeppi5l6
+==> Installing py-google-auth-oauthlib-0.4.6-epcpobmgqfgdoxbuqwkcu2xcb3hluv7y [145/151]
+==> No binary for py-google-auth-oauthlib-0.4.6-epcpobmgqfgdoxbuqwkcu2xcb3hluv7y found: installing from source
+==> Fetching https://mirror.spack.io/_source-cache/archive/a9/a90a072f6993f2c327067bf65270046384cda5a8ecb20b94ea9a687f1f233a7a.tar.gz
+==> No patches needed for py-google-auth-oauthlib
+==> py-google-auth-oauthlib: Executing phase: 'install'
+==> py-google-auth-oauthlib: Successfully installed py-google-auth-oauthlib-0.4.6-epcpobmgqfgdoxbuqwkcu2xcb3hluv7y
+  Stage: 0.57s.  Install: 0.54s.  Post-install: 0.04s.  Total: 1.27s
+[+] /home/a10-kfotso/spack/spack/opt/spack/linux-ubuntu22.04-neoverse_v2/gcc-11.4.0/py-google-auth-oauthlib-0.4.6-epcpobmgqfgdoxbuqwkcu2xcb3hluv7y
+==> Error: py-horovod-0.28.1-ghgpqsyk7yalacm35sz6fmnyudta6oqt: Package was not installed
+==> Updating view at /home/a10-kfotso/spack/spack/var/spack/environments/horovod_env/.spack-env/view
+==> Error: Installation request failed.  Refer to reported errors for failing package(s).
