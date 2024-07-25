@@ -29,6 +29,9 @@ Link to the tutorial on ARM
 NVIDIA CPU benchmarking guide:
 --> [here](https://nvidia.github.io/grace-cpu-benchmarking-guide/benchmarks/HPL/index.html)
 
+Link to Grace architechture in depth:
+--> [here](https://resources.nvidia.com/en-us-grace-cpu/grace-cpu-1?ncid=no-ncid)
+
 Link to the video on Grace:
 --> [here](https://www.youtube.com/watch?v=VRX7-LEbemI)
 
