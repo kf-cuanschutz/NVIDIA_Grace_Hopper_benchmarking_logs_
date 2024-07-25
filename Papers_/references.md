@@ -22,8 +22,10 @@ III) Documentation related to HPL:
 
 Additional documentation on Grace:
 --> [here](https://docs.nvidia.com/grace-performance-tuning-guide.pdf)
+--> [here](https://github.com/arm-hpc-user-group/tutorial-neoverse?tab=readme-ov-file)
 
 Additional documentation on Hopper:
 --> [here](https://docs.nvidia.com/cuda/pdf/Hopper_Tuning_Guide.pdf)
+
 
 
