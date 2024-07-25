@@ -23,7 +23,11 @@ III) Documentation related to HPL:
 Additional documentation on Grace:
 --> [here](https://docs.nvidia.com/grace-performance-tuning-guide.pdf)
 
-Link to the tutorial on ARM [here](https://github.com/arm-hpc-user-group/tutorial-neoverse?tab=readme-ov-file)
+Link to the tutorial on ARM 
+--> [here](https://github.com/arm-hpc-user-group/tutorial-neoverse?tab=readme-ov-file)
+
+NVIDIA CPU benchmarking guide:
+--> [here](https://nvidia.github.io/grace-cpu-benchmarking-guide/benchmarks/HPL/index.html)
 
 Link to the video on Grace:
 --> [here](https://www.youtube.com/watch?v=VRX7-LEbemI)
