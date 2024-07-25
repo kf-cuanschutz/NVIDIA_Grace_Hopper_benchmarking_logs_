@@ -20,4 +20,10 @@ III) Documentation related to HPL:
 * [12] https://hpl-calculator.sourceforge.net/Howto-HPL-GPU.pdf
 * [13] Information on HPL [syntax](https://sepwww.stanford.edu/sep/claudio/Research/Prst_ExpRefl/ShtPSPI/intel/cmkl/10.0.3.020/benchmarks/mp_linpack/www/HPL_infog2l.html)
 
+Additional documentation on Grace:
+--> [here](https://docs.nvidia.com/grace-performance-tuning-guide.pdf)
+
+Additional documentation on Hopper:
+--> [here](https://docs.nvidia.com/cuda/pdf/Hopper_Tuning_Guide.pdf)
+
 
