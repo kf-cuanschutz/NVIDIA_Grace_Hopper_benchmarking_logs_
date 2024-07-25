@@ -1,0 +1,30 @@
+## Large scale experiment:
+--------------------------
+
+```bash
+perf stat make large_scale_experiment
+```
+
+```bash
+ Performance counter stats for 'make large_scale_experiment':
+
+      9,213,278.26 msec task-clock                       #    5.240 CPUs utilized             
+           140,145      context-switches                 #   15.211 /sec                      
+            70,426      cpu-migrations                   #    7.644 /sec                      
+           977,247      page-faults                      #  106.069 /sec                      
+30,870,935,237,273      cycles                           #    3.351 GHz                         (42.90%)
+10,278,484,257,377      instructions                     #    0.33  insn per cycle              (57.18%)
+ 1,699,021,873,113      branches                         #  184.410 M/sec                       (71.46%)
+       493,734,147      branch-misses                    #    0.03% of all branches             (71.45%)
+                        TopdownL1                 #      0.1 %  bad_speculation        
+                                                  #      4.0 %  retiring                 (57.16%)
+                                                  #      2.2 %  frontend_bound           (42.88%)
+                                                  #     93.7 %  backend_bound            (28.60%)
+
+    1758.393626457 seconds time elapsed
+
+    9187.111449000 seconds user
+      23.414682000 seconds sys
+
+
+```
