@@ -10,7 +10,7 @@ The Grace Hopper system is made of an ARM CPU part and a Hopper architechture pa
 * According to nvidia-smi, the GPU chip is  NVIDIA GH200 with global memory 574.5GB.
 * The OS distribution is Ubuntu 22.04.4 and the kernel is 6.5.0-1019-nvidia-64k, suitable for the arm64 architecture.
 
-Link to Hopper CUDA gencode --> [here](https://arnon.dk/matching-sm-architectures-arch-and-gencode-for-various-nvidia-cards/)
+Link to Hopper CUDA gencode --> [90](https://arnon.dk/matching-sm-architectures-arch-and-gencode-for-various-nvidia-cards/)
 
 
 [1] Further links to nvidia-smi: https://developer.download.nvidia.com/compute/DCGM/docs/nvidia-smi-367.38.pdf
