@@ -1,7 +1,7 @@
 Compiling the lessons learned from the Slurm MIG Installation:
 --------------------------------------------------------------
 
-* The main guide that was used to achieve this was [here](https://techcommunity.microsoft.com/t5/azure-high-performance-computing/creating-a-slurm-cluster-for-scheduling-nvidia-mig-based-gpu/ba-p/4183835). 
+* The main guide that was used to achieve this was [here](https://techcommunity.microsoft.com/t5/azure-high-performance-computing/creating-a-slurm-cluster-for-scheduling-nvidia-mig-based-gpu/ba-p/4183835). This [doc](https://drtailor.medium.com/how-to-setup-slurm-on-ubuntu-20-04-for-single-node-work-scheduling-6cc909574365) was also helpful at times.
 Because we are working only on a single node, some steps had to be skipped. We will go over that a little later.
 
 * We first followed the NVIDIA guide on MIG to assess the gpu partitioning with nvidia-smi. Partitioning here means the action of creating seperate GPU instances composed of their own unique paths to the DRAM, the L2 cache, memory controllers etc ...
