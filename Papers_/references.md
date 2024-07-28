@@ -35,8 +35,12 @@ Link to Grace architechture in depth:
 Link to the video on Grace:
 --> [here](https://www.youtube.com/watch?v=VRX7-LEbemI)
 
+Link to the Grace Hopper whitepaper:
+-->[here](https://www.amax.com/content/files/2023/12/NVIDIA_Grace_Hopper_Superchip_Architecture_Overview_Whitepaper.pdf)
+
 Additional documentation on Hopper:
 --> [here](https://docs.nvidia.com/cuda/pdf/Hopper_Tuning_Guide.pdf)
+
 
 
 
