@@ -194,5 +194,6 @@ sudo tail var/log/slurm/slurmd.log
 scontrol update nodename=localhost state=resume
 ```
 
-* [This](https://gitlab.com/nvidia/hpc/slurm-mig-discovery) was a helpful link as well.
+* [This](https://gitlab.com/nvidia/hpc/slurm-mig-discovery) was a helpful link as well. This [page](https://www.reddit.com/r/SLURM/comments/gx2x99/cgroup_v2/) showed me the
+  right thing to edit in the slurm.conf file.
 
