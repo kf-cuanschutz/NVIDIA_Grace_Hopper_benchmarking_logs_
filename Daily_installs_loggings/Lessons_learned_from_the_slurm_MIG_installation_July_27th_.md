@@ -101,11 +101,98 @@ Successfully created GPU instance ID  4 on GPU  0 using profile MIG 1g.24gb (ID 
 Successfully created compute instance ID  0 on GPU  0 GPU instance ID  4 using profile MIG 1g.24gb (ID  7)
 
 ```
+
+* We had to clone the mig discovery github repo.
+```bash
+a10-kfotso@a10-cuanschutz01:~/mig_discovery$ git clone https://gitlab.com/nvidia/hpc/slurm-mig-discovery.git
+Cloning into 'slurm-mig-discovery'...
+remote: Enumerating objects: 7, done.
+remote: Total 7 (delta 0), reused 0 (delta 0), pack-reused 7 (from 1)
+Receiving objects: 100% (7/7), 8.07 KiB | 8.07 MiB/s, done.
+Resolving deltas: 100% (1/1), done.
+a10-kfotso@a10-cuanschutz01:~/mig_discovery$ cd slurm-mig-discovery
+a10-kfotso@a10-cuanschutz01:~/mig_discovery/slurm-mig-discovery$ sudo gcc -g -o mig -I/usr/local/cuda/include -I/usr/cuda/include mig.c -lnvidia-ml
+a10-kfotso@a10-cuanschutz01:~/mig_discovery/slurm-mig-discovery$ sudo ./mig
+GPU count 1
+Success
+```
+
+* We did not have to install ```slurm-slurmd```. We could not locate it with apt anyway.
+
+* We had to make sure to chown all the .conf files to ```slurm:slurm```. It was really an important step
+
+* We had to enable munge.
+
+```bash
+root@a10-cuanschutz01:~# cp /etc/munge/munge.key /sched/
+root@a10-cuanschutz01:~# chown munge:munge /sched/munge.key
+root@a10-cuanschutz01:~# chmod 400 /sched/munge.key
+root@a10-cuanschutz01:~# cp /sched/munge.key /etc/slurm/
+root@a10-cuanschutz01:~# cp /sched/munge.key /etc/slurm-llnl/
+root@a10-cuanschutz01:~# systemctl restart munge
+root@a10-cuanschutz01:~# systemctl enable munge
+Synchronizing state of munge.service with SysV service script with /lib/systemd/systemd-sysv-install.
+Executing: /lib/systemd/systemd-sysv-install enable munge
+```
   
 * We created a directory ``` /sched/```. We created the file ```/sched/cgroup.conf```. We also created the files accounting.conf, gres.conf, partition.conf, cgroup.conf and cgroup_allowed_devices_file.conf. 
 
 * We made sure to copy them to /etc/slurm and /etc/slurm-llnl.  For more information please refer to all the configuration files that we uploaded [here](https://github.com/kf-cuanschutz/NVIDIA_Grace_Hopper_benchmarking_logs_/tree/main/Daily_installs_loggings/all_final_slurm_mig_config_files_)
 
+* A lot of trial and error were necessary and the commands below were alwauys very useful:
 
+```bash
+systemctl restart slurmctld;systemctl enable slurmctld;systemctl restart slurmd;systemctl enable slurmd
+```
 
+```bash
+slurmctld -D
+```
+
+```bash
+scontrol update nodename=localhost state=idle
+```
+
+* We had to create a mount point for the cgroup.
+
+```bash
+root@a10-cuanschutz01:/sched# 
+
+echo CgroupMountpoint=/sys/fs/cgroup >> /etc/slurm-llnl/cgroup.conf
+root@a10-cuanschutz01:/sched# 
+
+echo CgroupMountpoint=/sys/fs/cgroup >> /etc/slurm/cgroup.conf
+root@a10-cuanschutz01:/sched# ls /sys/fs/cgroup^C
+root@a10-cuanschutz01:/sched# 
+
+echo CgroupMountpoint=/sys/fs/cgroup >> /sched/cgroup.conf
+root@a10-cuanschutz01:/sched# cat cgroup.conf 
+CgroupAutomount=yes
+ConstrainCores=no
+ConstrainRamSpace=no
+ConstrainDevices=yes
+CgroupMountpoint=/sys/fs/cgroup
+root@a10-cuanschutz01:/sched# systemctl restart slurmctld;systemctl enable slurmctld;systemctl restart slurmd;systemctl enable slurmd
+Synchronizing state of slurmctld.service with SysV service script with /lib/systemd/systemd-sysv-install.
+Executing: /lib/systemd/systemd-sysv-install enable slurmctld
+Synchronizing state of slurmd.service with SysV service script with /lib/systemd/systemd-sysv-install.
+Executing: /lib/systemd/systemd-sysv-install enable slurmd
+
+```
+
+```bash
+apt install cgroupfs-mount
+cgroupfs-mount
+```
+
+* Finally, the following slurm commands are very useful for debugging purposes:
+
+```bash
+slurmd -C
+slurmctld -D
+sudo tail var/log/slurm/slurmd.log
+scontrol update nodename=localhost state=resume
+```
+
+* [This](https://gitlab.com/nvidia/hpc/slurm-mig-discovery) was a helpful link as well.
 
