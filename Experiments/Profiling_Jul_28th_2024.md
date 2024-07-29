@@ -41,5 +41,28 @@ All done.
 I am not able to use ncu when the MIG is activate I tried different ways but it is not working. I might have to rever the MIG for now:
 
 ```bash
-nvidia-smi -mig 0
+(cuda_env) root@a10-cuanschutz01:/home/a10-kfotso/benchmarking_/Pi_numba_cuda_project_/gpu_programming_December_2023# nvidia-smi -mig 0
+Unable to disable MIG Mode for GPU 00000009:01:00.0: In use by another client
+Terminating early due to previous errors.
 ```
+
+This is strange because when I try to see all of the processes that are running I see none:
+
+```bash
+(cuda_env) root@a10-cuanschutz01:/home/a10-kfotso/benchmarking_/Pi_numba_cuda_project_/gpu_programming_December_2023# fuser -v /dev/nvidia*
+```
+
+I saw this issue as well that seems to confirm [it](https://github.com/NVIDIA/gpu-operator/issues/118)
+
+Let's try to kill process 2263460?
+
+```bash
+(cuda_env) root@a10-cuanschutz01:/home/a10-kfotso/benchmarking_/Pi_numba_cuda_project_/gpu_programming_December_2023# ls /proc/*/fd/* -l | grep /dev/nvidi
+ls: cannot access '/proc/2263460/fd/255': No such file or directory
+ls: cannot access '/proc/2263460/fd/3': No such file or directory
+ls: cannot access '/proc/self/fd/255': No such file or directory
+ls: cannot access '/proc/self/fd/3': No such file or directory
+ls: cannot access '/proc/thread-self/fd/255': No such file or directory
+ls: cannot access '/proc/thread-self/fd/3': No such file or directory
+```
+It looks like it did not work.
