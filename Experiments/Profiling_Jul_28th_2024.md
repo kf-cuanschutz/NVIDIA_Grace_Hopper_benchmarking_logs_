@@ -30,3 +30,10 @@ GPU clocks set to "(gpuClkMin tdp, gpuClkMax tdp)" for GPU 00000009:01:00.0
 Warning: persistence mode is disabled on device 00000009:01:00.0. See the Known Issues section of the nvidia-smi(1) man page for more information. Run with [--help | -h] switch to get more information on how to enable persistence mode.
 All done.
 ````
+
+I decided to reset the clocks:
+
+```bash
+(cuda_env) root@a10-cuanschutz01:/home/a10-kfotso/benchmarking_/Pi_numba_cuda_project_/gpu_programming_December_2023# nvidia-smi --reset-gpu-clocks
+All done.
+```
