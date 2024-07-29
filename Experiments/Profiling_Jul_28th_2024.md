@@ -37,3 +37,9 @@ I decided to reset the clocks:
 (cuda_env) root@a10-cuanschutz01:/home/a10-kfotso/benchmarking_/Pi_numba_cuda_project_/gpu_programming_December_2023# nvidia-smi --reset-gpu-clocks
 All done.
 ```
+
+I am not able to use ncu when the MIG is activate I tried different ways but it is not working. I might have to rever the MIG for now:
+
+```bash
+nvidia-smi -mig 0
+```
