@@ -66,3 +66,33 @@ ls: cannot access '/proc/thread-self/fd/255': No such file or directory
 ls: cannot access '/proc/thread-self/fd/3': No such file or directory
 ```
 It looks like it did not work.
+
+Looks like I found the culprit?
+
+```bash
+(cuda_env) root@a10-cuanschutz01:/home/a10-kfotso/benchmarking_/Pi_numba_cuda_project_/gpu_programming_December_2023# lsof | grep -i nvidia
+systemd-u    1119                               root  mem       REG              252,0    23209   41812296 /usr/lib/modules/6.5.0-1019-nvidia-64k/modules.builtin.bin
+systemd-u    1119                               root  mem       REG              252,0   909157   41812286 /usr/lib/modules/6.5.0-1019-nvidia-64k/modules.symbols.bin
+systemd-u    1119                               root  mem       REG              252,0  1927237   41812283 /usr/lib/modules/6.5.0-1019-nvidia-64k/modules.alias.bin
+systemd-u    1119                               root  mem       REG              252,0  1169980   41812282 /usr/lib/modules/6.5.0-1019-nvidia-64k/modules.dep.bin
+systemd-u    1119                               root  mem       REG              252,0    49215   41812297 /usr/lib/modules/6.5.0-1019-nvidia-64k/modules.builtin.alias.bin
+nvidia-mo 1484769                               root  cwd       DIR              252,0     4096          2 /
+nvidia-mo 1484769                               root  rtd       DIR              252,0     4096          2 /
+nvidia-mo 1484769                               root  txt   unknown                                        /proc/1484769/exe
+nvidia-mo 1484770                               root  cwd       DIR              252,0     4096          2 /
+nvidia-mo 1484770                               root  rtd       DIR              252,0     4096          2 /
+nvidia-mo 1484770                               root  txt   unknown                                        /proc/1484770/exe
+nvidia-pe 1984422                               root  cwd       DIR              252,0     4096          2 /
+nvidia-pe 1984422                               root  rtd       DIR              252,0     4096          2 /
+nvidia-pe 1984422                               root  txt       REG              252,0   195976   41718137 /usr/bin/nvidia-persistenced
+nvidia-pe 1984422                               root  mem       REG              252,0     6240   41681700 /usr/lib/aarch64-linux-gnu/librt.so.1
+nvidia-pe 1984422                               root  mem       REG              252,0   390808   41718167 /usr/lib/aarch64-linux-gnu/libnvidia-cfg.so.550.54.15
+nvidia-pe 1984422                               root  mem       REG              252,0  1637400   41681454 /usr/lib/aarch64-linux-gnu/libc.so.6
+nvidia-pe 1984422                               root  mem       REG              252,0    13752   41681697 /usr/lib/aarch64-linux-gnu/libpthread.so.0
+nvidia-pe 1984422                               root  mem       REG              252,0     6152   41681529 /usr/lib/aarch64-linux-gnu/libdl.so.2
+nvidia-pe 1984422                               root  mem       REG              252,0   187776   41680960 /usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1
+nvidia-pe 1984422                               root    0u     unix 0xffff005a73b65d80      0t0    3448369 type=DGRAM
+nvidia-pe 1984422                               root    1uW     REG               0,26        8     251658 /run/nvidia-persistenced/nvidia-persistenced.pid
+nvidia-pe 1984422                               root    2r      DIR               0,23        0    1633844 /sys/bus/pci/drivers/nvidia
+nvidia-pe 1984422                               root    9u     unix 0xffff005a73b60880      0t0    3448370 /var/run/nvidia-persistenced/socket type=STREAM
+```
