@@ -197,3 +197,5 @@ scontrol update nodename=localhost state=resume
 * [This](https://gitlab.com/nvidia/hpc/slurm-mig-discovery) was a helpful link as well. This [page](https://www.reddit.com/r/SLURM/comments/gx2x99/cgroup_v2/) showed me the
   right thing to edit in the slurm.conf file.
 
+* More informations on MIG here [1](https://cloud.google.com/kubernetes-engine/docs/how-to/gpus-multi),[2](https://developer.nvidia.com/blog/getting-the-most-out-of-the-a100-gpu-with-multi-instance-gpu/),[3](https://www.seimaxim.com/kb/gpu/nvidia-a100-mig-cheat-sheat)
+
