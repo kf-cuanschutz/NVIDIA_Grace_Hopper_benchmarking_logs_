@@ -54,3 +54,204 @@ jit execs 45 kernels
 avg:  1872.42 GFLOPS    29.55 GB/s           total: 316015 kernels 122682.53 GOPS  1936.39 GB 65520.96 ms
 
 ```
+
+Stable diffusion not working
+
+```bash
+python3 examples/stable_diffusion.py
+
+(tiny_grad_env) a10-kfotso@a10-cuanschutz01:~/benchmarking_/tiny_grad/tinygrad$ python3 examples/stable_diffusion.py
+ram used:  4.26 GB, cond_stage_model.transformer.text_model.final_layer_norm.bias: 100%|████████████████████████████████████████████████████████████████████████████████████| 1131/1131 [00:00<00:00, 2105.27it/s]
+loaded weights in 540.05 ms, 4.26 GB loaded at 7.90 GB/s
+got CLIP context (1, 77, 768)
+got unconditional CLIP context (1, 77, 768)
+running for [1, 201, 401, 601, 801] timesteps
+  0%|                                                                                                                                                                                       | 0/5 [00:00<?, ?it/s]4 errors generated.
+Traceback (most recent call last):
+  File "/home/a10-kfotso/benchmarking_/tiny_grad/tinygrad/examples/stable_diffusion.py", line 274, in <module>
+    latent = run(model, unconditional_context, context, latent, Tensor([timestep]), alphas[tid], alphas_prev[tid], Tensor([args.guidance]))
+  File "/home/a10-kfotso/benchmarking_/tiny_grad/tinygrad/tinygrad/engine/jit.py", line 172, in __call__
+    self.ret = self.fxn(*args, **kwargs)
+  File "/home/a10-kfotso/benchmarking_/tiny_grad/tinygrad/examples/stable_diffusion.py", line 265, in run
+    def run(model, *x): return model(*x).realize()
+  File "/home/a10-kfotso/benchmarking_/tiny_grad/tinygrad/examples/stable_diffusion.py", line 200, in __call__
+    return x_prev.realize()
+  File "/home/a10-kfotso/benchmarking_/tiny_grad/tinygrad/tinygrad/tensor.py", line 3167, in _wrapper
+    ret = fn(*args, **kwargs)
+  File "/home/a10-kfotso/benchmarking_/tiny_grad/tinygrad/tinygrad/tensor.py", line 203, in realize
+    run_schedule(*self.schedule_with_vars(*lst), do_update_stats=do_update_stats)
+  File "/home/a10-kfotso/benchmarking_/tiny_grad/tinygrad/tinygrad/engine/realize.py", line 223, in run_schedule
+    for ei in lower_schedule(schedule):
+  File "/home/a10-kfotso/benchmarking_/tiny_grad/tinygrad/tinygrad/engine/realize.py", line 216, in lower_schedule
+    raise e
+  File "/home/a10-kfotso/benchmarking_/tiny_grad/tinygrad/tinygrad/engine/realize.py", line 210, in lower_schedule
+    try: yield lower_schedule_item(si)
+  File "/home/a10-kfotso/benchmarking_/tiny_grad/tinygrad/tinygrad/engine/realize.py", line 194, in lower_schedule_item
+    runner = get_runner(si.outputs[0].device, si.ast)
+  File "/home/a10-kfotso/benchmarking_/tiny_grad/tinygrad/tinygrad/engine/realize.py", line 164, in get_runner
+    method_cache[ckey] = method_cache[bkey] = ret = CompiledRunner(replace(prg, dname=dname))
+  File "/home/a10-kfotso/benchmarking_/tiny_grad/tinygrad/tinygrad/engine/realize.py", line 82, in __init__
+    self.lib:bytes = precompiled if precompiled is not None else Device[p.dname].compiler.compile_cached(p.src)
+  File "/home/a10-kfotso/benchmarking_/tiny_grad/tinygrad/tinygrad/device.py", line 183, in compile_cached
+    lib = self.compile(src)
+  File "/home/a10-kfotso/benchmarking_/tiny_grad/tinygrad/tinygrad/runtime/ops_gpu.py", line 26, in compile
+    raise CompileError(f"OpenCL Compile Error\n\n{mstr.value.decode()}")
+tinygrad.device.CompileError: OpenCL Compile Error
+
+<kernel>:39:38: error: call to 'exp2' is ambiguous
+    data0[alu1] = (float)((cast1*(1/(exp2((cast1*((half)(-1.4426950408889634))))+(half)(1.0)))));
+                                     ^~~~
+cl_kernel.h:1473:24: note: candidate function
+float __OVERLOADABLE__ exp2(float);
+                       ^
+cl_kernel.h:1474:25: note: candidate function
+double __OVERLOADABLE__ exp2(double);
+                        ^
+cl_kernel.h:1475:25: note: candidate function
+float2 __OVERLOADABLE__ exp2(float2); 
+                        ^
+cl_kernel.h:1477:25: note: candidate function
+float3 __OVERLOADABLE__ exp2(float3); 
+                        ^
+cl_kernel.h:1479:25: note: candidate function
+float4 __OVERLOADABLE__ exp2(float4); 
+                        ^
+cl_kernel.h:1480:25: note: candidate function
+float8 __OVERLOADABLE__ exp2(float8); 
+                        ^
+cl_kernel.h:1481:26: note: candidate function
+float16 __OVERLOADABLE__ exp2(float16); 
+                         ^
+cl_kernel.h:1482:26: note: candidate function
+double2 __OVERLOADABLE__ exp2(double2); 
+                         ^
+cl_kernel.h:1484:26: note: candidate function
+double3 __OVERLOADABLE__ exp2(double3); 
+                         ^
+cl_kernel.h:1486:26: note: candidate function
+double4 __OVERLOADABLE__ exp2(double4); 
+                         ^
+cl_kernel.h:1487:26: note: candidate function
+double8 __OVERLOADABLE__ exp2(double8); 
+                         ^
+cl_kernel.h:1488:27: note: candidate function
+double16 __OVERLOADABLE__ exp2(double16); 
+                          ^
+<kernel>:40:38: error: call to 'exp2' is ambiguous
+    data0[alu2] = (float)((cast2*(1/(exp2((cast2*((half)(-1.4426950408889634))))+(half)(1.0)))));
+                                     ^~~~
+cl_kernel.h:1473:24: note: candidate function
+float __OVERLOADABLE__ exp2(float);
+                       ^
+cl_kernel.h:1474:25: note: candidate function
+double __OVERLOADABLE__ exp2(double);
+                        ^
+cl_kernel.h:1475:25: note: candidate function
+float2 __OVERLOADABLE__ exp2(float2); 
+                        ^
+cl_kernel.h:1477:25: note: candidate function
+float3 __OVERLOADABLE__ exp2(float3); 
+                        ^
+cl_kernel.h:1479:25: note: candidate function
+float4 __OVERLOADABLE__ exp2(float4); 
+                        ^
+cl_kernel.h:1480:25: note: candidate function
+float8 __OVERLOADABLE__ exp2(float8); 
+                        ^
+cl_kernel.h:1481:26: note: candidate function
+float16 __OVERLOADABLE__ exp2(float16); 
+                         ^
+cl_kernel.h:1482:26: note: candidate function
+double2 __OVERLOADABLE__ exp2(double2); 
+                         ^
+cl_kernel.h:1484:26: note: candidate function
+double3 __OVERLOADABLE__ exp2(double3); 
+                         ^
+cl_kernel.h:1486:26: note: candidate function
+double4 __OVERLOADABLE__ exp2(double4); 
+                         ^
+cl_kernel.h:1487:26: note: candidate function
+double8 __OVERLOADABLE__ exp2(double8); 
+                         ^
+cl_kernel.h:1488:27: note: candidate function
+double16 __OVERLOADABLE__ exp2(double16); 
+                          ^
+<kernel>:41:38: error: call to 'exp2' is ambiguous
+    data0[alu3] = (float)((cast3*(1/(exp2((cast3*((half)(-1.4426950408889634))))+(half)(1.0)))));
+                                     ^~~~
+cl_kernel.h:1473:24: note: candidate function
+float __OVERLOADABLE__ exp2(float);
+                       ^
+cl_kernel.h:1474:25: note: candidate function
+double __OVERLOADABLE__ exp2(double);
+                        ^
+cl_kernel.h:1475:25: note: candidate function
+float2 __OVERLOADABLE__ exp2(float2); 
+                        ^
+cl_kernel.h:1477:25: note: candidate function
+float3 __OVERLOADABLE__ exp2(float3); 
+                        ^
+cl_kernel.h:1479:25: note: candidate function
+float4 __OVERLOADABLE__ exp2(float4); 
+                        ^
+cl_kernel.h:1480:25: note: candidate function
+float8 __OVERLOADABLE__ exp2(float8); 
+                        ^
+cl_kernel.h:1481:26: note: candidate function
+float16 __OVERLOADABLE__ exp2(float16); 
+                         ^
+cl_kernel.h:1482:26: note: candidate function
+double2 __OVERLOADABLE__ exp2(double2); 
+                         ^
+cl_kernel.h:1484:26: note: candidate function
+double3 __OVERLOADABLE__ exp2(double3); 
+                         ^
+cl_kernel.h:1486:26: note: candidate function
+double4 __OVERLOADABLE__ exp2(double4); 
+                         ^
+cl_kernel.h:1487:26: note: candidate function
+double8 __OVERLOADABLE__ exp2(double8); 
+                         ^
+cl_kernel.h:1488:27: note: candidate function
+double16 __OVERLOADABLE__ exp2(double16); 
+                          ^
+<kernel>:42:38: error: call to 'exp2' is ambiguous
+    data0[alu0] = (float)((cast0*(1/(exp2((cast0*((half)(-1.4426950408889634))))+(half)(1.0)))));
+                                     ^~~~
+cl_kernel.h:1473:24: note: candidate function
+float __OVERLOADABLE__ exp2(float);
+                       ^
+cl_kernel.h:1474:25: note: candidate function
+double __OVERLOADABLE__ exp2(double);
+                        ^
+cl_kernel.h:1475:25: note: candidate function
+float2 __OVERLOADABLE__ exp2(float2); 
+                        ^
+cl_kernel.h:1477:25: note: candidate function
+float3 __OVERLOADABLE__ exp2(float3); 
+                        ^
+cl_kernel.h:1479:25: note: candidate function
+float4 __OVERLOADABLE__ exp2(float4); 
+                        ^
+cl_kernel.h:1480:25: note: candidate function
+float8 __OVERLOADABLE__ exp2(float8); 
+                        ^
+cl_kernel.h:1481:26: note: candidate function
+float16 __OVERLOADABLE__ exp2(float16); 
+                         ^
+cl_kernel.h:1482:26: note: candidate function
+double2 __OVERLOADABLE__ exp2(double2); 
+                         ^
+cl_kernel.h:1484:26: note: candidate function
+double3 __OVERLOADABLE__ exp2(double3); 
+                         ^
+cl_kernel.h:1486:26: note: candidate function
+double4 __OVERLOADABLE__ exp2(double4); 
+                         ^
+cl_kernel.h:1487:26: note: candidate function
+double8 __OVERLOADABLE__ exp2(double8); 
+                         ^
+cl_kernel.h:1488:27: note: candidate function
+double16 __OVERLOADABLE__ exp2(double16); 
+
+```
