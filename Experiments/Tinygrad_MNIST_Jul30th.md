@@ -297,7 +297,7 @@ Training Completed!
 avg:  1422.23 GFLOPS    31.69 GB/s           total: 5426482 kernels 674113.69 GOPS 15022.08 GB 473982.16 ms
 ```
 
-Ran tinygrad with optimization:
+# Ran tinygrad with optimization:
 
 ```bash
  DEBUG=2 BEAM=2  python mnist.py
@@ -398,7 +398,7 @@ jit execs 45 kernels
 avg:  3793.43 GFLOPS    63.65 GB/s           total: 316015 kernels 116195.23 GOPS  1949.62 GB 30630.65 ms
 
 ```
-Just switched MNIST batch to 256 from 128
+# Just switched MNIST batch to 256 from 128
 
 Result below:
 
@@ -455,7 +455,7 @@ Result below:
 avg:  4283.87 GFLOPS    60.86 GB/s           total: 316015 kernels 231770.02 GOPS  3292.84 GB 54102.97 ms
 ```
 
-Just switched MNIST batch size to 512
+# Just switched MNIST batch size to 512
 
 ```bash
 python mnist.py
