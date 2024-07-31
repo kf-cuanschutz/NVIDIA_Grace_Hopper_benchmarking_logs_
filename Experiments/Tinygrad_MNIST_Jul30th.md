@@ -456,3 +456,60 @@ avg:  4283.87 GFLOPS    60.86 GB/s           total: 316015 kernels 231770.02 GOP
 ```
 
 Just switched MNIST batch size to 512
+
+```bash
+python mnist.py
+
+
+*** GPU     329978 r_256_2_10                             mem  0.32 GB tm      5.95us/114677.55ms (    50.41 GFLOPS    4.6|185.2   GB/s) 
+jit execs 47 kernels
+*** GPU     329979 E_                                     mem  0.32 GB tm      4.19us/114677.55ms (     0.00 GFLOPS    0.0|0.0     GB/s) 
+*** GPU     329980 E_n1                                   mem  0.32 GB tm      4.29us/114677.56ms (     0.00 GFLOPS    0.0|0.0     GB/s) 
+*** CUSTOM  329981 custom_random                          mem  0.32 GB 
+*** GPU     329982 r_75_32_60000_5_5                      mem  0.32 GB tm      6.21us/114677.57ms (    10.82 GFLOPS   38.7|38.7    GB/s) 
+*** CUSTOM  329983 custom_random                          mem  0.32 GB 
+*** GPU     329984 r_5_2_10                               mem  0.32 GB tm      3.42us/114677.57ms (     0.08 GFLOPS    0.0|0.0     GB/s) 
+*** GPU     329985 E_n2                                   mem  0.32 GB tm      4.26us/114677.57ms (     0.00 GFLOPS    0.0|0.0     GB/s) 
+*** GPU     329986 E_n2                                   mem  0.32 GB tm      3.20us/114677.58ms (     0.00 GFLOPS    0.0|0.0     GB/s) 
+*** GPU     329987 E_32_8_2                               mem  0.32 GB tm      3.74us/114677.58ms (     0.55 GFLOPS    1.1|1.1     GB/s) 
+*** GPU     329988 r_196_10_32_16_375_16_4                mem  0.32 GB tm     13.85ms/114691.43ms (  4420.45 GFLOPS    3.7|305.4   GB/s) 
+*** GPU     329989 r_4_250_32_8_30_4                      mem  0.32 GB tm     33.02us/114691.47ms (  3968.99 GFLOPS   13.0|1596.9  GB/s) 
+*** GPU     329990 r_1792_32_10_7                         mem  0.32 GB tm     11.78us/114691.48ms (   340.87 GFLOPS  375.0|375.0   GB/s) 
+*** GPU     329991 r2_256_2_250                           mem  0.32 GB tm      7.26us/114691.49ms (    17.69 GFLOPS   18.0|18.0    GB/s) 
+*** GPU     329992 r_32_4_13_13_2_2_3_3_16_4_2            mem  0.32 GB tm     71.14us/114691.56ms (  3113.92 GFLOPS  628.4|1187.2  GB/s) 
+*** GPU     329993 r_64_2_4                               mem  0.32 GB tm      4.03us/114691.56ms (     1.17 GFLOPS    0.1|4.3     GB/s) 
+*** GPU     329994 r_13312_8_13_2_2_2                     mem  0.32 GB tm     70.21us/114691.63ms (   118.32 GFLOPS  788.8|788.8   GB/s) 
+*** GPU     329995 r_13312_4_13_2_4_2                     mem  0.32 GB tm     76.58us/114691.71ms (   578.54 GFLOPS  867.8|867.8   GB/s) 
+*** GPU     329996 r_8_512_11_2_16_2_3_11_4_3             mem  0.32 GB tm    959.04us/114692.67ms (  3572.01 GFLOPS   28.2|5688.8  GB/s) 
+*** GPU     329997 r_2048_16_2_2_5_5                      mem  0.32 GB tm     37.82us/114692.70ms (   346.53 GFLOPS  505.9|2425.7  GB/s) 
+*** GPU     329998 r_2048_5_16_2_2_5                      mem  0.32 GB tm     45.76us/114692.75ms (   358.04 GFLOPS  489.8|1002.5  GB/s) 
+*** GPU     329999 E_640_32_8_5                           mem  0.32 GB tm     12.00us/114692.76ms (   273.07 GFLOPS  819.2|819.2   GB/s) 
+*** GPU     330000 r_2_128_2_16_4_25_5_2                  mem  0.32 GB tm     17.73us/114692.78ms (  2125.63 GFLOPS  189.6|6210.5  GB/s) 
+*** GPU     330001 r_16_32_10                             mem  0.32 GB tm      4.03us/114692.78ms (     1.14 GFLOPS    5.6|5.6     GB/s) 
+*** GPU     330002 r_16_32_10n1                           mem  0.32 GB tm      3.74us/114692.79ms (     5.47 GFLOPS    6.6|6.6     GB/s) 
+*** GPU     330003 r_16_32_10n3                           mem  0.32 GB tm      4.32us/114692.79ms (     4.74 GFLOPS    5.7|5.7     GB/s) 
+*** GPU     330004 r_16_32_10n5                           mem  0.32 GB tm      4.03us/114692.80ms (     7.75 GFLOPS    1.7|7.2     GB/s) 
+*** GPU     330005 r_16_32_10n6                           mem  0.32 GB tm      4.03us/114692.80ms (    13.97 GFLOPS    7.2|12.8    GB/s) 
+*** GPU     330006 E_16_5_32_2                            mem  0.32 GB tm      4.51us/114692.80ms (    18.16 GFLOPS   11.5|27.8    GB/s) 
+*** GPU     330007 r3_10_8_16_4                           mem  0.32 GB tm      4.26us/114692.81ms (    44.81 GFLOPS    4.9|170.8   GB/s) 
+*** GPU     330008 r_25_32_2_4_4_10_4_4_2                 mem  0.32 GB tm     11.01us/114692.82ms (  1786.05 GFLOPS  603.0|1711.6  GB/s) 
+*** GPU     330009 E_256_5_16_2_2_2_2_2_5                 mem  0.32 GB tm     66.91us/114692.89ms (   269.34 GFLOPS  579.8|685.6   GB/s) 
+*** GPU     330010 r3_100_2_2_8_64_5_4_2                  mem  0.32 GB tm     18.72us/114692.91ms (  1039.49 GFLOPS  196.7|981.2   GB/s) 
+*** GPU     330011 E_32_32_11_2_2_11_4_2                  mem  0.32 GB tm    148.38us/114693.05ms (    48.89 GFLOPS  301.2|301.2   GB/s) 
+*** GPU     330012 r_32_64_8_4_2_64_9_4_2_2               mem  0.32 GB tm   1026.05us/114694.08ms (  2354.97 GFLOPS   85.1|1512.5  GB/s) 
+*** GPU     330013 r_4_128_32_8_11_4_11_3_3_2             mem  0.32 GB tm    723.84us/114694.80ms (  3549.50 GFLOPS   50.2|5720.6  GB/s) 
+*** GPU     330014 r_32_64_2_121_2_4                      mem  0.32 GB tm     25.98us/114694.83ms (  9384.35 GFLOPS  612.9|38147.8 GB/s) 
+*** GPU     330015 r_512_2_13_2_13_4_4_4_2                mem  0.32 GB tm    107.20us/114694.94ms (   503.67 GFLOPS  769.1|1756.4  GB/s) 
+*** GPU     330016 r3_1536_2_16_8_3_2                     mem  0.32 GB tm     17.76us/114694.95ms (   650.38 GFLOPS  556.3|2092.3  GB/s) 
+*** GPU     330017 r3_32_2_32_8                           mem  0.32 GB tm      4.86us/114694.96ms (    23.58 GFLOPS   13.8|84.2    GB/s) 
+*** GPU     330018 E_512_13_13_2_16_2_2                   mem  0.32 GB tm    138.82us/114695.10ms (   598.40 GFLOPS  877.6|1117.0  GB/s) 
+*** GPU     330019 r_256_8_3_2_26_2_3_26_2                mem  0.32 GB tm     93.41us/114695.19ms (  2667.87 GFLOPS  481.7|3912.9  GB/s) 
+*** GPU     330020 r_256_32_13_2_4_13                     mem  0.32 GB tm     53.95us/114695.25ms (   230.95 GFLOPS  821.8|939.6   GB/s) 
+*** GPU     330021 r3_144_2_64_4                          mem  0.32 GB tm      5.06us/114695.25ms (   309.87 GFLOPS   59.7|1137.4  GB/s) 
+*** GPU     330022 r3_4_8_16_16                           mem  0.32 GB tm      5.54us/114695.26ms (     4.53 GFLOPS    6.1|15.5    GB/s) 
+*** GPU     330023 E_4_32_4n2                             mem  0.32 GB tm      4.51us/114695.26ms (     0.23 GFLOPS    0.9|0.9     GB/s) 
+*** GPU     330024 r_256_2n1                              mem  0.32 GB tm      4.93us/114695.27ms (    13.40 GFLOPS    0.1|53.7    GB/s) 
+*** GPU     330025 r_256_2_10                             mem  0.32 GB tm      5.41us/114695.27ms (    55.48 GFLOPS    5.0|203.8   GB/s) 
+avg:  4372.00 GFLOPS    53.25 GB/s           total: 330025 kernels 501447.41 GOPS  6107.83 GB 114695.27 ms
+
+```
