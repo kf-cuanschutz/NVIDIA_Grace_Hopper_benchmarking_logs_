@@ -53,7 +53,7 @@ jit execs 45 kernels
 avg:  8611.70 GFLOPS   141.40 GB/s           total: 316015 kernels 118443.78 GOPS  1944.79 GB 13753.83 ms
 ```
 
-With 256 batch size.
+# With 256 batch size.
 
 ```bash
 it execs 45 kernels
