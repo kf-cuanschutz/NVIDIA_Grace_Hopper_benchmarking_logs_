@@ -41,6 +41,9 @@ Link to the Grace Hopper whitepaper:
 Additional documentation on Hopper:
 --> [here](https://docs.nvidia.com/cuda/pdf/Hopper_Tuning_Guide.pdf)
 
+LLM course:
+---> [here](https://web.stanford.edu/~jurafsky/slp3/)
+
 
 
 
