@@ -454,3 +454,5 @@ Result below:
 *** GPU     316015 r_256_10                               mem  0.19 GB tm      6.18us/ 54102.97ms (    13.68 GFLOPS    2.2|46.8    GB/s) 
 avg:  4283.87 GFLOPS    60.86 GB/s           total: 316015 kernels 231770.02 GOPS  3292.84 GB 54102.97 ms
 ```
+
+Just switched MNIST batch size to 512
