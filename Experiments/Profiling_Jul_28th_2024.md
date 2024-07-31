@@ -96,3 +96,22 @@ nvidia-pe 1984422                               root    1uW     REG             
 nvidia-pe 1984422                               root    2r      DIR               0,23        0    1633844 /sys/bus/pci/drivers/nvidia
 nvidia-pe 1984422                               root    9u     unix 0xffff005a73b60880      0t0    3448370 /var/run/nvidia-persistenced/socket type=STREAM
 ```
+* Looks like the following worked to reset the MIG. This [link](https://github.com/NVIDIA/gpu-operator/issues/118) was helpful.
+
+```bash
+root@a10-cuanschutz01:~# nvidia-smi -mig DISABLED
+Unable to disable MIG Mode for GPU 00000009:01:00.0: In use by another client
+Terminating early due to previous errors.
+root@a10-cuanschutz01:~#  nvidia-smi --gpu-reset
+GPU 00000009:01:00.0 was successfully reset.
+All done.
+
+root@a10-cuanschutz01:~# nvidia-smi -mig 0
+Disabled MIG Mode for GPU 00000009:01:00.0
+
+Warning: persistence mode is disabled on device 00000009:01:00.0. See the Known Issues section of the nvidia-smi(1) man page for more information. Run with [--help | -h] switch to get more information on how to enable persistence mode.
+All done.
+
+```
+
+
