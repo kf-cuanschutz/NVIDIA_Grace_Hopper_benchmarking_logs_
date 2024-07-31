@@ -160,3 +160,17 @@ Page up
 *** GPU     330024 r_32_16                                  mem  0.32 GB tm      6.14us/ 43570.57ms (     0.25 GFLOPS    0.1|0.8     GB/s) 
 avg: 11379.04 GFLOPS   140.18 GB/s           total: 330025 kernels 495791.23 GOPS  6107.78 GB 43570.58 ms
 ```
+# Batch size 1024
+
+```bash
+*** GPU     323012 r3_64_16_16n1                            mem  0.58 GB tm      5.12us/100927.97ms (     9.80 GFLOPS   13.1|33.6    GB/s) 
+*** GPU     323013 E_32768_13_13_2_2                        mem  0.58 GB tm    176.13us/100928.14ms (  1006.14 GFLOPS 1383.4|2515.3  GB/s) 
+*** GPU     323014 r_256_8_3_2_26_4_26_3_2                  mem  0.58 GB tm    104.45us/100928.25ms (  4294.59 GFLOPS  858.8|5554.8  GB/s) 
+*** GPU     323015 r_256_32_4_13_4_13                       mem  0.58 GB tm     68.61us/100928.31ms (  5488.72 GFLOPS 1291.9|22153.6 GB/s) 
+*** GPU     323016 r3_288_32_8                              mem  0.58 GB tm      6.14us/100928.32ms (    85.50 GFLOPS   49.1|300.0   GB/s) 
+*** GPU     323017 r3_32_16_16n1                            mem  0.58 GB tm      6.14us/100928.33ms (     4.08 GFLOPS    5.5|14.0    GB/s) 
+*** GPU     323018 E_64_16                                  mem  0.58 GB tm      5.12us/100928.33ms (     0.40 GFLOPS    1.6|1.6     GB/s) 
+*** GPU     323019 r_32_32                                  mem  0.58 GB tm      5.12us/100928.34ms (     0.40 GFLOPS    0.2|1.1     GB/s) 
+*** GPU     323020 r_256_10_4n1                             mem  0.58 GB tm      9.22us/100928.35ms (    15.17 GFLOPS    5.9|35.8    GB/s) 
+avg:  9704.02 GFLOPS   113.12 GB/s           total: 323020 kernels 979410.64 GOPS 11417.01 GB 100928.35 ms
+```
