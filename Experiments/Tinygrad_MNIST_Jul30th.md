@@ -398,4 +398,4 @@ jit execs 45 kernels
 avg:  3793.43 GFLOPS    63.65 GB/s           total: 316015 kernels 116195.23 GOPS  1949.62 GB 30630.65 ms
 
 ```
-Just switched MNIST batch to 256
+Just switched MNIST batch to 256 from 128
