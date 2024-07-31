@@ -199,7 +199,7 @@ scontrol update nodename=localhost state=resume
 
 * More informations on MIG here [1](https://cloud.google.com/kubernetes-engine/docs/how-to/gpus-multi),[2](https://developer.nvidia.com/blog/getting-the-most-out-of-the-a100-gpu-with-multi-instance-gpu/),[3](https://www.seimaxim.com/kb/gpu/nvidia-a100-mig-cheat-sheat)
 
-* Looks like the following worked to reset the MIG:
+* Looks like the following worked to reset the MIG. This [link](https://github.com/NVIDIA/gpu-operator/issues/118) was helpful.
 
 ```bash
 root@a10-cuanschutz01:~# nvidia-smi -mig DISABLED
@@ -207,6 +207,12 @@ Unable to disable MIG Mode for GPU 00000009:01:00.0: In use by another client
 Terminating early due to previous errors.
 root@a10-cuanschutz01:~#  nvidia-smi --gpu-reset
 GPU 00000009:01:00.0 was successfully reset.
+All done.
+
+root@a10-cuanschutz01:~# nvidia-smi -mig 0
+Disabled MIG Mode for GPU 00000009:01:00.0
+
+Warning: persistence mode is disabled on device 00000009:01:00.0. See the Known Issues section of the nvidia-smi(1) man page for more information. Run with [--help | -h] switch to get more information on how to enable persistence mode.
 All done.
 
 ```
