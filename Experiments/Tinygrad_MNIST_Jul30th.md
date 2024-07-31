@@ -1,6 +1,7 @@
 ### Ran the tinygrad example MNIST:
 ------------------------------------
 
+Links to tinygrad [here](https://docs.tinygrad.org/mnist/) and [here](https://github.com/tinygrad/tinygrad/tree/master).
 ```bash
 DEBUG=2 python mnist.py 
 
@@ -254,4 +255,44 @@ double8 __OVERLOADABLE__ exp2(double8);
 cl_kernel.h:1488:27: note: candidate function
 double16 __OVERLOADABLE__ exp2(double16); 
 
+```
+
+
+I ran tinygrad GAN:
+
+```bash
+DEBUG=3 python examples/mnist_gan.py
+
+*** GPU     5426454 r_16_16_8_16_128_4_4_4n1               mem  0.07 GB tm    390.40us/473979.31ms (  1393.98 GFLOPS   24.2|1391.3  GB/s) ['leakyrelu', 'leakyrelu bw', 'dropout', 'dot bw', 'dropout bw', '__add__']
+*** GPU     5426455 r_4_49_32_4_256_4_4_4n2                mem  0.07 GB tm    622.18us/473979.94ms (  1325.17 GFLOPS   13.7|1326.5  GB/s) ['tanh bw', 'dot bw']
+*** GPU     5426456 r_16_16_8_16_196_4_4_4n1               mem  0.07 GB tm    641.47us/473980.58ms (  1289.73 GFLOPS   14.0|1288.1  GB/s) ['leakyrelu', 'leakyrelu bw', 'dot bw', '__add__']
+*** GPU     5426457 r_49_16_4_16_128_4_4_4                 mem  0.07 GB tm    167.97us/473980.75ms (  4894.29 GFLOPS   41.2|4913.4  GB/s) ['dot bw']
+*** GPU     5426458 r_16_8_8_16_256_4_4_4n1                mem  0.07 GB tm    383.97us/473981.13ms (  1405.05 GFLOPS   16.4|1403.7  GB/s) ['leakyrelu', 'leakyrelu bw', 'dot bw', '__add__']
+*** GPU     5426459 r_32_8_8_16_128_4_4_4                  mem  0.07 GB tm    152.00us/473981.28ms (  3532.05 GFLOPS   34.5|3545.8  GB/s) ['dot bw']
+*** GPU     5426460 E_32_49_8_16_4                         mem  0.07 GB tm     26.53us/473981.31ms (    90.79 GFLOPS  363.2|363.2   GB/s) ['__rmul__', '__add__']
+*** GPU     5426461 E_32_49_8_16_4n1                       mem  0.07 GB tm     25.12us/473981.33ms (   127.84 GFLOPS  383.5|383.5   GB/s) ['__rmul__', '__mul__', '__add__']
+*** GPU     5426462 r_16_4_8_16_128_4_4_4n1                mem  0.07 GB tm    122.02us/473981.46ms (  1110.74 GFLOPS   21.5|1108.6  GB/s) ['leakyrelu', 'leakyrelu bw', 'dot bw', '__add__']
+*** GPU     5426463 r_16_4_8_16_128_4_4_4n2                mem  0.07 GB tm     95.23us/473981.55ms (  1409.38 GFLOPS   22.0|1414.9  GB/s) ['dot bw']
+*** GPU     5426464 E_64_16_8_16_4n2                       mem  0.06 GB tm     13.50us/473981.56ms (   116.47 GFLOPS  465.9|465.9   GB/s) ['__rmul__', '__add__']
+*** GPU     5426465 E_64_16_8_16_4n3                       mem  0.06 GB tm     13.38us/473981.58ms (   156.78 GFLOPS  470.4|470.4   GB/s) ['__rmul__', '__mul__', '__add__']
+*** GPU     5426466 E_6272_32_4n5                          mem  0.06 GB tm     18.59us/473981.60ms (   399.42 GFLOPS  690.9|820.4   GB/s) ['__truediv__', '__truediv__', 'sqrt', '__add__', '__truediv__', '__mul__', '__sub__']
+*** GPU     5426467 r_8_2_8_16_128_4_4_4                   mem  0.06 GB tm     98.43us/473981.69ms (   340.89 GFLOPS    9.3|342.2   GB/s) ['dot bw']
+*** GPU     5426468 E_32_8_8_16_4n2                        mem  0.06 GB tm      8.35us/473981.70ms (    47.08 GFLOPS  188.3|188.3   GB/s) ['__rmul__', '__add__']
+*** GPU     5426469 E_32_8_8_16_4n3                        mem  0.06 GB tm      7.68us/473981.71ms (    68.27 GFLOPS  204.8|204.8   GB/s) ['__rmul__', '__mul__', '__add__']
+*** GPU     5426470 E_4096_32_4n7                          mem  0.06 GB tm     13.92us/473981.72ms (   348.40 GFLOPS  602.6|715.6   GB/s) ['__truediv__', '__truediv__', 'sqrt', '__add__', '__truediv__', '__mul__', '__sub__']
+*** GPU     5426471 E_16_4_8_16_4n2                        mem  0.06 GB tm      6.46us/473981.73ms (    15.21 GFLOPS   60.8|60.8    GB/s) ['__rmul__', '__add__']
+*** GPU     5426472 E_16_4_8_16_4n3                        mem  0.06 GB tm      6.50us/473981.74ms (    20.18 GFLOPS   60.5|60.5    GB/s) ['__rmul__', '__mul__', '__add__']
+*** GPU     5426473 E_1024_32_4n7                          mem  0.06 GB tm      7.81us/473981.75ms (   155.28 GFLOPS  268.6|319.0   GB/s) ['__truediv__', '__truediv__', 'sqrt', '__add__', '__truediv__', '__mul__', '__sub__']
+*** GPU     5426474 E_256_32_4n2                           mem  0.06 GB tm      7.36us/473981.75ms (    41.18 GFLOPS   71.2|84.6    GB/s) ['__truediv__', '__truediv__', 'sqrt', '__add__', '__truediv__', '__mul__', '__sub__']
+*** GPU     5426475 E_4_32_4n3                             mem  0.06 GB tm      6.59us/473981.76ms (     0.16 GFLOPS    0.6|0.6     GB/s) ['log_softmax']
+*** GPU     5426476 r_256_2_2n2                            mem  0.06 GB tm      6.37us/473981.77ms (    11.14 GFLOPS    1.9|43.4    GB/s) ['log_softmax', '__mul__', 'mean']
+*** CLANG   5426477 copy        4,   CLANG <- GPU          mem  0.06 GB tm     35.23us/473981.80ms (     0.00 GFLOPS    0.0|0.0     GB/s) 
+*** GPU     5426478 r_2_4_8_16_32_4_4_4                    mem  0.06 GB tm     23.49us/473981.82ms (   182.06 GFLOPS    9.8|181.4   GB/s) ['dot', 'leakyrelu']
+*** GPU     5426479 r_2_8_8_16_64_4_4_4                    mem  0.06 GB tm     34.24us/473981.86ms (   494.77 GFLOPS   21.1|493.8   GB/s) ['dot', 'leakyrelu']
+*** GPU     5426480 r_2_16_8_16_128_4_4_4                  mem  0.06 GB tm     91.07us/473981.95ms (   740.48 GFLOPS   27.3|739.8   GB/s) ['dot', 'leakyrelu']
+*** GPU     5426481 r_49_16_4_256_4_4_4                    mem  0.06 GB tm    148.93us/473982.10ms (   692.02 GFLOPS   24.7|691.3   GB/s) ['dot', 'tanh']
+*** CLANG   5426482 copy   200704,   CLANG <- GPU          mem  0.06 GB tm     64.06us/473982.16ms (     0.00 GFLOPS    3.1|0.0     GB/s) 
+Generator loss: 1.3740071058273315, Discriminator loss: 0.9452890753746033: 100%|███████████████████████████████████████████████████████████████████████████████████████████████| 300/300 [59:45<00:00,  0.08it/s]
+Training Completed!
+avg:  1422.23 GFLOPS    31.69 GB/s           total: 5426482 kernels 674113.69 GOPS 15022.08 GB 473982.16 ms
 ```
