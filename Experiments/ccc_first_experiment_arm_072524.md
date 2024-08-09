@@ -21,11 +21,12 @@ I need to test that on Alpine as well.
 
 In [7]: data = np.random.rand(200, 1000)
 
-In [8]: %timeit ccc(data, n_jobs=72)
-^C^C^C
-KeyboardInterrupt
-
-
 In [9]: %timeit ccc(data, n_jobs=4)
 24.1 s ± 436 ms per loop (mean ± std. dev. of 7 runs, 1 loop each)
+```
+On Alpine:
+
+```python
+In [6]: %timeit ccc(data, n_jobs=4)
+49.7 s ± 1.08 s per loop (mean ± std. dev. of 7 runs, 1 loop each)
 ```
