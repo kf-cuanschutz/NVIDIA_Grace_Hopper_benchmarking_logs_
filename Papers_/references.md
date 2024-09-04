@@ -44,6 +44,9 @@ Additional documentation on Hopper:
 LLM course:
 ---> [here](https://web.stanford.edu/~jurafsky/slp3/)
 
+Other articles on GH:
+---> [1](https://hc2023.hotchips.org/assets/program/conference/day1/CPU1/HC2023.Arm.MagnusBruce.v04.FINAL.pdf),[2](https://chipsandcheese.com/2024/07/31/grace-hopper-nvidias-halfway-apu/),[3](https://www.semianalysis.com/p/gb200-hardware-architecture-and-component)
+
 
 
 
