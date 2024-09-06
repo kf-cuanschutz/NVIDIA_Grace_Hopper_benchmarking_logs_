@@ -55,3 +55,23 @@ GPU parts:
 GPU time is 2.7425854206085205
 
 ```
+
+Lot of nan:
+
+```bash
+GPU percentiles: [0.5 nan nan nan nan nan nan nan nan]
+GPU quantiles: [0.5008643755592058                nan                nan
+                nan                nan                nan
+                nan                nan                nan]
+GPU percentiles: [0.3333333333333333 0.6666666666666667                nan
+                nan                nan                nan
+                nan                nan                nan]
+GPU quantiles: [0.33260897569783154 0.6641338135760118                  nan
+                 nan                 nan                 nan
+                 nan                 nan                 nan]
+GPU percentiles: [0.25 0.5  0.75  nan  nan  nan  nan  nan  nan]
+GPU quantiles: [0.2451335619930029 0.5008643755592058 0.7473250297638401
+                nan                nan                nan
+                nan                nan                nan]
+
+```
