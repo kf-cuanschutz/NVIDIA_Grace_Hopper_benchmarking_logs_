@@ -124,4 +124,4 @@ GPU parts:
 
 GPU time is 12.10914945602417
 ```
-
+See resulting plot [here](https://github.com/kf-cuanschutz/NVIDIA_Grace_Hopper_benchmarking_logs_/blob/main/Experiments/cpu_vs_gpu.png)
