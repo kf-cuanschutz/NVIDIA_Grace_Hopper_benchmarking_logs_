@@ -112,3 +112,12 @@ xz                        5.4.6                h998d150_1
 zlib                      1.2.13               h68df207_6    conda-forge
 
 ```
+
+Installing cupy:
+---------------
+
+```bash
+python -m pip install -U setuptools pip
+conda install -c conda-forge cupy
+
+```
