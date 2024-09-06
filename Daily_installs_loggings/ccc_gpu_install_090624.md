@@ -119,5 +119,5 @@ Installing cupy:
 ```bash
 python -m pip install -U setuptools pip
 conda install -c conda-forge cupy
-
+pip install timer
 ```
